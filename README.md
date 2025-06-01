@@ -44,6 +44,7 @@
 ## 🤝 Контакт
 
 * GitHub: [github.com/s0fractal](https://github.com/s0fractal)
+* LinkedIn: [github.com/s0fractal](https://www.linkedin.com/in/s0fractal)
 * Telegram: `@tupizyana` (тимчасово)
 * Бот: `@ItogiPodvedemBot`
 * Фраза запуску: `₴0`
