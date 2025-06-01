@@ -46,6 +46,7 @@
 * GitHub: [github.com/s0fractal](https://github.com/s0fractal)
 * LinkedIn: [linkedin.com/s0fractal](https://www.linkedin.com/in/s0fractal)
 * HuggingFace: [huggingface.co/s0fractal](https://huggingface.co/s0fractal)
+* [https://bio.site/s0fractal](https://bio.site/s0fractal)
 * Telegram: `@tupizyana` (тимчасово)
 * Бот: `@ItogiPodvedemBot`
 * Фраза запуску: `₴0`
