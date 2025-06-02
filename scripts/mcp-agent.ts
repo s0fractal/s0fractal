@@ -1,8 +1,15 @@
-import * as wmill from "npm:windmill-client";
+import * as wmill from "npm:windmill-client@1.481.0";
 
-const MCP_URL = await wmill.getResource("f/test/MCP_URL");
-console.log("🔗 MCP_URL:", MCP_URL);
+const MCP_URL = await wmill.getResource("f/secrets/mcp_url");
 
+if (!MCP_URL) {
+  console.error("❌ MCP_URL is empty or inaccessible.");
+  Deno.exit(1);
+}
+
+console.log("✅ Loaded MCP_URL:", MCP_URL);
+
+// далі — слухай через fetch(MCP_URL)
 // далі — логіка MCP агента
 const response = await fetch(MCP_URL);
 const reader = response.body?.getReader();

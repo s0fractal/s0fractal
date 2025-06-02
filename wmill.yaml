@@ -4,7 +4,7 @@ includes:
 excludes: []
 codebases: []
 skipVariables: true
-skipResources: true
+skipResources: false
 skipSecrets: true
 includeSchedules: false
 includeTriggers: false
