@@ -1,0 +1,17 @@
+{
+  "avatars": {
+    "s0fractal": {
+      "path": "media/avatars/s0fractal.svg",
+      "tags": [
+        "identity",
+        "main",
+        "entry"
+      ],
+      "usedIn": [
+        "me",
+        "README.md",
+        "gh-page"
+      ]
+    }
+  }
+}
