@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "wmill": "npm:windmill-client@1.481.0"
+  },
+  "tasks": {
+    "mcp": "run --allow-net --allow-read --allow-env scripts/mcp-agent.ts"
+  }
+}

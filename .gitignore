@@ -16,3 +16,5 @@ wmill-lock.yaml
 # Cache, tmp
 tmp/
 .cache/
+package-lock.json
+deno.lock

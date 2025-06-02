@@ -1,0 +1,23 @@
+{
+  "name": "s0fractal",
+  "version": "1.0.0",
+  "description": "Цей репозиторій — точка входу у фрактальну ідентичність.",
+  "homepage": "https://github.com/s0fractal/s0fractal#readme",
+  "bugs": {
+    "url": "https://github.com/s0fractal/s0fractal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s0fractal/s0fractal.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "windmill-client": "^1.494.0"
+  }
+}
