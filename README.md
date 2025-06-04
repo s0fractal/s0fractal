@@ -78,6 +78,7 @@
       - [dist](node_modules/windmill-client/dist/README.md)
         - [core](node_modules/windmill-client/dist/core/README.md)
   - [old](old/README.md)
+  - [s0fractal](s0fractal/README.md)
   - [scripts](scripts/README.md)
     - [scripts](scripts/scripts/README.md)
   - [src](src/README.md)
