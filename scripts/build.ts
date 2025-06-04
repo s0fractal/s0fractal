@@ -1,4 +1,9 @@
 // scripts/build.ts
+import { copy } from "https://deno.land/std@0.224.0/fs/copy.ts";
+import { exists } from "https://deno.land/std@0.224.0/fs/exists.ts";
+
+// Копіювання public → dist
+const PUBLIC_DIR = "./public";
 
 import { walk } from "https://deno.land/std/fs/mod.ts";
 import { basename, join } from "https://deno.land/std/path/mod.ts";
@@ -6,6 +11,11 @@ import { ensureDir } from "https://deno.land/std/fs/ensure_dir.ts";
 
 const DIST_DIR = "dist";
 await ensureDir(DIST_DIR);
+
+if (await exists(PUBLIC_DIR)) {
+  await copy(PUBLIC_DIR, DIST_DIR, { overwrite: true });
+  console.log("✅ Public content copied to dist/");
+}
 
 function renderHTML(title: string, body: string): string {
   return `<!DOCTYPE html>
@@ -18,6 +28,14 @@ function renderHTML(title: string, body: string): string {
   <meta property="og:description" content="Жива карта фрактальної структури, що самоорганізовується." />
   <meta property="og:image" content="https://s0fractal.github.io/s0fractal/media/svg/heart.svg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#000000">
+
+    <meta property="og:title" content="S0FRACTAL">
+    <meta property="og:description" content="Фрактальний простір живих структур.">
+    <meta property="og:image" content="/og-image.jpg">
+    <meta property="og:url" content="https://s0fractal.github.io/s0fractal/">
+<meta name="twitter:card" content="summary_large_image">
   <style>
     body { font-family: sans-serif; padding: 2em; max-width: 800px; margin: auto; }
     a { text-decoration: none; color: #1a0dab; }
