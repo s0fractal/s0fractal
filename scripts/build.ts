@@ -1,14 +1,11 @@
 // scripts/build.ts
 
 import { walk } from "https://deno.land/std/fs/mod.ts";
-import { dirname, join, relative } from "https://deno.land/std/path/mod.ts";
+import { basename, join } from "https://deno.land/std/path/mod.ts";
 import { ensureDir } from "https://deno.land/std/fs/ensure_dir.ts";
 
-const ROOT = ".";
-const OUT = "dist";
-
-const decoder = new TextDecoder("utf-8");
-const encoder = new TextEncoder();
+const DIST_DIR = "dist";
+await ensureDir(DIST_DIR);
 
 function renderHTML(title: string, body: string): string {
   return `<!DOCTYPE html>
@@ -27,33 +24,37 @@ ${body}
 </html>`;
 }
 
-async function convertReadmeToHTML(filePath: string, outPath: string) {
-  const raw = await Deno.readFile(filePath);
-  const text = decoder.decode(raw);
-  const htmlBody = `
-    <h1>${filePath}</h1>
-    <pre>${text.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</pre>
-  `;
-  const html = renderHTML(filePath, htmlBody);
-  await ensureDir(dirname(outPath));
-  await Deno.writeFile(outPath, encoder.encode(html));
+function dirname(path: string): string {
+  return path.split("/").slice(0, -1).join("/") || ".";
 }
 
-async function build() {
-  for await (const entry of walk(ROOT, { includeDirs: false, exts: [".md"] })) {
-    if (!entry.name.toLowerCase().includes("readme.md")) continue;
+const links: string[] = [];
 
-    const rel = relative(ROOT, entry.path);
-    const target = join(OUT, rel.replace(/\.md$/, ".html"));
-    await convertReadmeToHTML(entry.path, target);
-  }
-
-  const indexHTML = renderHTML(
-    "s0fractal",
-    `<h1>🧬 s0fractal map</h1><p>README файли відрендерені як HTML.</p>`,
+for await (
+  const entry of walk(".", {
+    includeDirs: false,
+    exts: [".md"],
+    match: [/README\.md$/],
+  })
+) {
+  const relPath = entry.path.replace(/\/?README\.md$/, ".html").replace(
+    /^\.\/?/,
+    "",
   );
-  await ensureDir(OUT);
-  await Deno.writeFile(join(OUT, "index.html"), encoder.encode(indexHTML));
+  const outPath = join(DIST_DIR, relPath);
+
+  links.push(`<li><a href="${relPath}">${relPath}</a></li>`);
+
+  await ensureDir(join(DIST_DIR, dirname(relPath)));
+  const content = await Deno.readTextFile(entry.path);
+  const html = renderHTML(relPath, `<pre>${content}</pre>`);
+  await Deno.writeTextFile(outPath, html);
+  console.log("✅ Built", outPath);
 }
 
-await build();
+const indexHTML = renderHTML(
+  "s0fractal map",
+  `<h1>🧬 s0fractal map</h1><ul>${links.join("\n")}</ul>`,
+);
+await Deno.writeTextFile(join(DIST_DIR, "index.html"), indexHTML);
+console.log("🌐 Created index.html with", links.length, "links.");
