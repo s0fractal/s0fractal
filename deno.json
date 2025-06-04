@@ -3,10 +3,12 @@
     "wmill": "npm:windmill-client@1.481.0"
   },
   "tasks": {
+    "start:tunnel": "bash scripts/start_tunnel_insiders.sh",
     "mcp": "run --allow-net --allow-read --allow-env scripts/mcp-agent.ts",
     "gen-index": "deno run --allow-read --allow-write scripts/gen_index.ts",
     "build": "deno run --allow-read --allow-write scripts/build.ts",
-    "seed": "deno run --allow-env --allow-read --allow-net scripts/seed.ts"
+    "seed": "deno run --allow-env --allow-read --allow-net scripts/seed.ts",
+    "gen:commit": "deno run --allow-run --allow-write --allow-env scripts/gen_commit_msg.ts"
   },
   "lint": {
     "rules": {
