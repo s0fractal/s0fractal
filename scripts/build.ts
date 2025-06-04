@@ -13,6 +13,11 @@ function renderHTML(title: string, body: string): string {
 <head>
   <meta charset="UTF-8">
   <title>${title}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="s0fractal map" />
+  <meta property="og:description" content="Жива карта фрактальної структури, що самоорганізовується." />
+  <meta property="og:image" content="https://s0fractal.github.io/s0fractal/media/svg/heart.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <style>
     body { font-family: sans-serif; padding: 2em; max-width: 800px; margin: auto; }
     a { text-decoration: none; color: #1a0dab; }
