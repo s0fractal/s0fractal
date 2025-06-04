@@ -8,7 +8,8 @@
     "gen-index": "deno run --allow-read --allow-write scripts/gen_index.ts",
     "build": "deno run --allow-read --allow-write scripts/build.ts",
     "seed": "deno run --allow-env --allow-read --allow-net scripts/seed.ts",
-    "gen:commit": "deno run --allow-run --allow-write --allow-env scripts/gen_commit_msg.ts"
+    "gen:commit": "deno run --allow-run --allow-write --allow-env --allow-read scripts/gen_commit_msg.ts",
+    "sync": "deno run --allow-run --allow-env --allow-read --allow-write scripts/full_sync.ts"
   },
   "lint": {
     "rules": {
