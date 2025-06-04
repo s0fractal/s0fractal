@@ -1,0 +1,6 @@
+{
+  "macbook": "local",
+  "macmini": "warp-station",
+  "ubuntu": "node",
+  "agents": ["core", "potik", "supabase", "warp"]
+}

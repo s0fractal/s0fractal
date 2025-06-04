@@ -1,0 +1,17 @@
+# Точка входу
+default:
+    @just diagnose
+
+diagnose:
+    bash scripts/diagnose.sh
+
+cleanup:
+    bash scripts/clean_launch_agents.sh && bash scripts/disable_login_items.sh
+
+warp:setup:
+    echo "⚙️ Налаштування Warp (локальне середовище)..."
+    # Тут буде скрипт warp setup
+
+zsh:setup:
+    echo "⚙️ Установка автодоповнення ZSH + Starship..."
+    # Тут буде скрипт zsh setup
