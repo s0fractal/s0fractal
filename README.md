@@ -1,21 +1,78 @@
-# 🧬 s0fractal
+# 🧬 S0FRACTAL INDEX
 
-Цей репозиторій розгортається як фрактальний організм.
-
-## 🧭 Структура
-
-| Іконка | Назва         | Опис                                    |
-|--------|---------------|------------------------------------------|
-| 🌱     | Паросток       | Перші інтенти, з яких все проростає      |
-| 💨     | Дихання        | Переміщення енергії, імпульси            |
-| 💓     | Серцебиття     | Ритм, що підтримує життєвий цикл         |
-| 🧠     | Мозок          | Логіка, агенти, розум                    |
-| 🦴     | Скелет         | Базові компоненти, структури             |
-| 📦     | Геном          | Конфігурації, змінні, .env               |
-| 🔥     | Ядро           | Головний код агента, точки входу         |
-| 📜     | Глосарій       | Визначення значень, еволюція термінів    |
-| 📁     | Треш           | Стара версія або тимчасові обʼєкти       |
-| old    | old            | Повільна архівація вручну                |
-| scripts| Скрипти        | Запуск ініціалізації, логінів тощо       |
-
-Переходимо на універсальну мову — де назви зберігаються лише тут.
+- [🧬](🧬/README.md)
+  - [🌱паросток](🧬/🌱паросток/README.md)
+  - [💓серцебиття](🧬/💓серцебиття/README.md)
+    - [фази](🧬/💓серцебиття/фази/README.md)
+      - [♻️_регенерація](🧬/💓серцебиття/фази/♻️_регенерація/README.md)
+      - [⚖️_баланс](🧬/💓серцебиття/фази/⚖️_баланс/README.md)
+      - [🌀_мутація](🧬/💓серцебиття/фази/🌀_мутація/README.md)
+      - [🌱_паросток](🧬/💓серцебиття/фази/🌱_паросток/README.md)
+      - [💀_розкладення](🧬/💓серцебиття/фази/💀_розкладення/README.md)
+      - [💓_серцебиття](🧬/💓серцебиття/фази/💓_серцебиття/README.md)
+      - [💨_дихання](🧬/💓серцебиття/фази/💨_дихання/README.md)
+      - [🕳️_зародження](🧬/💓серцебиття/фази/🕳️_зародження/README.md)
+      - [🚪_розкриття](🧬/💓серцебиття/фази/🚪_розкриття/README.md)
+      - [🧠_усвідомлення](🧬/💓серцебиття/фази/🧠_усвідомлення/README.md)
+  - [💨дихання](🧬/💨дихання/README.md)
+  - [📜глосарій](🧬/📜глосарій/README.md)
+  - [📦геном](🧬/📦геном/README.md)
+  - [🔥ядро](🧬/🔥ядро/README.md)
+  - [🦴скелет](🧬/🦴скелет/README.md)
+  - [🧠мозок](🧬/🧠мозок/README.md)
+  - [📁трeш](🧬/📁трeш/README.md)
+- [f](f/README.md)
+  - [agent](f/agent/README.md)
+  - [app_custom](f/app_custom/README.md)
+  - [app_groups](f/app_groups/README.md)
+  - [app_themes](f/app_themes/README.md)
+  - [secrets](f/secrets/README.md)
+  - [test](f/test/README.md)
+- [i](i/README.md)
+- [iam](iam/README.md)
+- [me](me/README.md)
+- [media](media/README.md)
+  - [avatars](media/avatars/README.md)
+  - [docs](media/docs/README.md)
+  - [exports](media/exports/README.md)
+  - [sources](media/sources/README.md)
+  - [svg](media/svg/README.md)
+  - [tmp](media/tmp/README.md)
+  - [ui](media/ui/README.md)
+  - [video](media/video/README.md)
+  - [voices](media/voices/README.md)
+- [mi](mi/README.md)
+- [node_modules](node_modules/README.md)
+  - [windmill-client](node_modules/windmill-client/README.md)
+    - [dist](node_modules/windmill-client/dist/README.md)
+      - [core](node_modules/windmill-client/dist/core/README.md)
+- [old](old/README.md)
+- [scripts](scripts/README.md)
+  - [scripts](scripts/scripts/README.md)
+- [src](src/README.md)
+  - [лінзи](src/лінзи/README.md)
+  - [медіа](src/медіа/README.md)
+  - [функції](src/функції/README.md)
+  - [час](src/час/README.md)
+  - [conversations](src/conversations/README.md)
+  - [f](src/f/README.md)
+    - [agent](src/f/agent/README.md)
+  - [ideas](src/ideas/README.md)
+  - [logs](src/logs/README.md)
+  - [media](src/media/README.md)
+    - [avatars](src/media/avatars/README.md)
+    - [docs](src/media/docs/README.md)
+    - [exports](src/media/exports/README.md)
+    - [sources](src/media/sources/README.md)
+    - [svg](src/media/svg/README.md)
+    - [tmp](src/media/tmp/README.md)
+    - [ui](src/media/ui/README.md)
+    - [video](src/media/video/README.md)
+    - [voices](src/media/voices/README.md)
+  - [memories](src/memories/README.md)
+  - [meta](src/meta/README.md)
+  - [notes](src/notes/README.md)
+  - [src-local](src/src-local/README.md)
+  - [time](src/time/README.md)
+  - [unsorted](src/unsorted/README.md)
+- [u](u/README.md)
