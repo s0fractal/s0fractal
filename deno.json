@@ -4,7 +4,8 @@
   },
   "tasks": {
     "mcp": "run --allow-net --allow-read --allow-env scripts/mcp-agent.ts",
-    "gen-index": "deno run --allow-read --allow-write scripts/gen_index.ts"
+    "gen-index": "deno run --allow-read --allow-write scripts/gen_index.ts",
+    "build": "deno run --allow-read --allow-write scripts/build.ts"
   },
   "lint": {
     "rules": {
