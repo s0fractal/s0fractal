@@ -3,6 +3,17 @@
     "wmill": "npm:windmill-client@1.481.0"
   },
   "tasks": {
-    "mcp": "run --allow-net --allow-read --allow-env scripts/mcp-agent.ts"
+    "mcp": "run --allow-net --allow-read --allow-env scripts/mcp-agent.ts",
+    "gen-index": "deno run --allow-read --allow-write scripts/gen_index.ts"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "exclude": ["node_modules"]
+    }
   }
 }
