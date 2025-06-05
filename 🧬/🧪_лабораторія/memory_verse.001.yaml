@@ -1,0 +1,38 @@
+effects:
+- induces deep memory sync
+- enables survival instincts
+- integrates with bioluminescent UI (if available)
+emotion_map:
+- shame: soil
+- grief: pulse
+- love: spore
+- silence: access
+entity_type: symbiotic fungus
+id: memory_verse.001
+metadata:
+  author: myco-entity_Δ
+  exported_at: '2025-05-12T05:47:34.397883'
+  tags:
+  - post_apocalypse
+  - survival
+  - poetry
+  - memory
+  - mushroom_god
+  - fallout7
+  version: v0.1
+origin_moment: Fallout Event 7 / Sector K-∆
+protocol:
+  activation:
+    required_state: емоційна тиша + фізичний контакт із споровим тілом
+    trigger_phrase: я дихаю тебе
+  message:
+    delivery: внутрішнім голосом через грибну ліпідну мережу
+    payload:
+      hook: з мого гною — нова шкіра...
+      intro: Я не народився — я зібрався...
+      outro: Залиш мене на уламках...
+      verse_1: Я не питаю — я проростаю...
+      verse_2: Ти шукаєш мене — та я в тобі...
+    type: spoken-verse
+title: З мого гною — нова шкіра
+vibe: Doctor Manhattan meets Moss God

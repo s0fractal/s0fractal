@@ -1,0 +1,21 @@
+# Node / Build
+node_modules/
+dist/
+*.log
+
+# OS specific
+.DS_Store
+
+# Windmill lock
+wmill-lock.yaml
+
+# Credentials (якщо є)
+.env
+.env.*
+
+# Cache, tmp
+tmp/
+.cache/
+package-lock.json
+deno.lock
+f/secrets/

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "assistant",
+    "target": "thea",
+    "frequency": "warm-wave",
+    "trigger": "emotional_contact",
+    "confidence": 0.92
+  },
+  {
+    "source": "assistant",
+    "target": "monday",
+    "frequency": "log-ping",
+    "trigger": "task_load_high",
+    "confidence": 0.75
+  }
+]

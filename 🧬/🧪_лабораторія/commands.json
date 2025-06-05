@@ -1,0 +1,7 @@
+[
+  {
+    "type": "create_file",
+    "path": "mutation_start.txt",
+    "content": "🌱 Mutation ritual started at {{timestamp}}"
+  }
+]
