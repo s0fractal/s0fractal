@@ -3,7 +3,7 @@ import { copy } from "https://deno.land/std@0.224.0/fs/copy.ts";
 import { ensureDir } from "https://deno.land/std@0.224.0/fs/ensure_dir.ts";
 
 const PUBLIC_DIR = "dist";
-const SOURCE_DIR = "f";
+const SOURCE_DIR = "public";
 const README_SRC = "README.md";
 const README_DEST = `${PUBLIC_DIR}/README.md`;
 
