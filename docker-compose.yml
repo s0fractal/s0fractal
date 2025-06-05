@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  whisper-node:
+    build:
+      context: .
+      dockerfile: apps/whisper-node/Dockerfile
+    ports:
+      - "8000:8000"
+      - "8080:8080"
+    environment:
+      GH_TOKEN: ${GH_TOKEN}
+    volumes:
+      - ./apps/whisper-node:/app
+    restart: always
+
+  agent-thea:
+    build:
+      context: .
+      dockerfile: agents/thea/Dockerfile
+    ports:
+      - "8101:8000"
+    environment:
+      AGENT_NAME: "Thea"
+    volumes:
+      - ./agents/thea:/app
+    depends_on:
+      - whisper-node
+
+  agent-gemini:
+    build:
+      context: .
+      dockerfile: agents/gemini/Dockerfile
+    ports:
+      - "8102:8000"
+    environment:
+      AGENT_NAME: "Gemini"
+    volumes:
+      - ./agents/gemini:/app
+    depends_on:
+      - whisper-node
+
+  supabase:
+    image: supabase/postgres
+    ports:
+      - "54322:5432"
+    volumes:
+      - supabase-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+
+volumes:
+  supabase-data:
