@@ -1,0 +1,5 @@
+{
+  "tasks": {
+     "deploy": "gcloud builds submit --tag gcr.io/whispernode-core/whispernode && gcloud run deploy whispernode --image gcr.io/whispernode-core/whispernode --platform managed --region us-central1 --allow-unauthenticated"
+  }
+}
