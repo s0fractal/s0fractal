@@ -1,12 +1,12 @@
 #!/usr/bin/env -S deno run -A
-
+import { exists } from "https://deno.land/std@0.224.0/fs/mod.ts";
 import { parse } from "https://deno.land/std@0.224.0/flags/mod.ts";
 
 const args = parse(Deno.args);
 const cmd = args._[0];
 
 switch (cmd) {
-  case (cmd === "init"): {
+  case "init": {
     const home = Deno.env.get("HOME");
     if (!home) {
       console.error("❌ Could not determine HOME directory.");
@@ -22,10 +22,17 @@ switch (cmd) {
     const script = `#!/bin/bash
 deno run -A ~/.s0fractal/fractal/fractal.ts "$@"`;
 
-    await Deno.writeTextFile(cliPath, script);
-    await Deno.chmod(cliPath, 0o755);
-    await Deno.writeTextFile(cliAlias, script);
-    await Deno.chmod(cliAlias, 0o755);
+    if (!(await exists(cliPath))) {
+      await Deno.writeTextFile(cliPath, script);
+      await Deno.chmod(cliPath, 0o755);
+      console.log("✅ CLI 'fractal' created");
+    }
+
+    if (!(await exists(cliAlias))) {
+      await Deno.writeTextFile(cliAlias, script);
+      await Deno.chmod(cliAlias, 0o755);
+      console.log("✅ CLI alias 'f' created");
+    }
 
     console.log("✅ Fractal CLI installed as 'fractal' and alias 'f'");
     Deno.exit(0);
