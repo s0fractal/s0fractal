@@ -1,31 +1,44 @@
 #!/bin/bash
-
 set -e
-
-REPO="https://github.com/s0fractal/s0fractal.git"
-DEST="$HOME/.s0fractal"
 
 echo "🌱 Welcome to s0fractal bootstrap"
 
-if [ -d "$DEST/.git" ]; then
-  echo "📦 Repo exists. Syncing..."
-  cd "$DEST"
-  git pull origin main
-else
-  echo "📥 Cloning..."
-  git clone "$REPO" "$DEST"
+# Check for git
+if ! command -v git &> /dev/null; then
+  echo "❌ Git is not installed. Please install Git and retry."
+  exit 1
 fi
 
-cd "$DEST"
+cd ~
 
-<<<<<<< HEAD
-echo "✅ Boot complete. Run: deno run -A ~/.s0fractal/fractal/fractal.ts init"
+# Clone or pull latest
+if [ -d ".s0fractal/.git" ]; then
+  echo "📦 Repo exists. Syncing..."
+  cd .s0fractal
+  git pull origin main
+else
+  echo "📥 Cloning repository..."
+  git clone https://github.com/s0fractal/s0fractal .s0fractal
+  cd .s0fractal
+fi
 
-echo "🧠 Initializing fractal CLI..."
-deno run -A ~/.s0fractal/fractal/fractal.ts init
-=======
-echo "⚙️ Running 'fractal.ts init'"
+# ENV fallback
+if [ ! -f .fractal.env ] && [ -f fallback/.fractal.env ]; then
+  cp fallback/.fractal.env .fractal.env
+  echo "✅ Default .fractal.env applied"
+fi
+
+# Install Deno if missing
+if ! command -v deno &> /dev/null; then
+  echo "📦 Installing Deno..."
+  curl -fsSL https://deno.land/x/install/install.sh | sh
+  export PATH="$HOME/.deno/bin:$PATH"
+  echo "🔁 You may need to reload your shell: source ~/.zshrc or ~/.bashrc"
+else
+  echo "✅ Deno already installed"
+fi
+chmod +x "$0"
+echo "⚙️ Running fractal.ts init..."
 deno run -A fractal/fractal.ts init
 
-echo "✅ Done. Try: fractal pulse"
->>>>>>> 165bdad (feat: оновлено 2025-06-06 — зміни в .fractal.env, cellar/whisper/README.md, install.sh)
+echo "🎉 Installation complete. Try running: fractal pulse"
