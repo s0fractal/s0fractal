@@ -3,9 +3,9 @@ import { copy } from "https://deno.land/std@0.224.0/fs/copy.ts";
 import { ensureDir } from "https://deno.land/std@0.224.0/fs/ensure_dir.ts";
 import { walk } from "https://deno.land/std@0.224.0/fs/walk.ts";
 import {
-    extname,
-    join,
-    relative,
+  extname,
+  join,
+  relative,
 } from "https://deno.land/std@0.224.0/path/mod.ts";
 
 const PUBLIC_DIR = "dist";
@@ -18,11 +18,11 @@ await ensureDir(PUBLIC_DIR);
 
 // Копіюємо все з кореня, окрім виключених директорій
 for await (const entry of Deno.readDir(SOURCE_DIR)) {
-    if (EXCLUDE_DIRS.includes(entry.name)) continue;
-    const from = join(SOURCE_DIR, entry.name);
-    const to = join(PUBLIC_DIR, entry.name);
-    await copy(from, to, { overwrite: true });
-    console.log(`✅ Скопійовано: ${entry.name}`);
+  if (EXCLUDE_DIRS.includes(entry.name)) continue;
+  const from = join(SOURCE_DIR, entry.name);
+  const to = join(PUBLIC_DIR, entry.name);
+  await copy(from, to, { overwrite: true });
+  console.log(`✅ Скопійовано: ${entry.name}`);
 }
 
 // Генерація index.html
@@ -32,14 +32,14 @@ const markdowns: string[] = [];
 const others: string[] = [];
 
 for await (const entry of walk(PUBLIC_DIR, { includeDirs: false })) {
-    const relPath = relative(PUBLIC_DIR, entry.path);
-    if (relPath.endsWith("README.md")) {
-        readmes.push(relPath);
-    } else if (extname(entry.name) === ".md") {
-        markdowns.push(relPath);
-    } else {
-        others.push(relPath);
-    }
+  const relPath = relative(PUBLIC_DIR, entry.path);
+  if (relPath.endsWith("README.md")) {
+    readmes.push(relPath);
+  } else if (extname(entry.name) === ".md") {
+    markdowns.push(relPath);
+  } else {
+    others.push(relPath);
+  }
 }
 
 const indexContent = `<!DOCTYPE html>
