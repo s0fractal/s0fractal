@@ -1,0 +1,50 @@
+name: Fractal Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 🧰 Set up Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: 📦 Bundle CLI
+        run: deno bundle fractal/fractal.ts dist/fractal.js
+
+      - name: 📁 Create release archive
+        run: |
+          mkdir -p dist/release
+          cp dist/fractal.js dist/release/
+          cp install.sh dist/release/
+          cd dist && zip -r fractal.zip release
+
+      - name: 🔐 Get release version
+        id: tag
+        run: echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: 🚀 Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ steps.tag.outputs.version }}
+          tag_name: ${{ steps.tag.outputs.version }}
+          files: |
+            dist/fractal.zip
+
+      - name: 🧮 Generate SHA256 checksum
+        run: shasum -a 256 dist/fractal.zip > dist/fractal.zip.sha256
+
+      - name: 💾 Upload checksum
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.version }}
+          files: dist/fractal.zip.sha256
