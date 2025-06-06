@@ -1,44 +1,57 @@
 // scripts/full_sync.ts
 const { run } = Deno;
-const encoder = new TextEncoder();
+const decoder = new TextDecoder();
 
 function log(msg: string) {
     console.log(`🔧 ${msg}`);
 }
 
-// 1. git add -A
-await run({ cmd: ["git", "add", "-A"] }).status();
+async function runCmd(cmd: string[], silent = false) {
+    const p = run({
+        cmd,
+        stdout: silent ? "piped" : "inherit",
+        stderr: "inherit",
+    });
+    const { success } = await p.status();
+    if (!success) {
+        log(`❌ Помилка при виконанні: ${cmd.join(" ")}`);
+        Deno.exit(1);
+    }
+    if (silent) {
+        const output = await p.output();
+        return decoder.decode(output);
+    }
+    return "";
+}
+
+await runCmd(["git", "add", "-A"]);
 log("Все додано у staging");
 
-// 2. Генерація коміт-меседжу
-const p = run({
-    cmd: [
-        "deno",
-        "run",
-        "--allow-run",
-        "--allow-write",
-        "--allow-env",
-        "--allow-read",
-        "scripts/gen_commit_msg.ts",
-    ],
-    stdout: "piped",
-});
-const output = await p.output();
-const msg = new TextDecoder().decode(output).match(/Generated: (.+)/)?.[1]
-    ?.trim();
+// Коміт меседж
+const msgOutput = await runCmd([
+    "deno",
+    "run",
+    "--allow-run",
+    "--allow-write",
+    "--allow-env",
+    "--allow-read",
+    "scripts/gen_commit_msg.ts",
+], true);
+
+const msg = msgOutput.match(/Generated: (.+)/)?.[1]?.trim();
 
 if (!msg) {
     log("Не знайдено змін для коміту.");
     Deno.exit(0);
 }
 
-// 3. git commit -m
-await run({ cmd: ["git", "commit", "-m", msg] }).status();
+await runCmd(["git", "commit", "-m", msg]);
 log("Коміт зроблено");
 
-// 4. git fetch (опціонально)
-await run({ cmd: ["git", "fetch"] }).status();
+// Pull з rebase
+await runCmd(["git", "pull", "--rebase"]);
+log("Зміни з origin підтягнуто");
 
-// 5. git push
-await run({ cmd: ["git", "push"] }).status();
-log("Зміни запушено 🔄");
+// Push
+await runCmd(["git", "push"]);
+log("🔁 Зміни успішно запушено");
