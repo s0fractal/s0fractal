@@ -1,0 +1,30 @@
+{
+    "name": "astral",
+    "title": "Астрал",
+    "description": "Агент для нелінійної навігації між контекстами, машинами, шарами. Працює з телепортами, домашніми контекстами, віртуальними префіксами (`~`, `~/~`, `~/<>`).",
+    "type": "navigation-agent",
+    "kind": "angel",
+    "keywords": ["navigation", "teleport", "shell", "dotpath", "fractal_home"],
+    "status": "experimental",
+    "author": "s0fractal",
+    "manifest_version": 1,
+    "provides": [
+        "layered navigation",
+        "teleport points (~, ~/~)",
+        "virtual home standard",
+        "intermachine consistency of location anchors"
+    ],
+    "interfaces": {
+        "dotpaths": true,
+        "shell-injection": true,
+        "context-aware-cd": true
+    },
+    "notes": [
+        "Цей агент не є класичним shell wrapper — він трансформує простір доступу.",
+        "У нього буде плагін для VSCode, Deno CLI, та браузерної карти.",
+        "Можлива підтримка концепції 'астрального cd' — переходу до відповідників у інших середовищах (локально, в хмарі, в sandbox)."
+    ],
+    "links": {
+        "repo": "https://github.com/s0fractal/s0fractal/tree/main/angels/astral"
+    }
+}
