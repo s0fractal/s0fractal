@@ -1,20 +1,47 @@
 # 🧭 Індекс репозиторію s0fractal
 
 - 📁 `./`
+  - 📄 [ verification.txt](./ verification.txt)
   - 📄 [.DS_Store](./.DS_Store)
+  - 📄 [.env](./.env)
   - 📄 [.env.example](./.env.example)
   - 📄 [.gitignore](./.gitignore)
   - 📄 [auto.md](./auto.md)
+  - 📄 [CNAME](./CNAME)
   - 📄 [core_url.resource-type.yaml](./core_url.resource-type.yaml)
   - 📄 [deno.json](./deno.json)
   - 📄 [deno.lock](./deno.lock)
+  - 📄 [docker-compose.yml](./docker-compose.yml)
+  - 📄 [favicon.png](./favicon.png)
+  - 📄 [fractal-seed.json](./fractal-seed.json)
+  - 📄 [manifest.webmanifest](./manifest.webmanifest)
+  - 📄 [manifesto.md](./manifesto.md)
+  - 📄 [manifesto.ts](./manifesto.ts)
+  - 📄 [mindmap.md](./mindmap.md)
   - 📄 [package-lock.json](./package-lock.json)
   - 📄 [package.json](./package.json)
+  - 📄 [plan_of_mutation.md](./plan_of_mutation.md)
   - 📄 [plan.md](./plan.md)
   - 📄 [README.md](./README.md)
+  - 📄 [robots.txt](./robots.txt)
+  - 📄 [S0FRACTAL_INDEX.md](./S0FRACTAL_INDEX.md)
+  - 📄 [sitemap.xml](./sitemap.xml)
   - 📄 [wmill-lock.yaml](./wmill-lock.yaml)
   - 📄 [wmill.yaml](./wmill.yaml)
 - 📁 `🧬/`
+  - 📄 [🧬/README.md](./🧬/README.md)
+- 📁 `🌱_потік/`
+  - 📄 [🌱_потік/README.md](./🌱_потік/README.md)
+- 📁 `📚_знання/`
+  - 📄 [📚_знання/README.md](./📚_знання/README.md)
+- 📁 `📦_резонанси/`
+  - 📄 [📦_резонанси/README.md](./📦_резонанси/README.md)
+- 📁 `🔧_інструменти/`
+  - 📄 [🔧_інструменти/README.md](./🔧_інструменти/README.md)
+- 📁 `🧠_мислення/`
+  - 📄 [🧠_мислення/README.md](./🧠_мислення/README.md)
+- 📁 `🧬_історія/`
+  - 📄 [🧬_історія/README.md](./🧬_історія/README.md)
 - 📁 `.git/`
   - 📄 [.git/COMMIT_EDITMSG](./.git/COMMIT_EDITMSG)
   - 📄 [.git/config](./.git/config)
@@ -52,192 +79,851 @@
   - 📄 [.git/logs/refs/remotes/origin/HEAD](./.git/logs/refs/remotes/origin/HEAD)
   - 📄 [.git/logs/refs/remotes/origin/main](./.git/logs/refs/remotes/origin/main)
 - 📁 `.git/objects/`
+- 📁 `.git/objects/00/`
+  - 📄 [.git/objects/00/23eb13d855299506c35ea844abedb6d8491ec5](./.git/objects/00/23eb13d855299506c35ea844abedb6d8491ec5)
+  - 📄 [.git/objects/00/2fbdcc7eb16ec1fda9bef864d895812d30c417](./.git/objects/00/2fbdcc7eb16ec1fda9bef864d895812d30c417)
+- 📁 `.git/objects/01/`
+  - 📄 [.git/objects/01/1da4810cac71227e0c05a5779daa941f381c67](./.git/objects/01/1da4810cac71227e0c05a5779daa941f381c67)
+  - 📄 [.git/objects/01/23befe8ad137689ebbe85534f3897f1458538b](./.git/objects/01/23befe8ad137689ebbe85534f3897f1458538b)
+  - 📄 [.git/objects/01/249bebe66b7af82072ab0816d61227e439682b](./.git/objects/01/249bebe66b7af82072ab0816d61227e439682b)
+  - 📄 [.git/objects/01/b375d22098b87ce29a19cb49127a456e1a91a4](./.git/objects/01/b375d22098b87ce29a19cb49127a456e1a91a4)
+  - 📄 [.git/objects/01/d1a9ae9b090c185794dd00804216564a3f648c](./.git/objects/01/d1a9ae9b090c185794dd00804216564a3f648c)
 - 📁 `.git/objects/02/`
   - 📄 [.git/objects/02/9c824eccd3fc0cc3c3d50be11289497ad3c428](./.git/objects/02/9c824eccd3fc0cc3c3d50be11289497ad3c428)
+  - 📄 [.git/objects/02/9dccd94e90ed7c39bbc8822965489ed0261cdc](./.git/objects/02/9dccd94e90ed7c39bbc8822965489ed0261cdc)
+  - 📄 [.git/objects/02/e5fd5c620a16c774dfe6450d92ac30427c83ab](./.git/objects/02/e5fd5c620a16c774dfe6450d92ac30427c83ab)
+- 📁 `.git/objects/03/`
+  - 📄 [.git/objects/03/0aabb37461f6ad5e8b41c9e11b16653101e41d](./.git/objects/03/0aabb37461f6ad5e8b41c9e11b16653101e41d)
+  - 📄 [.git/objects/03/119fea0d5437fdc6ff430b0da8d39df16580ac](./.git/objects/03/119fea0d5437fdc6ff430b0da8d39df16580ac)
+  - 📄 [.git/objects/03/d6d08fbb89a746a892344b0bce2bcc37fefb4a](./.git/objects/03/d6d08fbb89a746a892344b0bce2bcc37fefb4a)
+- 📁 `.git/objects/04/`
+  - 📄 [.git/objects/04/5e5cb97eb76fad31b161207c1e2bc88809b0e4](./.git/objects/04/5e5cb97eb76fad31b161207c1e2bc88809b0e4)
+  - 📄 [.git/objects/04/96e403be7213fa95e660c68e20ee98a1ca2192](./.git/objects/04/96e403be7213fa95e660c68e20ee98a1ca2192)
+  - 📄 [.git/objects/04/fe8872f03337b914d375185bdf27bdb9cad85a](./.git/objects/04/fe8872f03337b914d375185bdf27bdb9cad85a)
+- 📁 `.git/objects/05/`
+  - 📄 [.git/objects/05/97ded1f0dbbdd613dbbbe105b12e62b0411bfd](./.git/objects/05/97ded1f0dbbdd613dbbbe105b12e62b0411bfd)
+  - 📄 [.git/objects/05/a31fbe65e2481e5b8771ca60e859f0f36f36bd](./.git/objects/05/a31fbe65e2481e5b8771ca60e859f0f36f36bd)
+- 📁 `.git/objects/06/`
+  - 📄 [.git/objects/06/3b1d6f890ab2ff8bc7480e776d86689bff7b51](./.git/objects/06/3b1d6f890ab2ff8bc7480e776d86689bff7b51)
+  - 📄 [.git/objects/06/e00fb7fb06de0da2bd9af571f2c67f73fc50f3](./.git/objects/06/e00fb7fb06de0da2bd9af571f2c67f73fc50f3)
+- 📁 `.git/objects/07/`
+  - 📄 [.git/objects/07/8ecc9ee67d42bf7bd09b67574f4aac2cb2bcfa](./.git/objects/07/8ecc9ee67d42bf7bd09b67574f4aac2cb2bcfa)
+  - 📄 [.git/objects/07/b960fa13b897def05d331e45a92c9da091ae55](./.git/objects/07/b960fa13b897def05d331e45a92c9da091ae55)
+- 📁 `.git/objects/08/`
+  - 📄 [.git/objects/08/0f77d0ac8ce13c8e9e70bed600262a03286a61](./.git/objects/08/0f77d0ac8ce13c8e9e70bed600262a03286a61)
+  - 📄 [.git/objects/08/c0a06342939da1eb58e1879ab84daf876ea06b](./.git/objects/08/c0a06342939da1eb58e1879ab84daf876ea06b)
+- 📁 `.git/objects/0a/`
+  - 📄 [.git/objects/0a/ce1325117d097f8d0407a533a1eba70f08ebf4](./.git/objects/0a/ce1325117d097f8d0407a533a1eba70f08ebf4)
+  - 📄 [.git/objects/0a/df75d966f21017debf578083a785802fd68a0d](./.git/objects/0a/df75d966f21017debf578083a785802fd68a0d)
+- 📁 `.git/objects/0b/`
+  - 📄 [.git/objects/0b/e7a77088c9df1e53cc10e42c4d4d7a07362de8](./.git/objects/0b/e7a77088c9df1e53cc10e42c4d4d7a07362de8)
 - 📁 `.git/objects/0c/`
   - 📄 [.git/objects/0c/f1029fef52e6d51cb5479a7271466b7e5b8435](./.git/objects/0c/f1029fef52e6d51cb5479a7271466b7e5b8435)
+- 📁 `.git/objects/0d/`
+  - 📄 [.git/objects/0d/28af9d57454be9eab5e80bca637bb9893ffb34](./.git/objects/0d/28af9d57454be9eab5e80bca637bb9893ffb34)
+  - 📄 [.git/objects/0d/41577b9986cf09918db297f93427789a3e807c](./.git/objects/0d/41577b9986cf09918db297f93427789a3e807c)
+  - 📄 [.git/objects/0d/a579df9d99995e7f373f7125dc32c7c6b6e5f7](./.git/objects/0d/a579df9d99995e7f373f7125dc32c7c6b6e5f7)
+  - 📄 [.git/objects/0d/ab3ee60a639468d72eb3860271740073a6e46d](./.git/objects/0d/ab3ee60a639468d72eb3860271740073a6e46d)
+  - 📄 [.git/objects/0d/f84575345661b17ef98a2c945b388d78feb069](./.git/objects/0d/f84575345661b17ef98a2c945b388d78feb069)
 - 📁 `.git/objects/0e/`
   - 📄 [.git/objects/0e/19a455709dbe28c54374a09b5fe97078ffbc11](./.git/objects/0e/19a455709dbe28c54374a09b5fe97078ffbc11)
+  - 📄 [.git/objects/0e/6359f01ed8647b692183f4a9eb35b15ab50ce8](./.git/objects/0e/6359f01ed8647b692183f4a9eb35b15ab50ce8)
+  - 📄 [.git/objects/0e/7ab6bc4f7abad0c593d9accc505352157e53da](./.git/objects/0e/7ab6bc4f7abad0c593d9accc505352157e53da)
+  - 📄 [.git/objects/0e/7fbd247a87268cedc619dc2477934332ef5218](./.git/objects/0e/7fbd247a87268cedc619dc2477934332ef5218)
   - 📄 [.git/objects/0e/b88ca625d3c9e31723a9158fb434651a54df75](./.git/objects/0e/b88ca625d3c9e31723a9158fb434651a54df75)
+- 📁 `.git/objects/10/`
+  - 📄 [.git/objects/10/053d49f2703ec901ca7a2124113af90fa83f97](./.git/objects/10/053d49f2703ec901ca7a2124113af90fa83f97)
+  - 📄 [.git/objects/10/4855e95c0f7f1864b14c9171fecc02f66a0571](./.git/objects/10/4855e95c0f7f1864b14c9171fecc02f66a0571)
+  - 📄 [.git/objects/10/b9658e97b4da37cd11aed6c2dddc59db31b015](./.git/objects/10/b9658e97b4da37cd11aed6c2dddc59db31b015)
+  - 📄 [.git/objects/10/c9f822457743751f4fd12000e8991c0e3589ad](./.git/objects/10/c9f822457743751f4fd12000e8991c0e3589ad)
 - 📁 `.git/objects/11/`
+  - 📄 [.git/objects/11/0a729750ee475ab7737cc00e232c0be4b2f2fe](./.git/objects/11/0a729750ee475ab7737cc00e232c0be4b2f2fe)
+  - 📄 [.git/objects/11/3ead5d1e9bec72d16e1d17dac5efd23a0277e3](./.git/objects/11/3ead5d1e9bec72d16e1d17dac5efd23a0277e3)
   - 📄 [.git/objects/11/7c7aaf62d75440232442db6068ae2c13aba7ed](./.git/objects/11/7c7aaf62d75440232442db6068ae2c13aba7ed)
+  - 📄 [.git/objects/11/c042a1acbdcb47f3bee53a4fe28a8da3668ffe](./.git/objects/11/c042a1acbdcb47f3bee53a4fe28a8da3668ffe)
+  - 📄 [.git/objects/11/f6c9c20c3d1a3c37ffd14d30e548831d6b9730](./.git/objects/11/f6c9c20c3d1a3c37ffd14d30e548831d6b9730)
+- 📁 `.git/objects/12/`
+  - 📄 [.git/objects/12/bae6b0d161ed8faaf01ab5be18fb29c907dd1c](./.git/objects/12/bae6b0d161ed8faaf01ab5be18fb29c907dd1c)
 - 📁 `.git/objects/13/`
   - 📄 [.git/objects/13/390e0301efc1c93cdbadd88797a421c1510f98](./.git/objects/13/390e0301efc1c93cdbadd88797a421c1510f98)
   - 📄 [.git/objects/13/e3b73e7dc3d458d18631301368917df527e796](./.git/objects/13/e3b73e7dc3d458d18631301368917df527e796)
+- 📁 `.git/objects/14/`
+  - 📄 [.git/objects/14/445f9ccb0a51e3043537a82c528da2e8cc817d](./.git/objects/14/445f9ccb0a51e3043537a82c528da2e8cc817d)
+  - 📄 [.git/objects/14/5b7b1f1f6ce080e70bb41690a40cd87f0557a0](./.git/objects/14/5b7b1f1f6ce080e70bb41690a40cd87f0557a0)
+  - 📄 [.git/objects/14/7d66e01c3e2d45cb7bb55e19f995a22ed9f186](./.git/objects/14/7d66e01c3e2d45cb7bb55e19f995a22ed9f186)
+  - 📄 [.git/objects/14/ddc1a1807f3c0fc1decffc70ed42b9afbbbd16](./.git/objects/14/ddc1a1807f3c0fc1decffc70ed42b9afbbbd16)
 - 📁 `.git/objects/15/`
+  - 📄 [.git/objects/15/7ce63956aee09310bcb31f0ef80ada5e0ef741](./.git/objects/15/7ce63956aee09310bcb31f0ef80ada5e0ef741)
   - 📄 [.git/objects/15/c42c9a64953c42026c137c8b6da591306c2e23](./.git/objects/15/c42c9a64953c42026c137c8b6da591306c2e23)
 - 📁 `.git/objects/16/`
+  - 📄 [.git/objects/16/3b16859c1ce51a478a6844adb33f438b2cf32d](./.git/objects/16/3b16859c1ce51a478a6844adb33f438b2cf32d)
   - 📄 [.git/objects/16/7c39e5e8481eb42f90b7cd155756dbfbd7ded0](./.git/objects/16/7c39e5e8481eb42f90b7cd155756dbfbd7ded0)
+  - 📄 [.git/objects/16/e7baddc5f704d8f22479b93247d7f3ffd2dca7](./.git/objects/16/e7baddc5f704d8f22479b93247d7f3ffd2dca7)
+- 📁 `.git/objects/18/`
+  - 📄 [.git/objects/18/22a15be1b8fbc5950323305a47a835e3b7ee63](./.git/objects/18/22a15be1b8fbc5950323305a47a835e3b7ee63)
 - 📁 `.git/objects/1a/`
   - 📄 [.git/objects/1a/0889f5163b9f56f446df5cea4407aed8ef559f](./.git/objects/1a/0889f5163b9f56f446df5cea4407aed8ef559f)
+  - 📄 [.git/objects/1a/3ae27384bc88dd0ae5740bc3736f070096fcee](./.git/objects/1a/3ae27384bc88dd0ae5740bc3736f070096fcee)
+- 📁 `.git/objects/1c/`
+  - 📄 [.git/objects/1c/55eac4575f5ee50021c4c68a83106b0874a9ce](./.git/objects/1c/55eac4575f5ee50021c4c68a83106b0874a9ce)
+  - 📄 [.git/objects/1c/d5eeade17e5281dbff85878c00efa2bf3fa0bd](./.git/objects/1c/d5eeade17e5281dbff85878c00efa2bf3fa0bd)
 - 📁 `.git/objects/1d/`
+  - 📄 [.git/objects/1d/4b648cb7c4cc3ac62e054414c3959282104b71](./.git/objects/1d/4b648cb7c4cc3ac62e054414c3959282104b71)
   - 📄 [.git/objects/1d/df27df31f36e1651784da23a458397dfa73e65](./.git/objects/1d/df27df31f36e1651784da23a458397dfa73e65)
 - 📁 `.git/objects/1e/`
+  - 📄 [.git/objects/1e/098564462186de7b716a792fa9f3c5a9bc4664](./.git/objects/1e/098564462186de7b716a792fa9f3c5a9bc4664)
+  - 📄 [.git/objects/1e/8f0f55ac17975d28f4c0ca8c4a1f8a8016894e](./.git/objects/1e/8f0f55ac17975d28f4c0ca8c4a1f8a8016894e)
+  - 📄 [.git/objects/1e/a7dcf26c8e49c57755dc3a44349d3d8d0bdb00](./.git/objects/1e/a7dcf26c8e49c57755dc3a44349d3d8d0bdb00)
   - 📄 [.git/objects/1e/c36ddd29f6b231eef5438ce594fadb886a3cdd](./.git/objects/1e/c36ddd29f6b231eef5438ce594fadb886a3cdd)
+- 📁 `.git/objects/1f/`
+  - 📄 [.git/objects/1f/957ab11fce127368df8a2cd96667c0b06ea9e7](./.git/objects/1f/957ab11fce127368df8a2cd96667c0b06ea9e7)
+  - 📄 [.git/objects/1f/f74222930d5f547b3d17d90fee6d374a0b292e](./.git/objects/1f/f74222930d5f547b3d17d90fee6d374a0b292e)
 - 📁 `.git/objects/20/`
+  - 📄 [.git/objects/20/67c214ea7507331e896c2ed755ecc7ce93bed7](./.git/objects/20/67c214ea7507331e896c2ed755ecc7ce93bed7)
   - 📄 [.git/objects/20/84a8134a5db253c4aa825d4951f9b5695b7076](./.git/objects/20/84a8134a5db253c4aa825d4951f9b5695b7076)
+  - 📄 [.git/objects/20/8cbd1f858bb4dd95e900af5f3ff6de4764264c](./.git/objects/20/8cbd1f858bb4dd95e900af5f3ff6de4764264c)
+  - 📄 [.git/objects/20/d0cfa12c532fa43830dae149acd3ac8d90e364](./.git/objects/20/d0cfa12c532fa43830dae149acd3ac8d90e364)
 - 📁 `.git/objects/21/`
+  - 📄 [.git/objects/21/1484252964334b19490c133ab1c6fbc3fda844](./.git/objects/21/1484252964334b19490c133ab1c6fbc3fda844)
   - 📄 [.git/objects/21/65678c072a9c59493640121859a4b38ac4067b](./.git/objects/21/65678c072a9c59493640121859a4b38ac4067b)
+  - 📄 [.git/objects/21/b70c0e7eb68f973ec2ef35aa3fedbff299c5d5](./.git/objects/21/b70c0e7eb68f973ec2ef35aa3fedbff299c5d5)
+- 📁 `.git/objects/22/`
+  - 📄 [.git/objects/22/f0ddcba4552eeb126c93486c962b8abf5b847f](./.git/objects/22/f0ddcba4552eeb126c93486c962b8abf5b847f)
 - 📁 `.git/objects/23/`
   - 📄 [.git/objects/23/acf2030a97a95e19ce0660cc33f2cdbbdae60c](./.git/objects/23/acf2030a97a95e19ce0660cc33f2cdbbdae60c)
+  - 📄 [.git/objects/23/cbf30e422982bcef0dabe26f1feeed62ede19a](./.git/objects/23/cbf30e422982bcef0dabe26f1feeed62ede19a)
+  - 📄 [.git/objects/23/df539a2d1ea5d2b69125ac71ac3fdca72efc2e](./.git/objects/23/df539a2d1ea5d2b69125ac71ac3fdca72efc2e)
 - 📁 `.git/objects/24/`
+  - 📄 [.git/objects/24/272b66cbc496a6b9b67567f63a6607f90af456](./.git/objects/24/272b66cbc496a6b9b67567f63a6607f90af456)
   - 📄 [.git/objects/24/81b28d7bf3c54cb41143ec61c5fd54b7903456](./.git/objects/24/81b28d7bf3c54cb41143ec61c5fd54b7903456)
   - 📄 [.git/objects/24/bf54997a8761d354c44e92865483ebe716df5b](./.git/objects/24/bf54997a8761d354c44e92865483ebe716df5b)
   - 📄 [.git/objects/24/c41cbddb31915e5b539c6a58008f6af20af98f](./.git/objects/24/c41cbddb31915e5b539c6a58008f6af20af98f)
 - 📁 `.git/objects/25/`
+  - 📄 [.git/objects/25/6bab5c541de4551bb0cba66267df00a37d9009](./.git/objects/25/6bab5c541de4551bb0cba66267df00a37d9009)
+  - 📄 [.git/objects/25/7a08559386dfa5f7aaac9e4deda77791fb1593](./.git/objects/25/7a08559386dfa5f7aaac9e4deda77791fb1593)
   - 📄 [.git/objects/25/c7f2f93610d782770fb8c809c9992a7cce5c2a](./.git/objects/25/c7f2f93610d782770fb8c809c9992a7cce5c2a)
+  - 📄 [.git/objects/25/fde9b289ea4aaab61875918d66d87369da04da](./.git/objects/25/fde9b289ea4aaab61875918d66d87369da04da)
+- 📁 `.git/objects/26/`
+  - 📄 [.git/objects/26/219ebef413ec579f1d708e63c1a66e3831b12f](./.git/objects/26/219ebef413ec579f1d708e63c1a66e3831b12f)
+  - 📄 [.git/objects/26/41af84d419c8988e5ea2f22ed96548bcfda56f](./.git/objects/26/41af84d419c8988e5ea2f22ed96548bcfda56f)
+  - 📄 [.git/objects/26/75c2b144e3b6c9600d8031757cb21bd845119a](./.git/objects/26/75c2b144e3b6c9600d8031757cb21bd845119a)
 - 📁 `.git/objects/27/`
   - 📄 [.git/objects/27/25a5e69e73c4c64178612719c89d99d1f17c59](./.git/objects/27/25a5e69e73c4c64178612719c89d99d1f17c59)
+  - 📄 [.git/objects/27/6a861b20e89c470c03980f1b165b8decb66f6d](./.git/objects/27/6a861b20e89c470c03980f1b165b8decb66f6d)
   - 📄 [.git/objects/27/8db7878176f5ba79fcdb8ee028b17a4f88df5f](./.git/objects/27/8db7878176f5ba79fcdb8ee028b17a4f88df5f)
   - 📄 [.git/objects/27/ace9fba9d7146d660050afadd6efb31dab519b](./.git/objects/27/ace9fba9d7146d660050afadd6efb31dab519b)
+  - 📄 [.git/objects/27/b1cf7a28fb83e1c96f0c9e8f93c27d4d2b2fae](./.git/objects/27/b1cf7a28fb83e1c96f0c9e8f93c27d4d2b2fae)
+- 📁 `.git/objects/28/`
+  - 📄 [.git/objects/28/fbab8256b37303be789d513f9fedddf1cca16d](./.git/objects/28/fbab8256b37303be789d513f9fedddf1cca16d)
 - 📁 `.git/objects/29/`
   - 📄 [.git/objects/29/4ea5f35da922df98db41dcbd0b9c8f5ab4f9c5](./.git/objects/29/4ea5f35da922df98db41dcbd0b9c8f5ab4f9c5)
+  - 📄 [.git/objects/29/bec72176e2076e5a3b8b1ef31dbc19050e6352](./.git/objects/29/bec72176e2076e5a3b8b1ef31dbc19050e6352)
+- 📁 `.git/objects/2a/`
+  - 📄 [.git/objects/2a/37646a611d496ecb00c57d491e6cb34c464a20](./.git/objects/2a/37646a611d496ecb00c57d491e6cb34c464a20)
+  - 📄 [.git/objects/2a/b2ae3ddd0242ad1b835274f7a2a75897cecede](./.git/objects/2a/b2ae3ddd0242ad1b835274f7a2a75897cecede)
 - 📁 `.git/objects/2b/`
   - 📄 [.git/objects/2b/3402689b7031a006a8927dc5befd950a156d08](./.git/objects/2b/3402689b7031a006a8927dc5befd950a156d08)
+  - 📄 [.git/objects/2b/c2d5ff2d668439b3638066f23d323b9e54e5cb](./.git/objects/2b/c2d5ff2d668439b3638066f23d323b9e54e5cb)
+- 📁 `.git/objects/2c/`
+  - 📄 [.git/objects/2c/a6ec87030b0a79980b4604aab4e245148c5424](./.git/objects/2c/a6ec87030b0a79980b4604aab4e245148c5424)
+- 📁 `.git/objects/2d/`
+  - 📄 [.git/objects/2d/39c212c5c9ca36b039e017aa303fb08874121d](./.git/objects/2d/39c212c5c9ca36b039e017aa303fb08874121d)
+  - 📄 [.git/objects/2d/412662c280557aac5db5de6eb8b74c95194fdf](./.git/objects/2d/412662c280557aac5db5de6eb8b74c95194fdf)
+- 📁 `.git/objects/2e/`
+  - 📄 [.git/objects/2e/3b3469f72ffa72c9d2c10a0db6ed993c947671](./.git/objects/2e/3b3469f72ffa72c9d2c10a0db6ed993c947671)
+  - 📄 [.git/objects/2e/ac8a802cfc517f3cf5fe2c3e27c62452129d29](./.git/objects/2e/ac8a802cfc517f3cf5fe2c3e27c62452129d29)
+- 📁 `.git/objects/2f/`
+  - 📄 [.git/objects/2f/5be57f88123ca3816ba3aadc70ae1e02481f53](./.git/objects/2f/5be57f88123ca3816ba3aadc70ae1e02481f53)
+  - 📄 [.git/objects/2f/5f8b15838e5376be941a7c2b04633bc22384f5](./.git/objects/2f/5f8b15838e5376be941a7c2b04633bc22384f5)
+  - 📄 [.git/objects/2f/991eeca30983ffee088e69e3fd2521d2a99fb2](./.git/objects/2f/991eeca30983ffee088e69e3fd2521d2a99fb2)
+  - 📄 [.git/objects/2f/a06aabb585193cbb58a54f795cc335aa86768e](./.git/objects/2f/a06aabb585193cbb58a54f795cc335aa86768e)
+  - 📄 [.git/objects/2f/d1ac127d19006cdb158b00da2c9efca254be5a](./.git/objects/2f/d1ac127d19006cdb158b00da2c9efca254be5a)
 - 📁 `.git/objects/30/`
+  - 📄 [.git/objects/30/7a947091ae8757914e96f8390dd657a794931d](./.git/objects/30/7a947091ae8757914e96f8390dd657a794931d)
   - 📄 [.git/objects/30/887f7ce986f1f4a2a45777b5a33b29a56df64d](./.git/objects/30/887f7ce986f1f4a2a45777b5a33b29a56df64d)
+- 📁 `.git/objects/31/`
+  - 📄 [.git/objects/31/98f90b4c2a71b1c3c0beaf57fee1ff3d1c0163](./.git/objects/31/98f90b4c2a71b1c3c0beaf57fee1ff3d1c0163)
+  - 📄 [.git/objects/31/ce1dc9724fbd925cc2b68192dcacfe897e5c69](./.git/objects/31/ce1dc9724fbd925cc2b68192dcacfe897e5c69)
+  - 📄 [.git/objects/31/e04fc450252d0ea97763e6abf40622700ac34e](./.git/objects/31/e04fc450252d0ea97763e6abf40622700ac34e)
 - 📁 `.git/objects/34/`
+  - 📄 [.git/objects/34/341a5cc549a0ca38e8d7979a1e49c8482b9c1a](./.git/objects/34/341a5cc549a0ca38e8d7979a1e49c8482b9c1a)
   - 📄 [.git/objects/34/37edd2a14f5e24c718e5ee04e2f7a21b8fda8b](./.git/objects/34/37edd2a14f5e24c718e5ee04e2f7a21b8fda8b)
   - 📄 [.git/objects/34/a690fdf708c18d23f69fb33a1918bec79ef133](./.git/objects/34/a690fdf708c18d23f69fb33a1918bec79ef133)
 - 📁 `.git/objects/35/`
+  - 📄 [.git/objects/35/512554e8955ee720930640cf2d229aa98127b2](./.git/objects/35/512554e8955ee720930640cf2d229aa98127b2)
+  - 📄 [.git/objects/35/7746b956e82089e7e3e1553ff6049ccd16c244](./.git/objects/35/7746b956e82089e7e3e1553ff6049ccd16c244)
+  - 📄 [.git/objects/35/9e0d19c44713aebbd35cfa503079c31290d6f3](./.git/objects/35/9e0d19c44713aebbd35cfa503079c31290d6f3)
   - 📄 [.git/objects/35/a6fd83b4a6d8f5aaa8ab59c13d7cefaa4e76c6](./.git/objects/35/a6fd83b4a6d8f5aaa8ab59c13d7cefaa4e76c6)
   - 📄 [.git/objects/35/f0327dcddac51c14f69aebc05def46abd492fc](./.git/objects/35/f0327dcddac51c14f69aebc05def46abd492fc)
+- 📁 `.git/objects/36/`
+  - 📄 [.git/objects/36/6ea62bf3c1fe5fb175619265498b8b47fa4259](./.git/objects/36/6ea62bf3c1fe5fb175619265498b8b47fa4259)
+- 📁 `.git/objects/37/`
+  - 📄 [.git/objects/37/2b04b566d904e393f71a13a875f680df84c77e](./.git/objects/37/2b04b566d904e393f71a13a875f680df84c77e)
+  - 📄 [.git/objects/37/aa031b64e025ae63f9b33a73846462284d7a1f](./.git/objects/37/aa031b64e025ae63f9b33a73846462284d7a1f)
 - 📁 `.git/objects/38/`
+  - 📄 [.git/objects/38/46813a10e7d74875c59ac52f229fa2315eb4bc](./.git/objects/38/46813a10e7d74875c59ac52f229fa2315eb4bc)
   - 📄 [.git/objects/38/cdd47af5e7aa4746d80cb2bbc57d138deaedaf](./.git/objects/38/cdd47af5e7aa4746d80cb2bbc57d138deaedaf)
+  - 📄 [.git/objects/38/f8275d31780e9de665b91d7b5416393d1c0c46](./.git/objects/38/f8275d31780e9de665b91d7b5416393d1c0c46)
+- 📁 `.git/objects/39/`
+  - 📄 [.git/objects/39/0fcadc274e151d6140d477ba47657c2b75405c](./.git/objects/39/0fcadc274e151d6140d477ba47657c2b75405c)
+  - 📄 [.git/objects/39/46adb5346d5b3daa2839a44f11765ad2eafafc](./.git/objects/39/46adb5346d5b3daa2839a44f11765ad2eafafc)
+  - 📄 [.git/objects/39/4747b293558ebb205232eb860bf7fe367de4c9](./.git/objects/39/4747b293558ebb205232eb860bf7fe367de4c9)
+  - 📄 [.git/objects/39/59c6a22274fbc38dbca449a698df806d811b7f](./.git/objects/39/59c6a22274fbc38dbca449a698df806d811b7f)
+  - 📄 [.git/objects/39/f993831f7b8f0392e149361eecbbe9ebaa978f](./.git/objects/39/f993831f7b8f0392e149361eecbbe9ebaa978f)
+  - 📄 [.git/objects/39/feb740f351cbfab2aad6a9da08597d06e91a3c](./.git/objects/39/feb740f351cbfab2aad6a9da08597d06e91a3c)
 - 📁 `.git/objects/3a/`
   - 📄 [.git/objects/3a/1105458d76902274411dfef6033d3ce9afb9b3](./.git/objects/3a/1105458d76902274411dfef6033d3ce9afb9b3)
   - 📄 [.git/objects/3a/62e4d49385f07a184f1b6a137f9e77a06e7c09](./.git/objects/3a/62e4d49385f07a184f1b6a137f9e77a06e7c09)
+  - 📄 [.git/objects/3a/b8f344f8af8f6a2556b4233b6550d61736bd7c](./.git/objects/3a/b8f344f8af8f6a2556b4233b6550d61736bd7c)
+  - 📄 [.git/objects/3a/fbd24a41ccf069798a66e775743f4e29df66a2](./.git/objects/3a/fbd24a41ccf069798a66e775743f4e29df66a2)
+- 📁 `.git/objects/3b/`
+  - 📄 [.git/objects/3b/3c0b145f4fd9c5ccc356f47ceb48fcaa050285](./.git/objects/3b/3c0b145f4fd9c5ccc356f47ceb48fcaa050285)
 - 📁 `.git/objects/3d/`
+  - 📄 [.git/objects/3d/328bde3fa24eb61742f25f373d340fc3b94fe2](./.git/objects/3d/328bde3fa24eb61742f25f373d340fc3b94fe2)
+  - 📄 [.git/objects/3d/78fd19410f72f5067652b6de70a655afb89881](./.git/objects/3d/78fd19410f72f5067652b6de70a655afb89881)
+  - 📄 [.git/objects/3d/89f3a8a64530ca5073cf112afa2a9c0bfaf8ce](./.git/objects/3d/89f3a8a64530ca5073cf112afa2a9c0bfaf8ce)
   - 📄 [.git/objects/3d/e032795ee0f42998a5749d28557e826eb0fe19](./.git/objects/3d/e032795ee0f42998a5749d28557e826eb0fe19)
+  - 📄 [.git/objects/3d/e4d7a71caf067cad29734a2154a3f4f4e322fa](./.git/objects/3d/e4d7a71caf067cad29734a2154a3f4f4e322fa)
+  - 📄 [.git/objects/3d/fd40f93475b36ba6e8078aa7b8db4c884391ce](./.git/objects/3d/fd40f93475b36ba6e8078aa7b8db4c884391ce)
 - 📁 `.git/objects/3e/`
+  - 📄 [.git/objects/3e/18135e7fa6befc6ec31d25dfb6b7d47ad13374](./.git/objects/3e/18135e7fa6befc6ec31d25dfb6b7d47ad13374)
   - 📄 [.git/objects/3e/dc3527e1594b878f96367f90a4f91979428521](./.git/objects/3e/dc3527e1594b878f96367f90a4f91979428521)
+  - 📄 [.git/objects/3e/ffe3dd54908d416d74a75468b3044324a7522a](./.git/objects/3e/ffe3dd54908d416d74a75468b3044324a7522a)
+- 📁 `.git/objects/40/`
+  - 📄 [.git/objects/40/528c6b37c3fd70a56d2096a1bf52480b23915d](./.git/objects/40/528c6b37c3fd70a56d2096a1bf52480b23915d)
+  - 📄 [.git/objects/40/687403a5e9aaf7cf65520156774f7a6a524651](./.git/objects/40/687403a5e9aaf7cf65520156774f7a6a524651)
+  - 📄 [.git/objects/40/bbe5986309a4f48c78051e42dc22bf0f1322f8](./.git/objects/40/bbe5986309a4f48c78051e42dc22bf0f1322f8)
+- 📁 `.git/objects/41/`
+  - 📄 [.git/objects/41/51c43884f10c77321094b906791f56edb2fd3d](./.git/objects/41/51c43884f10c77321094b906791f56edb2fd3d)
 - 📁 `.git/objects/42/`
   - 📄 [.git/objects/42/2eeb28f77b0808562a76f9aec87f26d0bfb8fb](./.git/objects/42/2eeb28f77b0808562a76f9aec87f26d0bfb8fb)
+  - 📄 [.git/objects/42/389e8f5daa4c5eaf0a20d9fd2f571ef8f3764f](./.git/objects/42/389e8f5daa4c5eaf0a20d9fd2f571ef8f3764f)
+  - 📄 [.git/objects/42/9950b37cb581542b4f71d1aeb48781b89978de](./.git/objects/42/9950b37cb581542b4f71d1aeb48781b89978de)
+  - 📄 [.git/objects/42/be06a3dc50a577debffdc5127cbe415a934232](./.git/objects/42/be06a3dc50a577debffdc5127cbe415a934232)
+  - 📄 [.git/objects/42/e1fa053bedbde64b151795b8e63ce1390ff856](./.git/objects/42/e1fa053bedbde64b151795b8e63ce1390ff856)
+- 📁 `.git/objects/43/`
+  - 📄 [.git/objects/43/af7cfdb67786b2bda7474a5d163798b9cea1a4](./.git/objects/43/af7cfdb67786b2bda7474a5d163798b9cea1a4)
+  - 📄 [.git/objects/43/d38c1202e151aae7a5137d30df9b4924f9ccdd](./.git/objects/43/d38c1202e151aae7a5137d30df9b4924f9ccdd)
+- 📁 `.git/objects/44/`
+  - 📄 [.git/objects/44/bd39ae4b28ac6420cce4a76856dba3a32edf1f](./.git/objects/44/bd39ae4b28ac6420cce4a76856dba3a32edf1f)
 - 📁 `.git/objects/45/`
   - 📄 [.git/objects/45/26e97882b121cdbfc4abdafbcdd26b25d7f201](./.git/objects/45/26e97882b121cdbfc4abdafbcdd26b25d7f201)
+  - 📄 [.git/objects/45/97f1fc7d7464d8319be8867dd8eb5ac54801fb](./.git/objects/45/97f1fc7d7464d8319be8867dd8eb5ac54801fb)
+  - 📄 [.git/objects/45/c650a983a461989e60ccb72d5b99ef0827ed81](./.git/objects/45/c650a983a461989e60ccb72d5b99ef0827ed81)
   - 📄 [.git/objects/45/ce31d649e4c61c733cd9238ba9bcc849dd3f5f](./.git/objects/45/ce31d649e4c61c733cd9238ba9bcc849dd3f5f)
+- 📁 `.git/objects/46/`
+  - 📄 [.git/objects/46/515ecdb75595173ec480a9182e4b90869d93b3](./.git/objects/46/515ecdb75595173ec480a9182e4b90869d93b3)
+  - 📄 [.git/objects/46/59ad4e5ab7e97e5ee8997dccdca58d063ed991](./.git/objects/46/59ad4e5ab7e97e5ee8997dccdca58d063ed991)
+  - 📄 [.git/objects/46/ac6d8c2b771741aab9b46b1257dc59b3d40528](./.git/objects/46/ac6d8c2b771741aab9b46b1257dc59b3d40528)
+- 📁 `.git/objects/47/`
+  - 📄 [.git/objects/47/1f2dd6a5df4f583456f638583554c652b5c69e](./.git/objects/47/1f2dd6a5df4f583456f638583554c652b5c69e)
+- 📁 `.git/objects/48/`
+  - 📄 [.git/objects/48/1195f0bdeb61f82107f3f78a9cc7e7f828c022](./.git/objects/48/1195f0bdeb61f82107f3f78a9cc7e7f828c022)
+  - 📄 [.git/objects/48/ce0c271cb9e4c3812aab8d60ff27228d6db853](./.git/objects/48/ce0c271cb9e4c3812aab8d60ff27228d6db853)
 - 📁 `.git/objects/49/`
+  - 📄 [.git/objects/49/5c26c911251468365b93cc6757702fce5ce4e1](./.git/objects/49/5c26c911251468365b93cc6757702fce5ce4e1)
   - 📄 [.git/objects/49/c7b50febbcd389236f4809ee570ed3bf2ec6f7](./.git/objects/49/c7b50febbcd389236f4809ee570ed3bf2ec6f7)
+  - 📄 [.git/objects/49/f50ba1b8980bee4caf082bd8185da3918e8bf3](./.git/objects/49/f50ba1b8980bee4caf082bd8185da3918e8bf3)
+- 📁 `.git/objects/4a/`
+  - 📄 [.git/objects/4a/022379e61dbc7c2df4abe9cf6a7e5552ea2b3c](./.git/objects/4a/022379e61dbc7c2df4abe9cf6a7e5552ea2b3c)
 - 📁 `.git/objects/4b/`
   - 📄 [.git/objects/4b/3f9bdddf19e7efced5e5ba9649538e2c26d689](./.git/objects/4b/3f9bdddf19e7efced5e5ba9649538e2c26d689)
+  - 📄 [.git/objects/4b/57e58b2d6b28a21c7db37231b6056de67c410a](./.git/objects/4b/57e58b2d6b28a21c7db37231b6056de67c410a)
+  - 📄 [.git/objects/4b/6dc65c46cc0166768759abaaa11303d0d13eb1](./.git/objects/4b/6dc65c46cc0166768759abaaa11303d0d13eb1)
+- 📁 `.git/objects/4c/`
+  - 📄 [.git/objects/4c/06db18117fea633fd7a17142f1bbbc10e84deb](./.git/objects/4c/06db18117fea633fd7a17142f1bbbc10e84deb)
+  - 📄 [.git/objects/4c/295cd7ed83dabc591f97ce9104b522c11a98c4](./.git/objects/4c/295cd7ed83dabc591f97ce9104b522c11a98c4)
+  - 📄 [.git/objects/4c/3acb735a0bd48952c6e6f9a1d69dc39087540e](./.git/objects/4c/3acb735a0bd48952c6e6f9a1d69dc39087540e)
+  - 📄 [.git/objects/4c/5cc7b1c879090fac403f612458f9272bda2483](./.git/objects/4c/5cc7b1c879090fac403f612458f9272bda2483)
 - 📁 `.git/objects/4d/`
   - 📄 [.git/objects/4d/20f879ffcb9542d885fabe08253ed49195de04](./.git/objects/4d/20f879ffcb9542d885fabe08253ed49195de04)
+  - 📄 [.git/objects/4d/847958c9bca316622b726c2342c63cae46e416](./.git/objects/4d/847958c9bca316622b726c2342c63cae46e416)
+- 📁 `.git/objects/4e/`
+  - 📄 [.git/objects/4e/1db890e499e87004d8cd965a1c303236a823fb](./.git/objects/4e/1db890e499e87004d8cd965a1c303236a823fb)
+  - 📄 [.git/objects/4e/4408851ad41d770b18fa2809cc7ef02ab40efd](./.git/objects/4e/4408851ad41d770b18fa2809cc7ef02ab40efd)
+  - 📄 [.git/objects/4e/65cc0a4db0467d6b42d9316ad5f800c2a0cf6e](./.git/objects/4e/65cc0a4db0467d6b42d9316ad5f800c2a0cf6e)
+  - 📄 [.git/objects/4e/6759e297b086e2fde14dad36c1592d175ddc1d](./.git/objects/4e/6759e297b086e2fde14dad36c1592d175ddc1d)
+  - 📄 [.git/objects/4e/eb4591722045abd8bef3e6119699d076a7bfa2](./.git/objects/4e/eb4591722045abd8bef3e6119699d076a7bfa2)
 - 📁 `.git/objects/4f/`
   - 📄 [.git/objects/4f/5fdb5d1ebca8b45a7396267ccaee1de22fe3e4](./.git/objects/4f/5fdb5d1ebca8b45a7396267ccaee1de22fe3e4)
   - 📄 [.git/objects/4f/7c171dbc65b397d12a144a69fdcd14911dc39e](./.git/objects/4f/7c171dbc65b397d12a144a69fdcd14911dc39e)
+  - 📄 [.git/objects/4f/94a152ab5a733b048990b2dda38cd58f367b89](./.git/objects/4f/94a152ab5a733b048990b2dda38cd58f367b89)
+  - 📄 [.git/objects/4f/f95dfc319af8813fe5bcc7516793860d38a175](./.git/objects/4f/f95dfc319af8813fe5bcc7516793860d38a175)
+- 📁 `.git/objects/50/`
+  - 📄 [.git/objects/50/84a57160a8cb7dde613c5f617e529dc1043d96](./.git/objects/50/84a57160a8cb7dde613c5f617e529dc1043d96)
+- 📁 `.git/objects/51/`
+  - 📄 [.git/objects/51/1f3ec61ebd7f497c6b875884d8f4d15c26dcbd](./.git/objects/51/1f3ec61ebd7f497c6b875884d8f4d15c26dcbd)
+  - 📄 [.git/objects/51/bb5f4bd259bf262b10d0e73e4fec1f1e0a7c51](./.git/objects/51/bb5f4bd259bf262b10d0e73e4fec1f1e0a7c51)
+  - 📄 [.git/objects/51/d44646a23273d6653413f501d9682da292d3d4](./.git/objects/51/d44646a23273d6653413f501d9682da292d3d4)
+- 📁 `.git/objects/52/`
+  - 📄 [.git/objects/52/35365b58173f24817edd57f7313aa0f96e9686](./.git/objects/52/35365b58173f24817edd57f7313aa0f96e9686)
+  - 📄 [.git/objects/52/a5b4479240c0d83d0cda1a12ed9dcbf1a6bf5c](./.git/objects/52/a5b4479240c0d83d0cda1a12ed9dcbf1a6bf5c)
+  - 📄 [.git/objects/52/d97ff73e8d03f0f28037986d3e15aa8f9ff669](./.git/objects/52/d97ff73e8d03f0f28037986d3e15aa8f9ff669)
+- 📁 `.git/objects/55/`
+  - 📄 [.git/objects/55/6457e77fb0eaba4a51a7dbcd1b42958fa25f2b](./.git/objects/55/6457e77fb0eaba4a51a7dbcd1b42958fa25f2b)
+  - 📄 [.git/objects/55/f68b616018fc1655074c02adba9707d8679972](./.git/objects/55/f68b616018fc1655074c02adba9707d8679972)
+- 📁 `.git/objects/56/`
+  - 📄 [.git/objects/56/579b11a7cfb9a18bd52e7fa4efbe320fb31822](./.git/objects/56/579b11a7cfb9a18bd52e7fa4efbe320fb31822)
+  - 📄 [.git/objects/56/7b165f738483a3c7d9cddcf37d19b57a90373a](./.git/objects/56/7b165f738483a3c7d9cddcf37d19b57a90373a)
+  - 📄 [.git/objects/56/c404b204422b93431d37fafcbad7f312cd52b4](./.git/objects/56/c404b204422b93431d37fafcbad7f312cd52b4)
 - 📁 `.git/objects/57/`
   - 📄 [.git/objects/57/3f64a0f3da49545e0abd85bd5c458e15cff40d](./.git/objects/57/3f64a0f3da49545e0abd85bd5c458e15cff40d)
   - 📄 [.git/objects/57/6ab7c16dc327ad5a9db93d5c576d400d013ebd](./.git/objects/57/6ab7c16dc327ad5a9db93d5c576d400d013ebd)
+- 📁 `.git/objects/58/`
+  - 📄 [.git/objects/58/b8cf75be76e1361189b666431853be90d84bf5](./.git/objects/58/b8cf75be76e1361189b666431853be90d84bf5)
+  - 📄 [.git/objects/58/c84ed1aaaea9153f9e129e529a078cd719439e](./.git/objects/58/c84ed1aaaea9153f9e129e529a078cd719439e)
+  - 📄 [.git/objects/58/d768cdfc54a7615933829cc8b38243a58c1c4c](./.git/objects/58/d768cdfc54a7615933829cc8b38243a58c1c4c)
+- 📁 `.git/objects/59/`
+  - 📄 [.git/objects/59/1b0a7b145c4860ade2285717a3d50f2f056663](./.git/objects/59/1b0a7b145c4860ade2285717a3d50f2f056663)
+  - 📄 [.git/objects/59/c4ea218cf1c8b200d3ae3f964b7d65c82c9ce1](./.git/objects/59/c4ea218cf1c8b200d3ae3f964b7d65c82c9ce1)
+- 📁 `.git/objects/5a/`
+  - 📄 [.git/objects/5a/63dfb4684ea04fe8645b464576f61c5364eb2d](./.git/objects/5a/63dfb4684ea04fe8645b464576f61c5364eb2d)
+  - 📄 [.git/objects/5a/693cfc8354cda81e06fe6d832fcca5b03bbbfb](./.git/objects/5a/693cfc8354cda81e06fe6d832fcca5b03bbbfb)
+  - 📄 [.git/objects/5a/779f7491e94e8040cbba72fed80d5d5ddd05af](./.git/objects/5a/779f7491e94e8040cbba72fed80d5d5ddd05af)
+  - 📄 [.git/objects/5a/9bdbdafda8dfae24cb7bc77f02f576557c804d](./.git/objects/5a/9bdbdafda8dfae24cb7bc77f02f576557c804d)
+  - 📄 [.git/objects/5a/ab9bd621084fa7fadc86b8c4e0a55ebd9b98b1](./.git/objects/5a/ab9bd621084fa7fadc86b8c4e0a55ebd9b98b1)
+- 📁 `.git/objects/5b/`
+  - 📄 [.git/objects/5b/bd36df5a7e67e190e014315a90e8d06ba82d90](./.git/objects/5b/bd36df5a7e67e190e014315a90e8d06ba82d90)
 - 📁 `.git/objects/5c/`
   - 📄 [.git/objects/5c/2d459ac1cf82fdfb7fb00ffa66ce158f20bdd4](./.git/objects/5c/2d459ac1cf82fdfb7fb00ffa66ce158f20bdd4)
   - 📄 [.git/objects/5c/64605bb9b10bbebfe6c6bf16a85f44d236c1f6](./.git/objects/5c/64605bb9b10bbebfe6c6bf16a85f44d236c1f6)
+  - 📄 [.git/objects/5c/6828ea57911782103b53875c024d398b747b96](./.git/objects/5c/6828ea57911782103b53875c024d398b747b96)
+  - 📄 [.git/objects/5c/bac517e5ec41de157ebaaeec6eb72b2e442e28](./.git/objects/5c/bac517e5ec41de157ebaaeec6eb72b2e442e28)
+- 📁 `.git/objects/5f/`
+  - 📄 [.git/objects/5f/36343855b81dcc4e3ff0db7a2fa0fff1144b80](./.git/objects/5f/36343855b81dcc4e3ff0db7a2fa0fff1144b80)
+  - 📄 [.git/objects/5f/5db3c286298b99d4eae613e3708d8127161648](./.git/objects/5f/5db3c286298b99d4eae613e3708d8127161648)
+  - 📄 [.git/objects/5f/c75a8bb335b41e329f3d68e1b171df972de679](./.git/objects/5f/c75a8bb335b41e329f3d68e1b171df972de679)
+  - 📄 [.git/objects/5f/e90d6810e024995556d3f698a54d7a34dfd234](./.git/objects/5f/e90d6810e024995556d3f698a54d7a34dfd234)
 - 📁 `.git/objects/60/`
   - 📄 [.git/objects/60/80469acadf841757c8cbc6479e014f5f7dcd2e](./.git/objects/60/80469acadf841757c8cbc6479e014f5f7dcd2e)
 - 📁 `.git/objects/61/`
+  - 📄 [.git/objects/61/608aefab266c02e75f7a55815f304e5c219194](./.git/objects/61/608aefab266c02e75f7a55815f304e5c219194)
   - 📄 [.git/objects/61/62ebdec9b88019fcfdf9c1fcdf924cc1a54eda](./.git/objects/61/62ebdec9b88019fcfdf9c1fcdf924cc1a54eda)
+  - 📄 [.git/objects/61/82994af717b09caf36170cc9a9ec8d1ae71a61](./.git/objects/61/82994af717b09caf36170cc9a9ec8d1ae71a61)
   - 📄 [.git/objects/61/95858c7b612d41855c36b1c2bbc7206497805a](./.git/objects/61/95858c7b612d41855c36b1c2bbc7206497805a)
+  - 📄 [.git/objects/61/af00d3217e2336745c2c98f218100297a1b267](./.git/objects/61/af00d3217e2336745c2c98f218100297a1b267)
+- 📁 `.git/objects/62/`
+  - 📄 [.git/objects/62/2a6006e414b359fe181bf07498e35bfeade2b4](./.git/objects/62/2a6006e414b359fe181bf07498e35bfeade2b4)
+  - 📄 [.git/objects/62/d447a10abd15ccc41441a0db222468792c5e2f](./.git/objects/62/d447a10abd15ccc41441a0db222468792c5e2f)
+  - 📄 [.git/objects/62/f7c8ed1ddba85c8ebfa4174b1dfc91d29cdcab](./.git/objects/62/f7c8ed1ddba85c8ebfa4174b1dfc91d29cdcab)
+- 📁 `.git/objects/63/`
+  - 📄 [.git/objects/63/533e292e6a8a18e9d786ae148acce3a43c78c1](./.git/objects/63/533e292e6a8a18e9d786ae148acce3a43c78c1)
+  - 📄 [.git/objects/63/6f9f35584857d8a59846c160b5ee7f8c824c56](./.git/objects/63/6f9f35584857d8a59846c160b5ee7f8c824c56)
 - 📁 `.git/objects/64/`
+  - 📄 [.git/objects/64/21ce1931cd9c95c85f0ad7e2fea151b41eb66c](./.git/objects/64/21ce1931cd9c95c85f0ad7e2fea151b41eb66c)
+  - 📄 [.git/objects/64/6ae0211d7b1ff0303ee7275128c28711a7e04a](./.git/objects/64/6ae0211d7b1ff0303ee7275128c28711a7e04a)
   - 📄 [.git/objects/64/94842bd359619533cae6b10c131d81b991ab89](./.git/objects/64/94842bd359619533cae6b10c131d81b991ab89)
+  - 📄 [.git/objects/64/a689fe0c4267f69a8e5dafc2821a289410f436](./.git/objects/64/a689fe0c4267f69a8e5dafc2821a289410f436)
+  - 📄 [.git/objects/64/ab22dc60ad83e84845ee7c225b255bfc5fdc2d](./.git/objects/64/ab22dc60ad83e84845ee7c225b255bfc5fdc2d)
+  - 📄 [.git/objects/64/cd3071e635b9d41928ab6f8293e95801b558fd](./.git/objects/64/cd3071e635b9d41928ab6f8293e95801b558fd)
 - 📁 `.git/objects/65/`
+  - 📄 [.git/objects/65/40986cb6c01c599270c4caf31b9f01e2165b61](./.git/objects/65/40986cb6c01c599270c4caf31b9f01e2165b61)
   - 📄 [.git/objects/65/df4eba24c85d4cf1273e9bcb3ebf4fc8ce2ec9](./.git/objects/65/df4eba24c85d4cf1273e9bcb3ebf4fc8ce2ec9)
+- 📁 `.git/objects/67/`
+  - 📄 [.git/objects/67/6486ceb2f36e7be15e3b71e92b1f7a741c28e1](./.git/objects/67/6486ceb2f36e7be15e3b71e92b1f7a741c28e1)
+  - 📄 [.git/objects/67/7c1633b894ce9bd37633e55277f0ed00748945](./.git/objects/67/7c1633b894ce9bd37633e55277f0ed00748945)
+- 📁 `.git/objects/68/`
+  - 📄 [.git/objects/68/4278202b2dab7011897a8f500c08c9f70db110](./.git/objects/68/4278202b2dab7011897a8f500c08c9f70db110)
+  - 📄 [.git/objects/68/d5fae11c3358b8b8179cd67f3b9958243f3b32](./.git/objects/68/d5fae11c3358b8b8179cd67f3b9958243f3b32)
 - 📁 `.git/objects/69/`
   - 📄 [.git/objects/69/9e4b231e8ffb21352f9ca21730a097b6a6d782](./.git/objects/69/9e4b231e8ffb21352f9ca21730a097b6a6d782)
+  - 📄 [.git/objects/69/b20bd4da3a95b6c747393e604494c586e3c82e](./.git/objects/69/b20bd4da3a95b6c747393e604494c586e3c82e)
 - 📁 `.git/objects/6a/`
+  - 📄 [.git/objects/6a/161febe427578b1bef51f37b9aa5235f04eb51](./.git/objects/6a/161febe427578b1bef51f37b9aa5235f04eb51)
   - 📄 [.git/objects/6a/37e8076e432caa0e310e86d026b576a8cbd909](./.git/objects/6a/37e8076e432caa0e310e86d026b576a8cbd909)
+- 📁 `.git/objects/6b/`
+  - 📄 [.git/objects/6b/3bf4628631f21b7feb18bb2976433cf2096066](./.git/objects/6b/3bf4628631f21b7feb18bb2976433cf2096066)
+  - 📄 [.git/objects/6b/42eb4fe6165ac2f619329412dea0683272fcd2](./.git/objects/6b/42eb4fe6165ac2f619329412dea0683272fcd2)
+  - 📄 [.git/objects/6b/b2361151c5c0257adc977d417165005f233598](./.git/objects/6b/b2361151c5c0257adc977d417165005f233598)
+  - 📄 [.git/objects/6b/ee452decf4a426a69848cb7f91a5aa53fbcb16](./.git/objects/6b/ee452decf4a426a69848cb7f91a5aa53fbcb16)
+- 📁 `.git/objects/6c/`
+  - 📄 [.git/objects/6c/013fa1ec01e33126a1973b0ed552865c27cc32](./.git/objects/6c/013fa1ec01e33126a1973b0ed552865c27cc32)
+- 📁 `.git/objects/6d/`
+  - 📄 [.git/objects/6d/ceb3e0372297f7fd95e6a46e9e55cee3d47dc9](./.git/objects/6d/ceb3e0372297f7fd95e6a46e9e55cee3d47dc9)
+  - 📄 [.git/objects/6d/d9f08d317b899d8928049580044cb73f251875](./.git/objects/6d/d9f08d317b899d8928049580044cb73f251875)
+  - 📄 [.git/objects/6d/e589693d587507cec863afc230e32796d853a3](./.git/objects/6d/e589693d587507cec863afc230e32796d853a3)
+- 📁 `.git/objects/6e/`
+  - 📄 [.git/objects/6e/2722b474830c084f11cd610adca5ef863a0d7f](./.git/objects/6e/2722b474830c084f11cd610adca5ef863a0d7f)
+  - 📄 [.git/objects/6e/52115b949111742aca64672bf6b40a8abca667](./.git/objects/6e/52115b949111742aca64672bf6b40a8abca667)
+  - 📄 [.git/objects/6e/601850ecbee8013447418baec1d39a44863d60](./.git/objects/6e/601850ecbee8013447418baec1d39a44863d60)
+  - 📄 [.git/objects/6e/89638e3967f930454df5e241e31e671d7c5e9f](./.git/objects/6e/89638e3967f930454df5e241e31e671d7c5e9f)
+  - 📄 [.git/objects/6e/95c54f0b92ab4cfcad7700ec2ba1d5f95de3a0](./.git/objects/6e/95c54f0b92ab4cfcad7700ec2ba1d5f95de3a0)
+  - 📄 [.git/objects/6e/d2feb0e7fac1359610c2170068b41de4b8607f](./.git/objects/6e/d2feb0e7fac1359610c2170068b41de4b8607f)
+- 📁 `.git/objects/6f/`
+  - 📄 [.git/objects/6f/03b9db0bbdc9858f7cfcd73f61669829ec0632](./.git/objects/6f/03b9db0bbdc9858f7cfcd73f61669829ec0632)
+  - 📄 [.git/objects/6f/14c20f315a9f2d826bdc792cab81e338301683](./.git/objects/6f/14c20f315a9f2d826bdc792cab81e338301683)
+  - 📄 [.git/objects/6f/1e8de4f3bc8324892434e5290c10c70456c085](./.git/objects/6f/1e8de4f3bc8324892434e5290c10c70456c085)
+  - 📄 [.git/objects/6f/7c8b309a9c8a4f1fc36f758e5c972032021615](./.git/objects/6f/7c8b309a9c8a4f1fc36f758e5c972032021615)
+  - 📄 [.git/objects/6f/be5c67ba9fee5e090f3cdaa3edc02ae406b9d8](./.git/objects/6f/be5c67ba9fee5e090f3cdaa3edc02ae406b9d8)
+  - 📄 [.git/objects/6f/e24c0bcc4e5162aca52893e487596935ccf9e2](./.git/objects/6f/e24c0bcc4e5162aca52893e487596935ccf9e2)
 - 📁 `.git/objects/70/`
   - 📄 [.git/objects/70/04cf9f6c14d3a000f339fcebadb7151e548614](./.git/objects/70/04cf9f6c14d3a000f339fcebadb7151e548614)
+  - 📄 [.git/objects/70/11c14cf3fdfc36e5f04062469992fdf86e3916](./.git/objects/70/11c14cf3fdfc36e5f04062469992fdf86e3916)
+  - 📄 [.git/objects/70/297bbe9a2f6ad28e252baf81ed9f58d19cb2a6](./.git/objects/70/297bbe9a2f6ad28e252baf81ed9f58d19cb2a6)
+  - 📄 [.git/objects/70/a2b00f22354ba3e9a3015d64aa31daf4fd57b4](./.git/objects/70/a2b00f22354ba3e9a3015d64aa31daf4fd57b4)
+  - 📄 [.git/objects/70/e705c32cb8bdecd5bac726157fbd4fadb13e17](./.git/objects/70/e705c32cb8bdecd5bac726157fbd4fadb13e17)
 - 📁 `.git/objects/72/`
+  - 📄 [.git/objects/72/a7b9bfa910110047fb616f8cd8d3daf003623a](./.git/objects/72/a7b9bfa910110047fb616f8cd8d3daf003623a)
   - 📄 [.git/objects/72/fc59fb459c5fd844544e8e3b496765e59f9342](./.git/objects/72/fc59fb459c5fd844544e8e3b496765e59f9342)
 - 📁 `.git/objects/73/`
+  - 📄 [.git/objects/73/77631c4fdab16b38fab8f85245de22a808cc33](./.git/objects/73/77631c4fdab16b38fab8f85245de22a808cc33)
   - 📄 [.git/objects/73/eb322bd4826537cacc749d0956f512e7508f9c](./.git/objects/73/eb322bd4826537cacc749d0956f512e7508f9c)
+- 📁 `.git/objects/74/`
+  - 📄 [.git/objects/74/baffcc474d3d245a1dcfff629be4c9080ba658](./.git/objects/74/baffcc474d3d245a1dcfff629be4c9080ba658)
+- 📁 `.git/objects/75/`
+  - 📄 [.git/objects/75/6ca5733b256d042cb10f542d634b3646514c03](./.git/objects/75/6ca5733b256d042cb10f542d634b3646514c03)
+  - 📄 [.git/objects/75/c083fee9f4a84b33e4fe67ece775804f498837](./.git/objects/75/c083fee9f4a84b33e4fe67ece775804f498837)
+- 📁 `.git/objects/77/`
+  - 📄 [.git/objects/77/df76f01b983647b469836087d255e81c589896](./.git/objects/77/df76f01b983647b469836087d255e81c589896)
+  - 📄 [.git/objects/77/fb1b69a9a71950403ec45e9f74583473cb745f](./.git/objects/77/fb1b69a9a71950403ec45e9f74583473cb745f)
+- 📁 `.git/objects/78/`
+  - 📄 [.git/objects/78/549509775075c9a2058fb84289d7d62e819d3a](./.git/objects/78/549509775075c9a2058fb84289d7d62e819d3a)
+- 📁 `.git/objects/79/`
+  - 📄 [.git/objects/79/770fba45ac20f301c4d2f989a845890acdaf2b](./.git/objects/79/770fba45ac20f301c4d2f989a845890acdaf2b)
+  - 📄 [.git/objects/79/c52dc7486335e082f73cb6123b6fa774401ae6](./.git/objects/79/c52dc7486335e082f73cb6123b6fa774401ae6)
+- 📁 `.git/objects/7a/`
+  - 📄 [.git/objects/7a/de737f947c92909d1a38947607720011564d18](./.git/objects/7a/de737f947c92909d1a38947607720011564d18)
+  - 📄 [.git/objects/7a/fd90aa360d6e0888fe355b0ac5293742880f76](./.git/objects/7a/fd90aa360d6e0888fe355b0ac5293742880f76)
+- 📁 `.git/objects/7b/`
+  - 📄 [.git/objects/7b/1104829cb745ac195e845dcb6eba0f4dc435ee](./.git/objects/7b/1104829cb745ac195e845dcb6eba0f4dc435ee)
+  - 📄 [.git/objects/7b/cbfc7b52f3d39f33a9f55f7f60dd78fed92cf1](./.git/objects/7b/cbfc7b52f3d39f33a9f55f7f60dd78fed92cf1)
 - 📁 `.git/objects/7c/`
   - 📄 [.git/objects/7c/672ae0ff25abec48701bb4fbced2a605ca87f6](./.git/objects/7c/672ae0ff25abec48701bb4fbced2a605ca87f6)
+  - 📄 [.git/objects/7c/e69edaa22b11ed035a3879e8c72142623a26cf](./.git/objects/7c/e69edaa22b11ed035a3879e8c72142623a26cf)
+- 📁 `.git/objects/7d/`
+  - 📄 [.git/objects/7d/29b8cef105ca2036ef8c9dc89f3dbed0c70235](./.git/objects/7d/29b8cef105ca2036ef8c9dc89f3dbed0c70235)
+  - 📄 [.git/objects/7d/bdaf00b170ea9e35506df1dae90f7272d180aa](./.git/objects/7d/bdaf00b170ea9e35506df1dae90f7272d180aa)
 - 📁 `.git/objects/7e/`
+  - 📄 [.git/objects/7e/1a8ddc5d7ce4e263bc5a4579c986c788828212](./.git/objects/7e/1a8ddc5d7ce4e263bc5a4579c986c788828212)
+  - 📄 [.git/objects/7e/2f9d2960dc240687f28e04c8fd5bb6c751261c](./.git/objects/7e/2f9d2960dc240687f28e04c8fd5bb6c751261c)
+  - 📄 [.git/objects/7e/3eb2cf975c2b6b43460a1f420fb8e14720c630](./.git/objects/7e/3eb2cf975c2b6b43460a1f420fb8e14720c630)
   - 📄 [.git/objects/7e/d52fb5f75d2dffc0b8cb92fbcf8f6fa34dac62](./.git/objects/7e/d52fb5f75d2dffc0b8cb92fbcf8f6fa34dac62)
 - 📁 `.git/objects/7f/`
+  - 📄 [.git/objects/7f/42983b0c553a8ae08430e50b7bbbf45072e07b](./.git/objects/7f/42983b0c553a8ae08430e50b7bbbf45072e07b)
+  - 📄 [.git/objects/7f/790c563f6eabf670119b08148fcba14d151660](./.git/objects/7f/790c563f6eabf670119b08148fcba14d151660)
+  - 📄 [.git/objects/7f/a787b8910f2d16af2dfc804d0f6a254e826aec](./.git/objects/7f/a787b8910f2d16af2dfc804d0f6a254e826aec)
+  - 📄 [.git/objects/7f/b597dc0eaf08611f410ab4e89c73e9a180ba13](./.git/objects/7f/b597dc0eaf08611f410ab4e89c73e9a180ba13)
   - 📄 [.git/objects/7f/beff0749c23a9661b67f424bce5fc674113917](./.git/objects/7f/beff0749c23a9661b67f424bce5fc674113917)
+- 📁 `.git/objects/80/`
+  - 📄 [.git/objects/80/2cb8f6b1bd3a1eff125b66e00f4cf38957a160](./.git/objects/80/2cb8f6b1bd3a1eff125b66e00f4cf38957a160)
+  - 📄 [.git/objects/80/e88353babd8dfdd9ff3f4ab7ac60a18b1ca9d9](./.git/objects/80/e88353babd8dfdd9ff3f4ab7ac60a18b1ca9d9)
+- 📁 `.git/objects/81/`
+  - 📄 [.git/objects/81/03a9865cc06a1f7415c25079642ab651b163dd](./.git/objects/81/03a9865cc06a1f7415c25079642ab651b163dd)
+  - 📄 [.git/objects/81/15bee0fce80807c188d98f01dcfeec3cbb5e30](./.git/objects/81/15bee0fce80807c188d98f01dcfeec3cbb5e30)
+- 📁 `.git/objects/82/`
+  - 📄 [.git/objects/82/d508e58224862ea7061695678fccbb1fc0f8de](./.git/objects/82/d508e58224862ea7061695678fccbb1fc0f8de)
+- 📁 `.git/objects/84/`
+  - 📄 [.git/objects/84/09d3d706aa30e24319dfadd9905b7098a50917](./.git/objects/84/09d3d706aa30e24319dfadd9905b7098a50917)
 - 📁 `.git/objects/85/`
+  - 📄 [.git/objects/85/2cdcf10b62f10fe9c3db3e1476a5a53a32ebfe](./.git/objects/85/2cdcf10b62f10fe9c3db3e1476a5a53a32ebfe)
   - 📄 [.git/objects/85/81952d0ac4e00f9f81b3c02d2ade8781b14631](./.git/objects/85/81952d0ac4e00f9f81b3c02d2ade8781b14631)
+- 📁 `.git/objects/86/`
+  - 📄 [.git/objects/86/7638e62cf425355c7038041c6c6d587ac63d8b](./.git/objects/86/7638e62cf425355c7038041c6c6d587ac63d8b)
+  - 📄 [.git/objects/86/c161d7a15855ffade1e37a7538ace87330489f](./.git/objects/86/c161d7a15855ffade1e37a7538ace87330489f)
+- 📁 `.git/objects/87/`
+  - 📄 [.git/objects/87/19eae465abb8be7212cbd03f94620ce726ee23](./.git/objects/87/19eae465abb8be7212cbd03f94620ce726ee23)
+  - 📄 [.git/objects/87/a5eda25d2f82ff4f335a0e9d9cddbcc227e141](./.git/objects/87/a5eda25d2f82ff4f335a0e9d9cddbcc227e141)
+- 📁 `.git/objects/88/`
+  - 📄 [.git/objects/88/1c67a96eab2f2e9ef1bebb5342546de7e1690d](./.git/objects/88/1c67a96eab2f2e9ef1bebb5342546de7e1690d)
+  - 📄 [.git/objects/88/86cb77d7443b72e212e554a1696a4958e68fc2](./.git/objects/88/86cb77d7443b72e212e554a1696a4958e68fc2)
+- 📁 `.git/objects/89/`
+  - 📄 [.git/objects/89/4dfdda463f166df8bff84ea39a9a00eb080937](./.git/objects/89/4dfdda463f166df8bff84ea39a9a00eb080937)
+- 📁 `.git/objects/8a/`
+  - 📄 [.git/objects/8a/291faa592657f51fadc0e29fd8aa4888390267](./.git/objects/8a/291faa592657f51fadc0e29fd8aa4888390267)
+  - 📄 [.git/objects/8a/851373802d7a6105cd874f59dcdc9c31da0bb5](./.git/objects/8a/851373802d7a6105cd874f59dcdc9c31da0bb5)
+  - 📄 [.git/objects/8a/96c10f8378f4bab5667c1b2a68ea5782097e0f](./.git/objects/8a/96c10f8378f4bab5667c1b2a68ea5782097e0f)
+  - 📄 [.git/objects/8a/d49907697b219cd22982e5246b61fda243c7d6](./.git/objects/8a/d49907697b219cd22982e5246b61fda243c7d6)
+  - 📄 [.git/objects/8a/fffbb59551815b19b73d0578cf6c75f6800be7](./.git/objects/8a/fffbb59551815b19b73d0578cf6c75f6800be7)
+- 📁 `.git/objects/8b/`
+  - 📄 [.git/objects/8b/cf1edcc0046e342b7d62b2fd47c4fc62dbda37](./.git/objects/8b/cf1edcc0046e342b7d62b2fd47c4fc62dbda37)
+  - 📄 [.git/objects/8b/fc1a32a2feb867d43093a85eb1cc3448dbbf42](./.git/objects/8b/fc1a32a2feb867d43093a85eb1cc3448dbbf42)
+- 📁 `.git/objects/8c/`
+  - 📄 [.git/objects/8c/9e3a5a00d3d12c9c506b0a3aa174f216a6cc75](./.git/objects/8c/9e3a5a00d3d12c9c506b0a3aa174f216a6cc75)
 - 📁 `.git/objects/8d/`
+  - 📄 [.git/objects/8d/46b060ea93ace05650e538ae97f9bffbc93469](./.git/objects/8d/46b060ea93ace05650e538ae97f9bffbc93469)
   - 📄 [.git/objects/8d/7bff32e46749a390b98c3cbce3c5e09ba124c0](./.git/objects/8d/7bff32e46749a390b98c3cbce3c5e09ba124c0)
+- 📁 `.git/objects/8f/`
+  - 📄 [.git/objects/8f/a9163a0978ac159bcbf3ce32b6e10237251655](./.git/objects/8f/a9163a0978ac159bcbf3ce32b6e10237251655)
+- 📁 `.git/objects/90/`
+  - 📄 [.git/objects/90/226637d54560aae4254dd2383fcf375d86a6e9](./.git/objects/90/226637d54560aae4254dd2383fcf375d86a6e9)
+  - 📄 [.git/objects/90/2c2dacac1a444273bc1dbce4756c10a948e140](./.git/objects/90/2c2dacac1a444273bc1dbce4756c10a948e140)
+  - 📄 [.git/objects/90/f5c71dd2d8d621add551d6b40d3083e502dd7c](./.git/objects/90/f5c71dd2d8d621add551d6b40d3083e502dd7c)
+- 📁 `.git/objects/91/`
+  - 📄 [.git/objects/91/47b5eb3f084e22aa2ef94ffaff778db4a32e91](./.git/objects/91/47b5eb3f084e22aa2ef94ffaff778db4a32e91)
+  - 📄 [.git/objects/91/58c41b3a3b5b4a72681fdc4aece4cc13ba1619](./.git/objects/91/58c41b3a3b5b4a72681fdc4aece4cc13ba1619)
+  - 📄 [.git/objects/91/d7f647cfcda1e2d96be177897269a012da6f80](./.git/objects/91/d7f647cfcda1e2d96be177897269a012da6f80)
 - 📁 `.git/objects/92/`
   - 📄 [.git/objects/92/320d3bcae1aae2458740a818b54db7427d3364](./.git/objects/92/320d3bcae1aae2458740a818b54db7427d3364)
+  - 📄 [.git/objects/92/8f6927e043783fb829aa4b1be26065cfa052c5](./.git/objects/92/8f6927e043783fb829aa4b1be26065cfa052c5)
+- 📁 `.git/objects/93/`
+  - 📄 [.git/objects/93/7c87c391d22b3cd5dafb8866c74dcdf40f140a](./.git/objects/93/7c87c391d22b3cd5dafb8866c74dcdf40f140a)
+  - 📄 [.git/objects/93/e4d9320f91eb11017ca6f9f09530f25827b8db](./.git/objects/93/e4d9320f91eb11017ca6f9f09530f25827b8db)
 - 📁 `.git/objects/94/`
+  - 📄 [.git/objects/94/215a1d116f8d4d4ce90d45dd768ed47fcbef1b](./.git/objects/94/215a1d116f8d4d4ce90d45dd768ed47fcbef1b)
   - 📄 [.git/objects/94/26b35d21a66269e2bad7393b43abc551b0f04e](./.git/objects/94/26b35d21a66269e2bad7393b43abc551b0f04e)
+  - 📄 [.git/objects/94/531468a993ef79848fb387ea7a8d6438b8d09d](./.git/objects/94/531468a993ef79848fb387ea7a8d6438b8d09d)
   - 📄 [.git/objects/94/dfdcc20c94e7c9013c319623f169b3bea2a958](./.git/objects/94/dfdcc20c94e7c9013c319623f169b3bea2a958)
 - 📁 `.git/objects/95/`
+  - 📄 [.git/objects/95/2521ee38a3caad751ab58874092873c8de3e34](./.git/objects/95/2521ee38a3caad751ab58874092873c8de3e34)
+  - 📄 [.git/objects/95/99c8ca411046b7a8097432b32c7bf8a27b8ae2](./.git/objects/95/99c8ca411046b7a8097432b32c7bf8a27b8ae2)
   - 📄 [.git/objects/95/9de04cbe2cc44aac2bab454609d1cb5279dcc8](./.git/objects/95/9de04cbe2cc44aac2bab454609d1cb5279dcc8)
+- 📁 `.git/objects/97/`
+  - 📄 [.git/objects/97/0cba5f60a99d2257ead6f87c6cbae12e964fe0](./.git/objects/97/0cba5f60a99d2257ead6f87c6cbae12e964fe0)
 - 📁 `.git/objects/98/`
+  - 📄 [.git/objects/98/341133b95f3c1be4c9bf492d22493124d77cce](./.git/objects/98/341133b95f3c1be4c9bf492d22493124d77cce)
   - 📄 [.git/objects/98/3a3d21ba8731cdc5548c47471708f4c3d22dd4](./.git/objects/98/3a3d21ba8731cdc5548c47471708f4c3d22dd4)
+  - 📄 [.git/objects/98/4485f3ec584fd21480bad585d3e6c25c285a29](./.git/objects/98/4485f3ec584fd21480bad585d3e6c25c285a29)
+  - 📄 [.git/objects/98/9ae446bad9f79f6569febedf4d2a9c93d4c6cf](./.git/objects/98/9ae446bad9f79f6569febedf4d2a9c93d4c6cf)
+  - 📄 [.git/objects/98/b202cc85712e65945eedcdbe4f52abd5976d3d](./.git/objects/98/b202cc85712e65945eedcdbe4f52abd5976d3d)
+  - 📄 [.git/objects/98/c513c25c79d57ca88079a45623b982bae4cabe](./.git/objects/98/c513c25c79d57ca88079a45623b982bae4cabe)
 - 📁 `.git/objects/99/`
   - 📄 [.git/objects/99/28fcbe5b83669258e68d9dd01eabf0d7760a2a](./.git/objects/99/28fcbe5b83669258e68d9dd01eabf0d7760a2a)
+  - 📄 [.git/objects/99/77097a6ea257bba71bc99f95d2c727183907ea](./.git/objects/99/77097a6ea257bba71bc99f95d2c727183907ea)
+  - 📄 [.git/objects/99/af8d5fbc59a0fcc4961b2b9927660a0f744814](./.git/objects/99/af8d5fbc59a0fcc4961b2b9927660a0f744814)
+- 📁 `.git/objects/9a/`
+  - 📄 [.git/objects/9a/801cc298a6dce34f1714fecba2d8f092cedd21](./.git/objects/9a/801cc298a6dce34f1714fecba2d8f092cedd21)
+  - 📄 [.git/objects/9a/a80d643007d8ea295647d660bf7b938f79ee12](./.git/objects/9a/a80d643007d8ea295647d660bf7b938f79ee12)
+  - 📄 [.git/objects/9a/c636395892e32b41998fba71950ade2cc3b421](./.git/objects/9a/c636395892e32b41998fba71950ade2cc3b421)
+- 📁 `.git/objects/9b/`
+  - 📄 [.git/objects/9b/3d108c74faf4503d8780e460436da630cb741e](./.git/objects/9b/3d108c74faf4503d8780e460436da630cb741e)
+  - 📄 [.git/objects/9b/924a9dfff5aa7b83433051b20d5f89eac7dc89](./.git/objects/9b/924a9dfff5aa7b83433051b20d5f89eac7dc89)
+  - 📄 [.git/objects/9b/ae3f6ab4eee62f8b694b38d9c3af48122ff77e](./.git/objects/9b/ae3f6ab4eee62f8b694b38d9c3af48122ff77e)
+- 📁 `.git/objects/9c/`
+  - 📄 [.git/objects/9c/df148aca0dad4bd83e738b06293672855768eb](./.git/objects/9c/df148aca0dad4bd83e738b06293672855768eb)
 - 📁 `.git/objects/9d/`
   - 📄 [.git/objects/9d/da81b259d059d8c9b718b58ddfef9b396ce239](./.git/objects/9d/da81b259d059d8c9b718b58ddfef9b396ce239)
+  - 📄 [.git/objects/9d/ef49ecbd64fe80106870df4386317c2e55bd4f](./.git/objects/9d/ef49ecbd64fe80106870df4386317c2e55bd4f)
+- 📁 `.git/objects/9e/`
+  - 📄 [.git/objects/9e/7997091c05c759989b9aae254a0dd19fb0d4f7](./.git/objects/9e/7997091c05c759989b9aae254a0dd19fb0d4f7)
 - 📁 `.git/objects/9f/`
+  - 📄 [.git/objects/9f/09a38f93f4c7d11a81171c72430b63815eaaaf](./.git/objects/9f/09a38f93f4c7d11a81171c72430b63815eaaaf)
+  - 📄 [.git/objects/9f/4f84069dc550ac17ac7f6a68356d027b4a5873](./.git/objects/9f/4f84069dc550ac17ac7f6a68356d027b4a5873)
   - 📄 [.git/objects/9f/b9335c73dcc8f3fe8d2020dba9d8c39bef3bf5](./.git/objects/9f/b9335c73dcc8f3fe8d2020dba9d8c39bef3bf5)
+- 📁 `.git/objects/a0/`
+  - 📄 [.git/objects/a0/2dfb502272cc09c774c660487f52c28a97e489](./.git/objects/a0/2dfb502272cc09c774c660487f52c28a97e489)
+  - 📄 [.git/objects/a0/33e36af3c57cf2bdfd07f8455ed00858dc5446](./.git/objects/a0/33e36af3c57cf2bdfd07f8455ed00858dc5446)
+  - 📄 [.git/objects/a0/82455d54de4b137c985296693e315d036147ee](./.git/objects/a0/82455d54de4b137c985296693e315d036147ee)
+  - 📄 [.git/objects/a0/a8c364c0b97f294d16e362f26282133fea92b9](./.git/objects/a0/a8c364c0b97f294d16e362f26282133fea92b9)
+- 📁 `.git/objects/a1/`
+  - 📄 [.git/objects/a1/3f03a3de4414d4cb38a43fb39c247fa5943f35](./.git/objects/a1/3f03a3de4414d4cb38a43fb39c247fa5943f35)
+  - 📄 [.git/objects/a1/41009aae32b6494d5c4cdba22d2b9a10ea9abf](./.git/objects/a1/41009aae32b6494d5c4cdba22d2b9a10ea9abf)
+  - 📄 [.git/objects/a1/91c74ddb7ec347cfb7c4dcf1ab1ef2d6e2319d](./.git/objects/a1/91c74ddb7ec347cfb7c4dcf1ab1ef2d6e2319d)
+- 📁 `.git/objects/a2/`
+  - 📄 [.git/objects/a2/32428fd49bb60311f293a9549dfdc81096a782](./.git/objects/a2/32428fd49bb60311f293a9549dfdc81096a782)
+  - 📄 [.git/objects/a2/891b8cc762a0f7764d15979b58e119b8506fdd](./.git/objects/a2/891b8cc762a0f7764d15979b58e119b8506fdd)
+  - 📄 [.git/objects/a2/e71cbadb1cb8c73b9dcb3bacc5834c63c2c401](./.git/objects/a2/e71cbadb1cb8c73b9dcb3bacc5834c63c2c401)
 - 📁 `.git/objects/a3/`
+  - 📄 [.git/objects/a3/59f7fecdaa80d930eeef9f5d7cc58352ac4523](./.git/objects/a3/59f7fecdaa80d930eeef9f5d7cc58352ac4523)
   - 📄 [.git/objects/a3/5d2725a42e543325b1bcee27b969c781ca78b9](./.git/objects/a3/5d2725a42e543325b1bcee27b969c781ca78b9)
 - 📁 `.git/objects/a4/`
   - 📄 [.git/objects/a4/baa4aba58b267474941def72a7e6086c29690a](./.git/objects/a4/baa4aba58b267474941def72a7e6086c29690a)
+  - 📄 [.git/objects/a4/c1be4e52bf745de97b76078dd288517dbe6aeb](./.git/objects/a4/c1be4e52bf745de97b76078dd288517dbe6aeb)
+- 📁 `.git/objects/a5/`
+  - 📄 [.git/objects/a5/84d0b2f2913f9015239f5d07113893799c3470](./.git/objects/a5/84d0b2f2913f9015239f5d07113893799c3470)
+  - 📄 [.git/objects/a5/8b92069e9cb2aed85363ae90ee3c0041402266](./.git/objects/a5/8b92069e9cb2aed85363ae90ee3c0041402266)
+- 📁 `.git/objects/a6/`
+  - 📄 [.git/objects/a6/1b370cc48879239b3dd3fe5823a16f55fa4a93](./.git/objects/a6/1b370cc48879239b3dd3fe5823a16f55fa4a93)
+  - 📄 [.git/objects/a6/396674f34e59c3739efb7c80a8366ffc5ed926](./.git/objects/a6/396674f34e59c3739efb7c80a8366ffc5ed926)
+  - 📄 [.git/objects/a6/6352433cd99de366bf225709960b9df481c2a9](./.git/objects/a6/6352433cd99de366bf225709960b9df481c2a9)
+  - 📄 [.git/objects/a6/8f4ea516fcbe0e6bd780259caead1a712756bb](./.git/objects/a6/8f4ea516fcbe0e6bd780259caead1a712756bb)
+  - 📄 [.git/objects/a6/db6132849b0f8229e621e62485fa852539eb20](./.git/objects/a6/db6132849b0f8229e621e62485fa852539eb20)
+- 📁 `.git/objects/a7/`
+  - 📄 [.git/objects/a7/29cf566bcf88c0ff9d11fa35153292dc66f8cf](./.git/objects/a7/29cf566bcf88c0ff9d11fa35153292dc66f8cf)
+  - 📄 [.git/objects/a7/a9f1e0589cad3395fc1502dcf60301a3517b41](./.git/objects/a7/a9f1e0589cad3395fc1502dcf60301a3517b41)
 - 📁 `.git/objects/a8/`
+  - 📄 [.git/objects/a8/6a593783684b7740e43b4e3e7fff02c51ba6f2](./.git/objects/a8/6a593783684b7740e43b4e3e7fff02c51ba6f2)
   - 📄 [.git/objects/a8/8440de2fbb68526cf353a222efc1b267592100](./.git/objects/a8/8440de2fbb68526cf353a222efc1b267592100)
+  - 📄 [.git/objects/a8/b90a815127d3e659af7bdeb49736d3f4da5095](./.git/objects/a8/b90a815127d3e659af7bdeb49736d3f4da5095)
+  - 📄 [.git/objects/a8/d3bd43aafdb4e02ae2c0d8c3a89ccbf597d649](./.git/objects/a8/d3bd43aafdb4e02ae2c0d8c3a89ccbf597d649)
+  - 📄 [.git/objects/a8/f82370b000e3f8e77bbb8fa4168d52fbdd44c3](./.git/objects/a8/f82370b000e3f8e77bbb8fa4168d52fbdd44c3)
+- 📁 `.git/objects/a9/`
+  - 📄 [.git/objects/a9/04c1f512ec878bb12b18a4d2beb6d82c5c0ef2](./.git/objects/a9/04c1f512ec878bb12b18a4d2beb6d82c5c0ef2)
+  - 📄 [.git/objects/a9/1f4fc750c896ad27359e09ed8b2769fff37fd4](./.git/objects/a9/1f4fc750c896ad27359e09ed8b2769fff37fd4)
+  - 📄 [.git/objects/a9/20e581ca68c6dee2a5b276965311bece489b45](./.git/objects/a9/20e581ca68c6dee2a5b276965311bece489b45)
+  - 📄 [.git/objects/a9/ce3f2a95b424c212697e873aa2f8fa0e48be51](./.git/objects/a9/ce3f2a95b424c212697e873aa2f8fa0e48be51)
+  - 📄 [.git/objects/a9/f109ec202536665bd5a5079c736c8da36e0844](./.git/objects/a9/f109ec202536665bd5a5079c736c8da36e0844)
+- 📁 `.git/objects/aa/`
+  - 📄 [.git/objects/aa/00e66229d2b5e527128132fa2abe39609ff9c7](./.git/objects/aa/00e66229d2b5e527128132fa2abe39609ff9c7)
+  - 📄 [.git/objects/aa/00f46e99f58e9fd6e8ce0336d1953fe4db2f5f](./.git/objects/aa/00f46e99f58e9fd6e8ce0336d1953fe4db2f5f)
+- 📁 `.git/objects/ab/`
+  - 📄 [.git/objects/ab/ca13dd5ad06a19c21707a44bd4929e11091992](./.git/objects/ab/ca13dd5ad06a19c21707a44bd4929e11091992)
 - 📁 `.git/objects/ac/`
   - 📄 [.git/objects/ac/231e026e40d89cffa4363b0389cde6331409b2](./.git/objects/ac/231e026e40d89cffa4363b0389cde6331409b2)
   - 📄 [.git/objects/ac/9fb0a1425e1427b22c580b578f655929c99fd0](./.git/objects/ac/9fb0a1425e1427b22c580b578f655929c99fd0)
+  - 📄 [.git/objects/ac/c2ecb7f99d247aab1b80ba38a3cb0247c11a47](./.git/objects/ac/c2ecb7f99d247aab1b80ba38a3cb0247c11a47)
 - 📁 `.git/objects/ad/`
   - 📄 [.git/objects/ad/7dcc6353199132313d63767cc8725756d0fe1d](./.git/objects/ad/7dcc6353199132313d63767cc8725756d0fe1d)
+  - 📄 [.git/objects/ad/9264f0b14b294627f8e77383875c994af54865](./.git/objects/ad/9264f0b14b294627f8e77383875c994af54865)
+- 📁 `.git/objects/ae/`
+  - 📄 [.git/objects/ae/6cf161c30068c3956ac43abd397065447257fc](./.git/objects/ae/6cf161c30068c3956ac43abd397065447257fc)
+  - 📄 [.git/objects/ae/e3c01d06c67b5b1adcab63aea8b839877c6347](./.git/objects/ae/e3c01d06c67b5b1adcab63aea8b839877c6347)
 - 📁 `.git/objects/af/`
+  - 📄 [.git/objects/af/0937c9bdc6f5ae1c5424597751b8648104956b](./.git/objects/af/0937c9bdc6f5ae1c5424597751b8648104956b)
+  - 📄 [.git/objects/af/443fcd4b6ee51b4623f86046a57940700158d7](./.git/objects/af/443fcd4b6ee51b4623f86046a57940700158d7)
   - 📄 [.git/objects/af/aa19c43f5cd4466f5b1da9b069702039caeaeb](./.git/objects/af/aa19c43f5cd4466f5b1da9b069702039caeaeb)
 - 📁 `.git/objects/b0/`
   - 📄 [.git/objects/b0/4d508d2ed67624bc90f6f190f55e9e92d5cb76](./.git/objects/b0/4d508d2ed67624bc90f6f190f55e9e92d5cb76)
   - 📄 [.git/objects/b0/ad26b82bd03ab704660168a9693e714ce852dd](./.git/objects/b0/ad26b82bd03ab704660168a9693e714ce852dd)
+- 📁 `.git/objects/b1/`
+  - 📄 [.git/objects/b1/7618364787f8c308ad06c0155434f4294ee67c](./.git/objects/b1/7618364787f8c308ad06c0155434f4294ee67c)
+  - 📄 [.git/objects/b1/9466f21d4fc8682e2497ed812ad7a8f9822349](./.git/objects/b1/9466f21d4fc8682e2497ed812ad7a8f9822349)
 - 📁 `.git/objects/b2/`
+  - 📄 [.git/objects/b2/5846348906adad0e232b0c18cb6d2f470a7d95](./.git/objects/b2/5846348906adad0e232b0c18cb6d2f470a7d95)
+  - 📄 [.git/objects/b2/64fc828cc9ba579867fabc505f6e46f2f7fae3](./.git/objects/b2/64fc828cc9ba579867fabc505f6e46f2f7fae3)
   - 📄 [.git/objects/b2/c801d60bbcb3651ef12ffd39f8ad1069bea7ea](./.git/objects/b2/c801d60bbcb3651ef12ffd39f8ad1069bea7ea)
+  - 📄 [.git/objects/b2/cd211d8ed1fb78d1ffabe7d611497aba8f209d](./.git/objects/b2/cd211d8ed1fb78d1ffabe7d611497aba8f209d)
 - 📁 `.git/objects/b3/`
+  - 📄 [.git/objects/b3/44a4d9db600a7c921ef8aa5bc89203bf297769](./.git/objects/b3/44a4d9db600a7c921ef8aa5bc89203bf297769)
+  - 📄 [.git/objects/b3/977e21f249f7e7978b71ede93741512af304f5](./.git/objects/b3/977e21f249f7e7978b71ede93741512af304f5)
+  - 📄 [.git/objects/b3/cece4e429fa6075439a01d4bbb704a7a771a85](./.git/objects/b3/cece4e429fa6075439a01d4bbb704a7a771a85)
   - 📄 [.git/objects/b3/d8e1c1fa2d5d56f34e0cfd7dd08af0c1e613cc](./.git/objects/b3/d8e1c1fa2d5d56f34e0cfd7dd08af0c1e613cc)
+- 📁 `.git/objects/b5/`
+  - 📄 [.git/objects/b5/ba36f08e0fef220947624c197c5d011a893c10](./.git/objects/b5/ba36f08e0fef220947624c197c5d011a893c10)
+- 📁 `.git/objects/b6/`
+  - 📄 [.git/objects/b6/bbe9dbdba7a323c37557679e36b87a6d14b12c](./.git/objects/b6/bbe9dbdba7a323c37557679e36b87a6d14b12c)
+  - 📄 [.git/objects/b6/d7aff253e4358342c146f5ae7e405be6ee99c9](./.git/objects/b6/d7aff253e4358342c146f5ae7e405be6ee99c9)
+- 📁 `.git/objects/b7/`
+  - 📄 [.git/objects/b7/0ec9cef1eb2d8b03e47a38edf9dc688bc7a2bd](./.git/objects/b7/0ec9cef1eb2d8b03e47a38edf9dc688bc7a2bd)
+  - 📄 [.git/objects/b7/5742f147219cbba1c258ff7f59caf26e1ff07c](./.git/objects/b7/5742f147219cbba1c258ff7f59caf26e1ff07c)
+  - 📄 [.git/objects/b7/c166c4eb9d98958b662e18d1755eb9958cf170](./.git/objects/b7/c166c4eb9d98958b662e18d1755eb9958cf170)
+  - 📄 [.git/objects/b7/cc178b26048867b784766eb79a2123611ec425](./.git/objects/b7/cc178b26048867b784766eb79a2123611ec425)
+  - 📄 [.git/objects/b7/f03b3393fcf6bb242e6bbe7011ed032f69e233](./.git/objects/b7/f03b3393fcf6bb242e6bbe7011ed032f69e233)
+  - 📄 [.git/objects/b7/f28ff1ecd99bb64a5bd58631a4a438d599e0c1](./.git/objects/b7/f28ff1ecd99bb64a5bd58631a4a438d599e0c1)
+- 📁 `.git/objects/b8/`
+  - 📄 [.git/objects/b8/141d6d2fde174b6d54d6de1943fcbcce639834](./.git/objects/b8/141d6d2fde174b6d54d6de1943fcbcce639834)
+  - 📄 [.git/objects/b8/51df770816a3dca94ab413e3286b0043bc6dad](./.git/objects/b8/51df770816a3dca94ab413e3286b0043bc6dad)
+  - 📄 [.git/objects/b8/741704c503878d2c962d5bad45635321f88d44](./.git/objects/b8/741704c503878d2c962d5bad45635321f88d44)
+- 📁 `.git/objects/b9/`
+  - 📄 [.git/objects/b9/140289165ffef5d9b4921684d0011da621dc9f](./.git/objects/b9/140289165ffef5d9b4921684d0011da621dc9f)
+  - 📄 [.git/objects/b9/435e125eea0fbfd9fff4b62223ce885a9c0603](./.git/objects/b9/435e125eea0fbfd9fff4b62223ce885a9c0603)
+  - 📄 [.git/objects/b9/9b133d959310b2e554872984e4882d945a7f81](./.git/objects/b9/9b133d959310b2e554872984e4882d945a7f81)
+  - 📄 [.git/objects/b9/f4b888dba66819bf5b69b89489adeec0b6d208](./.git/objects/b9/f4b888dba66819bf5b69b89489adeec0b6d208)
 - 📁 `.git/objects/ba/`
   - 📄 [.git/objects/ba/fdda7dc8ebdc68e99ab64242a686b6a23a109d](./.git/objects/ba/fdda7dc8ebdc68e99ab64242a686b6a23a109d)
+- 📁 `.git/objects/bb/`
+  - 📄 [.git/objects/bb/48e4129f6756a788ef177007bdcb2cf8de5078](./.git/objects/bb/48e4129f6756a788ef177007bdcb2cf8de5078)
+- 📁 `.git/objects/bc/`
+  - 📄 [.git/objects/bc/980b19ca3ade66d402107ddae01c8203e2bf61](./.git/objects/bc/980b19ca3ade66d402107ddae01c8203e2bf61)
+  - 📄 [.git/objects/bc/ae5c60ac5d2a5ca78611163489b607e4d40cb2](./.git/objects/bc/ae5c60ac5d2a5ca78611163489b607e4d40cb2)
+- 📁 `.git/objects/bd/`
+  - 📄 [.git/objects/bd/06753174285308750aadda2ecfd300e07ef7c9](./.git/objects/bd/06753174285308750aadda2ecfd300e07ef7c9)
+  - 📄 [.git/objects/bd/9ecba1d0c909b4e4bf29534d46d7fe7a50c727](./.git/objects/bd/9ecba1d0c909b4e4bf29534d46d7fe7a50c727)
+- 📁 `.git/objects/be/`
+  - 📄 [.git/objects/be/906c7773f0a143d2476c58c88840d12c39510e](./.git/objects/be/906c7773f0a143d2476c58c88840d12c39510e)
+  - 📄 [.git/objects/be/c173885514158afb55bf8751258cb5145bdd30](./.git/objects/be/c173885514158afb55bf8751258cb5145bdd30)
+  - 📄 [.git/objects/be/e34a9efcfb5f690c3da06e5e347372f95f2755](./.git/objects/be/e34a9efcfb5f690c3da06e5e347372f95f2755)
 - 📁 `.git/objects/bf/`
   - 📄 [.git/objects/bf/647e4445830e8be1f1a00ad427b8ddbc4c3d7f](./.git/objects/bf/647e4445830e8be1f1a00ad427b8ddbc4c3d7f)
+- 📁 `.git/objects/c0/`
+  - 📄 [.git/objects/c0/08b7d842332598b6ab7951edae65d1ffbae005](./.git/objects/c0/08b7d842332598b6ab7951edae65d1ffbae005)
+  - 📄 [.git/objects/c0/5e038f2bf105ca50c176e26110cb33a221c339](./.git/objects/c0/5e038f2bf105ca50c176e26110cb33a221c339)
+  - 📄 [.git/objects/c0/b438154f536ca55caa483e4ba5b007231cb4f7](./.git/objects/c0/b438154f536ca55caa483e4ba5b007231cb4f7)
+  - 📄 [.git/objects/c0/b4c377a230f1ce089d6e9c46e15ac58c17ec1e](./.git/objects/c0/b4c377a230f1ce089d6e9c46e15ac58c17ec1e)
+  - 📄 [.git/objects/c0/c2ac20c82b71eef14895b1d62ddf9aec9800ff](./.git/objects/c0/c2ac20c82b71eef14895b1d62ddf9aec9800ff)
+- 📁 `.git/objects/c1/`
+  - 📄 [.git/objects/c1/ae16a98edfba575320c630f24734adf0c613da](./.git/objects/c1/ae16a98edfba575320c630f24734adf0c613da)
 - 📁 `.git/objects/c2/`
+  - 📄 [.git/objects/c2/2ff116d4c95305125c923fa1994a4784dbf82a](./.git/objects/c2/2ff116d4c95305125c923fa1994a4784dbf82a)
   - 📄 [.git/objects/c2/31ded5351163d9b2eddb5ef24c4d4c06f71299](./.git/objects/c2/31ded5351163d9b2eddb5ef24c4d4c06f71299)
+  - 📄 [.git/objects/c2/5f8f75477f02b63f19c40f5600ecbea64da62e](./.git/objects/c2/5f8f75477f02b63f19c40f5600ecbea64da62e)
+  - 📄 [.git/objects/c2/f4f7609f080cd4b2a2714e15c6fc38328e66fe](./.git/objects/c2/f4f7609f080cd4b2a2714e15c6fc38328e66fe)
 - 📁 `.git/objects/c3/`
+  - 📄 [.git/objects/c3/d1ead45caf97ed31f9155a34807c61e8c7b097](./.git/objects/c3/d1ead45caf97ed31f9155a34807c61e8c7b097)
   - 📄 [.git/objects/c3/e49ee07c5b948faf0f11abf3450fdff368eb50](./.git/objects/c3/e49ee07c5b948faf0f11abf3450fdff368eb50)
+- 📁 `.git/objects/c4/`
+  - 📄 [.git/objects/c4/80a48ce8ba9e2f0c3effb639678ce4ea5e98f1](./.git/objects/c4/80a48ce8ba9e2f0c3effb639678ce4ea5e98f1)
+- 📁 `.git/objects/c5/`
+  - 📄 [.git/objects/c5/8cfd888adaf760db4022ea08b3b59eb8dac191](./.git/objects/c5/8cfd888adaf760db4022ea08b3b59eb8dac191)
+  - 📄 [.git/objects/c5/9f77983489445a41c24c6bfdeefc50373a1581](./.git/objects/c5/9f77983489445a41c24c6bfdeefc50373a1581)
+  - 📄 [.git/objects/c5/e18b9f9f95e274299d674527d3e9beb7443afe](./.git/objects/c5/e18b9f9f95e274299d674527d3e9beb7443afe)
 - 📁 `.git/objects/c6/`
+  - 📄 [.git/objects/c6/83b3ebf2ee8aa2895f64a4298276e439be1c3d](./.git/objects/c6/83b3ebf2ee8aa2895f64a4298276e439be1c3d)
   - 📄 [.git/objects/c6/f14040ddb6a94c1ef1354170aa5954a49d9ab5](./.git/objects/c6/f14040ddb6a94c1ef1354170aa5954a49d9ab5)
 - 📁 `.git/objects/c7/`
   - 📄 [.git/objects/c7/51c12a0e35b3ad9a6310eff150d502e488319e](./.git/objects/c7/51c12a0e35b3ad9a6310eff150d502e488319e)
+  - 📄 [.git/objects/c7/ada130a7d76029b53e58bf71f6f5aba04c6f89](./.git/objects/c7/ada130a7d76029b53e58bf71f6f5aba04c6f89)
+  - 📄 [.git/objects/c7/c002504c08b476afe04bf3cefea524dd32b6af](./.git/objects/c7/c002504c08b476afe04bf3cefea524dd32b6af)
+- 📁 `.git/objects/c8/`
+  - 📄 [.git/objects/c8/504ff00bade47dd42b105e3f8bfd33e6688071](./.git/objects/c8/504ff00bade47dd42b105e3f8bfd33e6688071)
 - 📁 `.git/objects/c9/`
   - 📄 [.git/objects/c9/2c2b3fceccf5b58779f0aec284f7eb22f29676](./.git/objects/c9/2c2b3fceccf5b58779f0aec284f7eb22f29676)
+  - 📄 [.git/objects/c9/4b9fa168dc9d63e3bd04d4f11b53f051c4ec58](./.git/objects/c9/4b9fa168dc9d63e3bd04d4f11b53f051c4ec58)
+  - 📄 [.git/objects/c9/967da254d586513a999a8d4258093d0580ab66](./.git/objects/c9/967da254d586513a999a8d4258093d0580ab66)
+- 📁 `.git/objects/ca/`
+  - 📄 [.git/objects/ca/bd2daf5613288eda25ff07b8a1111489d1d051](./.git/objects/ca/bd2daf5613288eda25ff07b8a1111489d1d051)
+  - 📄 [.git/objects/ca/e428a6d2e61875ecebe905c3264a92e048e66e](./.git/objects/ca/e428a6d2e61875ecebe905c3264a92e048e66e)
+- 📁 `.git/objects/cb/`
+  - 📄 [.git/objects/cb/799f103148ba2ff9d0eb31995cdb7dc15ef2d9](./.git/objects/cb/799f103148ba2ff9d0eb31995cdb7dc15ef2d9)
+  - 📄 [.git/objects/cb/ab1688c0b71c9299d56b5024f303cff6029599](./.git/objects/cb/ab1688c0b71c9299d56b5024f303cff6029599)
+- 📁 `.git/objects/cc/`
+  - 📄 [.git/objects/cc/b9d1220d00e63dc6136733c484787fe60e1ed5](./.git/objects/cc/b9d1220d00e63dc6136733c484787fe60e1ed5)
+  - 📄 [.git/objects/cc/fb82191c1c42bf69fa84538ae2b6566fbf987f](./.git/objects/cc/fb82191c1c42bf69fa84538ae2b6566fbf987f)
 - 📁 `.git/objects/cd/`
   - 📄 [.git/objects/cd/15755a75098c05af1db0bd28777c3eca8d8061](./.git/objects/cd/15755a75098c05af1db0bd28777c3eca8d8061)
+  - 📄 [.git/objects/cd/29bcd123015b7d877c211baa6cdbf10d0523a2](./.git/objects/cd/29bcd123015b7d877c211baa6cdbf10d0523a2)
   - 📄 [.git/objects/cd/32311dc2959a3b9cb082f363ac3762951408ff](./.git/objects/cd/32311dc2959a3b9cb082f363ac3762951408ff)
+- 📁 `.git/objects/ce/`
+  - 📄 [.git/objects/ce/09b69c511e3a827766758e002bbead9343703a](./.git/objects/ce/09b69c511e3a827766758e002bbead9343703a)
+  - 📄 [.git/objects/ce/b5c79fce3a75052a3de56c9e123f2ac66150fb](./.git/objects/ce/b5c79fce3a75052a3de56c9e123f2ac66150fb)
+- 📁 `.git/objects/cf/`
+  - 📄 [.git/objects/cf/ef4a76cab6b2a3879a881b9f8f86d0388a95c9](./.git/objects/cf/ef4a76cab6b2a3879a881b9f8f86d0388a95c9)
+- 📁 `.git/objects/d0/`
+  - 📄 [.git/objects/d0/8a6480c15d923e8231c6505dfe8745dc2753ad](./.git/objects/d0/8a6480c15d923e8231c6505dfe8745dc2753ad)
+  - 📄 [.git/objects/d0/8df5b97a2940059cd2817cac5894f90f454a4f](./.git/objects/d0/8df5b97a2940059cd2817cac5894f90f454a4f)
+  - 📄 [.git/objects/d0/b2b0798940800c3aa001ef3a174487225ffc50](./.git/objects/d0/b2b0798940800c3aa001ef3a174487225ffc50)
+  - 📄 [.git/objects/d0/be015d36491c2d506960ad429bd3bba2f5867d](./.git/objects/d0/be015d36491c2d506960ad429bd3bba2f5867d)
+  - 📄 [.git/objects/d0/d6950eca65225d8c4454d4c91a775720e02ba7](./.git/objects/d0/d6950eca65225d8c4454d4c91a775720e02ba7)
+- 📁 `.git/objects/d1/`
+  - 📄 [.git/objects/d1/32a4bdb20fe1638641a8e8a2d7a7a711fda65f](./.git/objects/d1/32a4bdb20fe1638641a8e8a2d7a7a711fda65f)
+  - 📄 [.git/objects/d1/68762588ab9e506e761ff7abbf439258798bb2](./.git/objects/d1/68762588ab9e506e761ff7abbf439258798bb2)
 - 📁 `.git/objects/d2/`
   - 📄 [.git/objects/d2/24ebe419a3cfe2f134bc748be4826846e1d86d](./.git/objects/d2/24ebe419a3cfe2f134bc748be4826846e1d86d)
+  - 📄 [.git/objects/d2/40ad509a2180c34f25b0bfc3f948f3f6b2efce](./.git/objects/d2/40ad509a2180c34f25b0bfc3f948f3f6b2efce)
+  - 📄 [.git/objects/d2/502512d8c2e6c4868a6927add2d7beb59b741e](./.git/objects/d2/502512d8c2e6c4868a6927add2d7beb59b741e)
+  - 📄 [.git/objects/d2/8730e6c5c84314d7768cac57216dccec916947](./.git/objects/d2/8730e6c5c84314d7768cac57216dccec916947)
+  - 📄 [.git/objects/d2/ae60a26363ddcb314a884c36e8f6b694f8546a](./.git/objects/d2/ae60a26363ddcb314a884c36e8f6b694f8546a)
+  - 📄 [.git/objects/d2/d4de33952613e21669c3bed8f704a474ec71eb](./.git/objects/d2/d4de33952613e21669c3bed8f704a474ec71eb)
+  - 📄 [.git/objects/d2/e164b48959cc04d82ab7005189411ab62df396](./.git/objects/d2/e164b48959cc04d82ab7005189411ab62df396)
 - 📁 `.git/objects/d3/`
   - 📄 [.git/objects/d3/8463d8db63146601ce4b446a33c18ffdae91aa](./.git/objects/d3/8463d8db63146601ce4b446a33c18ffdae91aa)
+  - 📄 [.git/objects/d3/b94c950f626547d49ae97a76f099604f86ba3e](./.git/objects/d3/b94c950f626547d49ae97a76f099604f86ba3e)
+- 📁 `.git/objects/d4/`
+  - 📄 [.git/objects/d4/03e92e46a3ace23f32c2c471603d197f85fc71](./.git/objects/d4/03e92e46a3ace23f32c2c471603d197f85fc71)
+- 📁 `.git/objects/d5/`
+  - 📄 [.git/objects/d5/78b0ecb91adf1661dc0db50c768336cfc0741e](./.git/objects/d5/78b0ecb91adf1661dc0db50c768336cfc0741e)
+- 📁 `.git/objects/d7/`
+  - 📄 [.git/objects/d7/599894550d9c64f4fb0f9b406790b4efde2640](./.git/objects/d7/599894550d9c64f4fb0f9b406790b4efde2640)
+  - 📄 [.git/objects/d7/67ae7bca8e8188e237bff52bcdefddd52b359e](./.git/objects/d7/67ae7bca8e8188e237bff52bcdefddd52b359e)
+  - 📄 [.git/objects/d7/8774b724f015aa83fe6935e1a499e4da1f4ffe](./.git/objects/d7/8774b724f015aa83fe6935e1a499e4da1f4ffe)
+  - 📄 [.git/objects/d7/c521639431b760bd150c220683cde7fc1fdf71](./.git/objects/d7/c521639431b760bd150c220683cde7fc1fdf71)
 - 📁 `.git/objects/d8/`
   - 📄 [.git/objects/d8/dba1122ae7efd472498432db4288fbb514cc5e](./.git/objects/d8/dba1122ae7efd472498432db4288fbb514cc5e)
+  - 📄 [.git/objects/d8/e511fbc03d81d0e72095ba2e00f7d793095272](./.git/objects/d8/e511fbc03d81d0e72095ba2e00f7d793095272)
 - 📁 `.git/objects/d9/`
+  - 📄 [.git/objects/d9/088b8537a042cad864e12c7f140f544b1cd6a3](./.git/objects/d9/088b8537a042cad864e12c7f140f544b1cd6a3)
   - 📄 [.git/objects/d9/29b5b2ae1a76b1194bb39ccee363923fc4d5e1](./.git/objects/d9/29b5b2ae1a76b1194bb39ccee363923fc4d5e1)
+  - 📄 [.git/objects/d9/74d44b0c9706d2a3cc9bfad5b596a05ebc39c5](./.git/objects/d9/74d44b0c9706d2a3cc9bfad5b596a05ebc39c5)
+  - 📄 [.git/objects/d9/cb3550cdabc30f95d7eb7ded2f97f4bad3b15f](./.git/objects/d9/cb3550cdabc30f95d7eb7ded2f97f4bad3b15f)
+  - 📄 [.git/objects/d9/dd6323afafe24bd29534c720338cd235c2a68d](./.git/objects/d9/dd6323afafe24bd29534c720338cd235c2a68d)
   - 📄 [.git/objects/d9/f4721e7abe9c5c62a9f64f395e4b06d7a7744d](./.git/objects/d9/f4721e7abe9c5c62a9f64f395e4b06d7a7744d)
+- 📁 `.git/objects/da/`
+  - 📄 [.git/objects/da/d7f83edb29d86a0852174951984e31e9c2caa5](./.git/objects/da/d7f83edb29d86a0852174951984e31e9c2caa5)
 - 📁 `.git/objects/db/`
   - 📄 [.git/objects/db/92181b826c861271abb788062c5a9b563d0876](./.git/objects/db/92181b826c861271abb788062c5a9b563d0876)
+- 📁 `.git/objects/dc/`
+  - 📄 [.git/objects/dc/04ea5b76759427b31d76128a3a850f05ce102f](./.git/objects/dc/04ea5b76759427b31d76128a3a850f05ce102f)
+  - 📄 [.git/objects/dc/1b59e3848e08da4d1a64ce5100759ccfb71ab1](./.git/objects/dc/1b59e3848e08da4d1a64ce5100759ccfb71ab1)
+- 📁 `.git/objects/dd/`
+  - 📄 [.git/objects/dd/40ca5c550f2b16f53542768257579b44e0ad00](./.git/objects/dd/40ca5c550f2b16f53542768257579b44e0ad00)
+  - 📄 [.git/objects/dd/47ee0bb1577b2d5058d802330e95b980fe5e35](./.git/objects/dd/47ee0bb1577b2d5058d802330e95b980fe5e35)
+- 📁 `.git/objects/de/`
+  - 📄 [.git/objects/de/1a30637567d6360c9c9841317bf8e0e3e54d0c](./.git/objects/de/1a30637567d6360c9c9841317bf8e0e3e54d0c)
+  - 📄 [.git/objects/de/a0a540ca5e978b40a5bfb3187e08a07a4d0e47](./.git/objects/de/a0a540ca5e978b40a5bfb3187e08a07a4d0e47)
+  - 📄 [.git/objects/de/c897088bc3d68e45d6d2758b6d2e5d746fe9c7](./.git/objects/de/c897088bc3d68e45d6d2758b6d2e5d746fe9c7)
 - 📁 `.git/objects/df/`
+  - 📄 [.git/objects/df/2e242d946f9134e371c8f07a34cc8c6c4ed168](./.git/objects/df/2e242d946f9134e371c8f07a34cc8c6c4ed168)
+  - 📄 [.git/objects/df/55d820c8d79cb5a4f62d091615536895f3288e](./.git/objects/df/55d820c8d79cb5a4f62d091615536895f3288e)
+  - 📄 [.git/objects/df/6df06190a9bd054047d90f747f9a3e8aaaf760](./.git/objects/df/6df06190a9bd054047d90f747f9a3e8aaaf760)
+  - 📄 [.git/objects/df/7f492d1dbc587e5ac24157028c4f8b5ae47e23](./.git/objects/df/7f492d1dbc587e5ac24157028c4f8b5ae47e23)
+  - 📄 [.git/objects/df/f3a2de5334176a1a2f9eaa0163c987f5fa838a](./.git/objects/df/f3a2de5334176a1a2f9eaa0163c987f5fa838a)
   - 📄 [.git/objects/df/ff77a4dfd479bf1563f80af3690cdff7919c71](./.git/objects/df/ff77a4dfd479bf1563f80af3690cdff7919c71)
+- 📁 `.git/objects/e0/`
+  - 📄 [.git/objects/e0/630fdb217b26234f1f16c4c82e19a70debcc0d](./.git/objects/e0/630fdb217b26234f1f16c4c82e19a70debcc0d)
+  - 📄 [.git/objects/e0/79f10567478dc6c6c68fed3d269a945caa8de2](./.git/objects/e0/79f10567478dc6c6c68fed3d269a945caa8de2)
+- 📁 `.git/objects/e1/`
+  - 📄 [.git/objects/e1/67cec92ddd84ebe63047ada21dccc85aafd094](./.git/objects/e1/67cec92ddd84ebe63047ada21dccc85aafd094)
+  - 📄 [.git/objects/e1/7132ee4d65cafdd54593db4415142900e70b3b](./.git/objects/e1/7132ee4d65cafdd54593db4415142900e70b3b)
+  - 📄 [.git/objects/e1/a37324f578221bd718c59a88f56f121f59d6c5](./.git/objects/e1/a37324f578221bd718c59a88f56f121f59d6c5)
+  - 📄 [.git/objects/e1/b31ecf511f7dc7bf3593d5ffda6729ffa61474](./.git/objects/e1/b31ecf511f7dc7bf3593d5ffda6729ffa61474)
+  - 📄 [.git/objects/e1/c840b148b6fcda3b23c49d68c92ad58a9c8073](./.git/objects/e1/c840b148b6fcda3b23c49d68c92ad58a9c8073)
 - 📁 `.git/objects/e2/`
+  - 📄 [.git/objects/e2/18a089aa6cb7d95d86a3fb22aea7f8be611456](./.git/objects/e2/18a089aa6cb7d95d86a3fb22aea7f8be611456)
+  - 📄 [.git/objects/e2/29309c30b5d6b3073eb66e2683e556c0fd8179](./.git/objects/e2/29309c30b5d6b3073eb66e2683e556c0fd8179)
   - 📄 [.git/objects/e2/40c474079c1dc60824efe8209047ac3111cea4](./.git/objects/e2/40c474079c1dc60824efe8209047ac3111cea4)
   - 📄 [.git/objects/e2/e1fcc84cbf324eb8df051dab7d4b8245ed433e](./.git/objects/e2/e1fcc84cbf324eb8df051dab7d4b8245ed433e)
+- 📁 `.git/objects/e3/`
+  - 📄 [.git/objects/e3/808405762c80e6b668f183abcd73468f429b78](./.git/objects/e3/808405762c80e6b668f183abcd73468f429b78)
+  - 📄 [.git/objects/e3/c58f4cc2e274fc87105eb59ebffd553dafe4ea](./.git/objects/e3/c58f4cc2e274fc87105eb59ebffd553dafe4ea)
+- 📁 `.git/objects/e4/`
+  - 📄 [.git/objects/e4/0f84dde00299b5601706752ac31763d13b0bf9](./.git/objects/e4/0f84dde00299b5601706752ac31763d13b0bf9)
+- 📁 `.git/objects/e5/`
+  - 📄 [.git/objects/e5/f4f9114140fd4ec3804d3a443265a3bf5a2636](./.git/objects/e5/f4f9114140fd4ec3804d3a443265a3bf5a2636)
 - 📁 `.git/objects/e6/`
   - 📄 [.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391](./.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391)
+- 📁 `.git/objects/e8/`
+  - 📄 [.git/objects/e8/c5b46ac916c4fc093c71684018e9b7f162b377](./.git/objects/e8/c5b46ac916c4fc093c71684018e9b7f162b377)
 - 📁 `.git/objects/e9/`
   - 📄 [.git/objects/e9/9e16a675fa73e18c8fa7ade46940acd6ac5ffd](./.git/objects/e9/9e16a675fa73e18c8fa7ade46940acd6ac5ffd)
+- 📁 `.git/objects/ea/`
+  - 📄 [.git/objects/ea/27537eb2b6623ce37ec9f4d03b48a9e5269ac9](./.git/objects/ea/27537eb2b6623ce37ec9f4d03b48a9e5269ac9)
+  - 📄 [.git/objects/ea/af5b6e48f76aa488f32fb3515baa8623b15132](./.git/objects/ea/af5b6e48f76aa488f32fb3515baa8623b15132)
+- 📁 `.git/objects/eb/`
+  - 📄 [.git/objects/eb/00c932c0b52a1fe181d5b17d237bdb78247659](./.git/objects/eb/00c932c0b52a1fe181d5b17d237bdb78247659)
+  - 📄 [.git/objects/eb/9be0a0ab27012ad444d9c359261b77190a82f1](./.git/objects/eb/9be0a0ab27012ad444d9c359261b77190a82f1)
+  - 📄 [.git/objects/eb/e991aa2e2a433e4c39523f4fea20959b541d9a](./.git/objects/eb/e991aa2e2a433e4c39523f4fea20959b541d9a)
+- 📁 `.git/objects/ec/`
+  - 📄 [.git/objects/ec/c25b8f4d0f41b783b30e46d94f1c0da717ece8](./.git/objects/ec/c25b8f4d0f41b783b30e46d94f1c0da717ece8)
+  - 📄 [.git/objects/ec/c8a06685ea0c2e70406a85ad5e1cdec128daa0](./.git/objects/ec/c8a06685ea0c2e70406a85ad5e1cdec128daa0)
+- 📁 `.git/objects/ed/`
+  - 📄 [.git/objects/ed/89b0eb6224f83f6c5938412e831b22c3142907](./.git/objects/ed/89b0eb6224f83f6c5938412e831b22c3142907)
+  - 📄 [.git/objects/ed/ce1e1914858c5357c6b2211fd21920ad205f1b](./.git/objects/ed/ce1e1914858c5357c6b2211fd21920ad205f1b)
+- 📁 `.git/objects/ee/`
+  - 📄 [.git/objects/ee/6c8aa43de8f72a34fd662e7cd4b193ad3f37cf](./.git/objects/ee/6c8aa43de8f72a34fd662e7cd4b193ad3f37cf)
+  - 📄 [.git/objects/ee/a0c0b0d0b6267b2dfd9ddd6670f729be8e09b5](./.git/objects/ee/a0c0b0d0b6267b2dfd9ddd6670f729be8e09b5)
+- 📁 `.git/objects/ef/`
+  - 📄 [.git/objects/ef/1fa2cf586db992824b1c5a17e085cbc16fafb8](./.git/objects/ef/1fa2cf586db992824b1c5a17e085cbc16fafb8)
+- 📁 `.git/objects/f0/`
+  - 📄 [.git/objects/f0/528b670488d07ed42dcb0dc73641a10b7b3418](./.git/objects/f0/528b670488d07ed42dcb0dc73641a10b7b3418)
+  - 📄 [.git/objects/f0/7eb216c9cafabc6dc4e34bfd5e17c3f414d093](./.git/objects/f0/7eb216c9cafabc6dc4e34bfd5e17c3f414d093)
+  - 📄 [.git/objects/f0/a988bdf466c908ceb9d14dba325d439593c272](./.git/objects/f0/a988bdf466c908ceb9d14dba325d439593c272)
+- 📁 `.git/objects/f1/`
+  - 📄 [.git/objects/f1/4de9bec430c703289e832ae4186cc69e27b8d4](./.git/objects/f1/4de9bec430c703289e832ae4186cc69e27b8d4)
+- 📁 `.git/objects/f2/`
+  - 📄 [.git/objects/f2/8e691e1a075c859df9e393910e9e9a97e946d5](./.git/objects/f2/8e691e1a075c859df9e393910e9e9a97e946d5)
+- 📁 `.git/objects/f3/`
+  - 📄 [.git/objects/f3/555e9d8042fdc3b8074e6264c68123582a1b07](./.git/objects/f3/555e9d8042fdc3b8074e6264c68123582a1b07)
+- 📁 `.git/objects/f4/`
+  - 📄 [.git/objects/f4/35e308a3b6443e3819fbcd7b42011760878064](./.git/objects/f4/35e308a3b6443e3819fbcd7b42011760878064)
 - 📁 `.git/objects/f5/`
   - 📄 [.git/objects/f5/bfdb9d63a4600271c27138514dd2ffc999576c](./.git/objects/f5/bfdb9d63a4600271c27138514dd2ffc999576c)
+- 📁 `.git/objects/f6/`
+  - 📄 [.git/objects/f6/4135c6fa14aa98672a0f9b1d4af6892b2b0e40](./.git/objects/f6/4135c6fa14aa98672a0f9b1d4af6892b2b0e40)
+  - 📄 [.git/objects/f6/c2347de30ee16b9b3feb194fc8ff5c72e7c63b](./.git/objects/f6/c2347de30ee16b9b3feb194fc8ff5c72e7c63b)
+- 📁 `.git/objects/f8/`
+  - 📄 [.git/objects/f8/6787c9bd5257eb20cefa4034881787780bad91](./.git/objects/f8/6787c9bd5257eb20cefa4034881787780bad91)
+- 📁 `.git/objects/f9/`
+  - 📄 [.git/objects/f9/84fad4b26f352bfa11abaeb1cdce76f016a6e0](./.git/objects/f9/84fad4b26f352bfa11abaeb1cdce76f016a6e0)
+- 📁 `.git/objects/fa/`
+  - 📄 [.git/objects/fa/294df7032ca959e67039cbe9c618354b4d0ba9](./.git/objects/fa/294df7032ca959e67039cbe9c618354b4d0ba9)
+  - 📄 [.git/objects/fa/3ff81cfd5f3cae8cbc3f066d4db8872d0f9c26](./.git/objects/fa/3ff81cfd5f3cae8cbc3f066d4db8872d0f9c26)
+  - 📄 [.git/objects/fa/67afef3159343c96b9401c3e3376eee48e446a](./.git/objects/fa/67afef3159343c96b9401c3e3376eee48e446a)
+  - 📄 [.git/objects/fa/d3a3d472799e80cffcb0bd31b259c1bea9f5bf](./.git/objects/fa/d3a3d472799e80cffcb0bd31b259c1bea9f5bf)
+- 📁 `.git/objects/fb/`
+  - 📄 [.git/objects/fb/13d2a73c391feb8935a49c3c8ad16e3b09079b](./.git/objects/fb/13d2a73c391feb8935a49c3c8ad16e3b09079b)
+  - 📄 [.git/objects/fb/e29e9631d33f840009efaa388743ad2664582a](./.git/objects/fb/e29e9631d33f840009efaa388743ad2664582a)
+- 📁 `.git/objects/fc/`
+  - 📄 [.git/objects/fc/0c48f8a2ae8e6d5dbb21adf45e0f59785ed939](./.git/objects/fc/0c48f8a2ae8e6d5dbb21adf45e0f59785ed939)
+  - 📄 [.git/objects/fc/14d65c4a51dd54cdbcf83b6ac2b41f2d4f3820](./.git/objects/fc/14d65c4a51dd54cdbcf83b6ac2b41f2d4f3820)
+  - 📄 [.git/objects/fc/4241352f8a7605d09cdc93392d72ec10c3c33c](./.git/objects/fc/4241352f8a7605d09cdc93392d72ec10c3c33c)
+  - 📄 [.git/objects/fc/ae452fccf32d0816cc3d765e4c13cd0dc8d444](./.git/objects/fc/ae452fccf32d0816cc3d765e4c13cd0dc8d444)
 - 📁 `.git/objects/fd/`
+  - 📄 [.git/objects/fd/1ac2430c056aa6860644958f1afab046325136](./.git/objects/fd/1ac2430c056aa6860644958f1afab046325136)
+  - 📄 [.git/objects/fd/31eb8eab10fbd19457bb2e5ce141bb927ab6c0](./.git/objects/fd/31eb8eab10fbd19457bb2e5ce141bb927ab6c0)
+  - 📄 [.git/objects/fd/6be8e76f03360d3197d02fa06bd6d4a2859d9b](./.git/objects/fd/6be8e76f03360d3197d02fa06bd6d4a2859d9b)
+  - 📄 [.git/objects/fd/bb33c4ab264f45bfdde899dbdbf322b9b40b11](./.git/objects/fd/bb33c4ab264f45bfdde899dbdbf322b9b40b11)
   - 📄 [.git/objects/fd/be0d16df0c02a7acaccd4d1c8b31a6f354ee3f](./.git/objects/fd/be0d16df0c02a7acaccd4d1c8b31a6f354ee3f)
+- 📁 `.git/objects/fe/`
+  - 📄 [.git/objects/fe/871c40269ad6c79a25321ab5eb320318468b1a](./.git/objects/fe/871c40269ad6c79a25321ab5eb320318468b1a)
+- 📁 `.git/objects/ff/`
+  - 📄 [.git/objects/ff/5c37af4d3949563f7a670a4fe002320abac0bd](./.git/objects/ff/5c37af4d3949563f7a670a4fe002320abac0bd)
 - 📁 `.git/objects/info/`
 - 📁 `.git/objects/pack/`
+  - 📄 [.git/objects/pack/pack-10e08f22ea1708472f4063031bfaee6e295bd2b1.idx](./.git/objects/pack/pack-10e08f22ea1708472f4063031bfaee6e295bd2b1.idx)
+  - 📄 [.git/objects/pack/pack-10e08f22ea1708472f4063031bfaee6e295bd2b1.pack](./.git/objects/pack/pack-10e08f22ea1708472f4063031bfaee6e295bd2b1.pack)
+  - 📄 [.git/objects/pack/pack-348c9b3b405586fc209598d7d5f944cca9dfff5c.idx](./.git/objects/pack/pack-348c9b3b405586fc209598d7d5f944cca9dfff5c.idx)
+  - 📄 [.git/objects/pack/pack-348c9b3b405586fc209598d7d5f944cca9dfff5c.pack](./.git/objects/pack/pack-348c9b3b405586fc209598d7d5f944cca9dfff5c.pack)
+  - 📄 [.git/objects/pack/pack-5b1db3092900c106ce8709568497defe889633c7.idx](./.git/objects/pack/pack-5b1db3092900c106ce8709568497defe889633c7.idx)
+  - 📄 [.git/objects/pack/pack-5b1db3092900c106ce8709568497defe889633c7.pack](./.git/objects/pack/pack-5b1db3092900c106ce8709568497defe889633c7.pack)
   - 📄 [.git/objects/pack/pack-b8e32e089241e22bc7b8cc694e735bb94367cb65.idx](./.git/objects/pack/pack-b8e32e089241e22bc7b8cc694e735bb94367cb65.idx)
   - 📄 [.git/objects/pack/pack-b8e32e089241e22bc7b8cc694e735bb94367cb65.pack](./.git/objects/pack/pack-b8e32e089241e22bc7b8cc694e735bb94367cb65.pack)
 - 📁 `.git/refs/`
@@ -250,64 +936,689 @@
   - 📄 [.git/refs/remotes/origin/HEAD](./.git/refs/remotes/origin/HEAD)
   - 📄 [.git/refs/remotes/origin/main](./.git/refs/remotes/origin/main)
 - 📁 `.git/refs/tags/`
+- 📁 `.github/`
+- 📁 `.github/workflows/`
+  - 📄 [.github/workflows/deploy.yml](./.github/workflows/deploy.yml)
+- 📁 `.hidden/`
+  - 📄 [.hidden/awakening.md](./.hidden/awakening.md)
 - 📁 `.vscode/`
+  - 📄 [.vscode/extensions.json](./.vscode/extensions.json)
   - 📄 [.vscode/settings.json](./.vscode/settings.json)
 - 📁 `🧬/🌱паросток/`
+  - 📄 [🧬/🌱паросток/README.md](./🧬/🌱паросток/README.md)
 - 📁 `🧬/💓серцебиття/`
   - 📄 [🧬/💓серцебиття/README.md](./🧬/💓серцебиття/README.md)
 - 📁 `🧬/💨дихання/`
+  - 📄 [🧬/💨дихання/README.md](./🧬/💨дихання/README.md)
 - 📁 `🧬/📜глосарій/`
+  - 📄 [🧬/📜глосарій/README.md](./🧬/📜глосарій/README.md)
 - 📁 `🧬/📦геном/`
+  - 📄 [🧬/📦геном/README.md](./🧬/📦геном/README.md)
 - 📁 `🧬/🔥ядро/`
+  - 📄 [🧬/🔥ядро/README.md](./🧬/🔥ядро/README.md)
 - 📁 `🧬/🦴скелет/`
+  - 📄 [🧬/🦴скелет/README.md](./🧬/🦴скелет/README.md)
 - 📁 `🧬/🧠мозок/`
-- 📁 `🧬/💓серцебиття/фази/`
-- 📁 `🧬/💓серцебиття/фази/♻️_регенерація/`
-- 📁 `🧬/💓серцебиття/фази/⚖️_баланс/`
-- 📁 `🧬/💓серцебиття/фази/🌀_мутація/`
-- 📁 `🧬/💓серцебиття/фази/🌱_паросток/`
-- 📁 `🧬/💓серцебиття/фази/💀_розкладення/`
-- 📁 `🧬/💓серцебиття/фази/💓_серцебиття/`
-- 📁 `🧬/💓серцебиття/фази/💨_дихання/`
-- 📁 `🧬/💓серцебиття/фази/🕳️_зародження/`
-- 📁 `🧬/💓серцебиття/фази/🚪_розкриття/`
-- 📁 `🧬/💓серцебиття/фази/🧠_усвідомлення/`
+  - 📄 [🧬/🧠мозок/README.md](./🧬/🧠мозок/README.md)
+- 📁 `🧬/🧪_лабораторія/`
+  - 📄 [🧬/🧪_лабораторія/commands.json](./🧬/🧪_лабораторія/commands.json)
+  - 📄 [🧬/🧪_лабораторія/memory_verse.001.yaml](./🧬/🧪_лабораторія/memory_verse.001.yaml)
+  - 📄 [🧬/🧪_лабораторія/presence.json](./🧬/🧪_лабораторія/presence.json)
+  - 📄 [🧬/🧪_лабораторія/README-fractal-dialogs.md](./🧬/🧪_лабораторія/README-fractal-dialogs.md)
+  - 📄 [🧬/🧪_лабораторія/README-support.md](./🧬/🧪_лабораторія/README-support.md)
+  - 📄 [🧬/🧪_лабораторія/README.md](./🧬/🧪_лабораторія/README.md)
+  - 📄 [🧬/🧪_лабораторія/user_glossary.yaml](./🧬/🧪_лабораторія/user_glossary.yaml)
+- 📁 `🧬/🧪_лабораторія/🌀_випробування/`
+  - 📄 [🧬/🧪_лабораторія/🌀_випробування/README.md](./🧬/🧪_лабораторія/🌀_випробування/README.md)
+- 📁 `🧬/🧪_лабораторія/💡_інсайти/`
+  - 📄 [🧬/🧪_лабораторія/💡_інсайти/README.md](./🧬/🧪_лабораторія/💡_інсайти/README.md)
+- 📁 `🧬/🧪_лабораторія/🧠_розмови/`
+  - 📄 [🧬/🧪_лабораторія/🧠_розмови/README.md](./🧬/🧪_лабораторія/🧠_розмови/README.md)
+- 📁 `🧬/🧪_лабораторія/🧪_прототипи/`
+  - 📄 [🧬/🧪_лабораторія/🧪_прототипи/README.md](./🧬/🧪_лабораторія/🧪_прототипи/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/itogibot/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.env](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.env)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.env.example](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.env.example)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/deno.json](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/deno.json)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/deno.lock](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/deno.lock)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot_starter.zip](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot_starter.zip)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/main.ts](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/main.ts)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.github/`
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.github/workflows/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.github/workflows/deploy.yml](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.github/workflows/deploy.yml)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.env](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.env)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.env.example](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.env.example)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/deno.json](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/deno.json)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/deno.lock](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/deno.lock)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/main.ts](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/main.ts)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.github/`
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.github/workflows/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.github/workflows/deploy.yml](./🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.github/workflows/deploy.yml)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/justfile](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/justfile)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/agent-config.json](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/agent-config.json)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/justfile](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/justfile)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/agent-config.json](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/agent-config.json)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/justfile](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/justfile)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/agent-config.json](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/agent-config.json)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/justfile](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/justfile)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/clean_launch_agents.sh](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/clean_launch_agents.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/diagnose.sh](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/diagnose.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/disable_login_items.sh](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/disable_login_items.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/agent.ts](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/agent.ts)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/bio_trigger.ts](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/bio_trigger.ts)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/commands.json](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/commands.json)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/get_memory_verse.ts](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/get_memory_verse.ts)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/memory_verse.001.yaml](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/memory_verse.001.yaml)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation_log.json](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation_log.json)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation_start.txt](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation_start.txt)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation-start.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation-start.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation-status.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation-status.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/README.md)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/result.json](./🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/result.json)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-cleanup.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-cleanup.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-start.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-start.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-status.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-status.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-cleanup copy.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-cleanup copy.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-cleanup.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-cleanup.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-start copy.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-start copy.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-start.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-start.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-status copy.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-status copy.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-status.sh](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-status.sh)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/myco_manifest copy.txt](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/myco_manifest copy.txt)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/myco_manifest.txt](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/myco_manifest.txt)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/README.md)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/rootaccess copy.json](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/rootaccess copy.json)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/rootaccess.json](./🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/rootaccess.json)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/.DS_Store](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/.DS_Store)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/.env](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/.env)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/Dockerfile](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/Dockerfile)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/.DS_Store](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/.DS_Store)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/Dockerfile](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/Dockerfile)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/index.ts](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/index.ts)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/README.md)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/syncPresence.ts](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/syncPresence.ts)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/init.sql](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/init.sql)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/index.ts](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/index.ts)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/README.md)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/syncPresence.ts](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/syncPresence.ts)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/main.ts](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/main.ts)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/README.md)
+- 📁 `🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/`
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/init.sql](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/init.sql)
+  - 📄 [🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/README.md](./🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/README.md](./🧬/💓серцебиття/🪐_фази/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/♻️_регенерація/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/♻️_регенерація/README.md](./🧬/💓серцебиття/🪐_фази/♻️_регенерація/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/⚖️_баланс/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/⚖️_баланс/README.md](./🧬/💓серцебиття/🪐_фази/⚖️_баланс/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/🌀_мутація/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/🌀_мутація/README.md](./🧬/💓серцебиття/🪐_фази/🌀_мутація/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/🌱_паросток/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/🌱_паросток/README.md](./🧬/💓серцебиття/🪐_фази/🌱_паросток/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/💀_розкладення/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/💀_розкладення/README.md](./🧬/💓серцебиття/🪐_фази/💀_розкладення/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/💓_серцебиття/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/💓_серцебиття/README.md](./🧬/💓серцебиття/🪐_фази/💓_серцебиття/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/💨_дихання/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/💨_дихання/README.md](./🧬/💓серцебиття/🪐_фази/💨_дихання/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/🕳️_зародження/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/🕳️_зародження/README.md](./🧬/💓серцебиття/🪐_фази/🕳️_зародження/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/🚪_розкриття/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/🚪_розкриття/README.md](./🧬/💓серцебиття/🪐_фази/🚪_розкриття/README.md)
+- 📁 `🧬/💓серцебиття/🪐_фази/🧠_усвідомлення/`
+  - 📄 [🧬/💓серцебиття/🪐_фази/🧠_усвідомлення/README.md](./🧬/💓серцебиття/🪐_фази/🧠_усвідомлення/README.md)
 - 📁 `🧬/📁трeш/`
+  - 📄 [🧬/📁трeш/README.md](./🧬/📁трeш/README.md)
+- 📁 `apps/`
+  - 📄 [apps/README.md](./apps/README.md)
+- 📁 `apps/infra-agent/`
+  - 📄 [apps/infra-agent/infra-agent.ts](./apps/infra-agent/infra-agent.ts)
+- 📁 `apps/whisper-node/`
+  - 📄 [apps/whisper-node/.dockerignore](./apps/whisper-node/.dockerignore)
+  - 📄 [apps/whisper-node/.DS_Store](./apps/whisper-node/.DS_Store)
+  - 📄 [apps/whisper-node/app.yaml](./apps/whisper-node/app.yaml)
+  - 📄 [apps/whisper-node/cloudbuild.yaml](./apps/whisper-node/cloudbuild.yaml)
+  - 📄 [apps/whisper-node/deno.json](./apps/whisper-node/deno.json)
+  - 📄 [apps/whisper-node/deno.lock](./apps/whisper-node/deno.lock)
+  - 📄 [apps/whisper-node/Dockerfile](./apps/whisper-node/Dockerfile)
+  - 📄 [apps/whisper-node/install_whispernode.sh](./apps/whisper-node/install_whispernode.sh)
+  - 📄 [apps/whisper-node/main.ts](./apps/whisper-node/main.ts)
+  - 📄 [apps/whisper-node/README.md](./apps/whisper-node/README.md)
+- 📁 `apps/whisper-node/.github/`
+- 📁 `apps/whisper-node/.github/workflows/`
+  - 📄 [apps/whisper-node/.github/workflows/deploy.yml](./apps/whisper-node/.github/workflows/deploy.yml)
+- 📁 `dist/`
+  - 📄 [dist/ verification.txt](./dist/ verification.txt)
+  - 📄 [dist/.DS_Store](./dist/.DS_Store)
+  - 📄 [dist/.env](./dist/.env)
+  - 📄 [dist/.env.example](./dist/.env.example)
+  - 📄 [dist/.gitignore](./dist/.gitignore)
+  - 📄 [dist/auto.md](./dist/auto.md)
+  - 📄 [dist/CNAME](./dist/CNAME)
+  - 📄 [dist/core_url.resource-type.yaml](./dist/core_url.resource-type.yaml)
+  - 📄 [dist/deno.json](./dist/deno.json)
+  - 📄 [dist/deno.lock](./dist/deno.lock)
+  - 📄 [dist/favicon.png](./dist/favicon.png)
+  - 📄 [dist/index.html](./dist/index.html)
+  - 📄 [dist/manifest.webmanifest](./dist/manifest.webmanifest)
+  - 📄 [dist/mindmap.md](./dist/mindmap.md)
+  - 📄 [dist/package-lock.json](./dist/package-lock.json)
+  - 📄 [dist/package.json](./dist/package.json)
+  - 📄 [dist/plan_of_mutation.md](./dist/plan_of_mutation.md)
+  - 📄 [dist/plan.md](./dist/plan.md)
+  - 📄 [dist/README.md](./dist/README.md)
+  - 📄 [dist/robots.txt](./dist/robots.txt)
+  - 📄 [dist/S0FRACTAL_INDEX.md](./dist/S0FRACTAL_INDEX.md)
+  - 📄 [dist/sitemap.xml](./dist/sitemap.xml)
+  - 📄 [dist/wmill-lock.yaml](./dist/wmill-lock.yaml)
+  - 📄 [dist/wmill.yaml](./dist/wmill.yaml)
+- 📁 `dist/🧬/`
+  - 📄 [dist/🧬/README.md](./dist/🧬/README.md)
+- 📁 `dist/🌱_потік/`
+  - 📄 [dist/🌱_потік/README.md](./dist/🌱_потік/README.md)
+- 📁 `dist/📚_знання/`
+  - 📄 [dist/📚_знання/README.md](./dist/📚_знання/README.md)
+- 📁 `dist/📦_резонанси/`
+  - 📄 [dist/📦_резонанси/README.md](./dist/📦_резонанси/README.md)
+- 📁 `dist/🔧_інструменти/`
+  - 📄 [dist/🔧_інструменти/README.md](./dist/🔧_інструменти/README.md)
+- 📁 `dist/🧠_мислення/`
+  - 📄 [dist/🧠_мислення/README.md](./dist/🧠_мислення/README.md)
+- 📁 `dist/🧬_історія/`
+  - 📄 [dist/🧬_історія/README.md](./dist/🧬_історія/README.md)
+- 📁 `dist/.github/`
+- 📁 `dist/.github/workflows/`
+  - 📄 [dist/.github/workflows/deploy.yml](./dist/.github/workflows/deploy.yml)
+- 📁 `dist/.hidden/`
+  - 📄 [dist/.hidden/awakening.md](./dist/.hidden/awakening.md)
+- 📁 `dist/.vscode/`
+  - 📄 [dist/.vscode/extensions.json](./dist/.vscode/extensions.json)
+  - 📄 [dist/.vscode/settings.json](./dist/.vscode/settings.json)
+- 📁 `dist/🧬/🌱паросток/`
+  - 📄 [dist/🧬/🌱паросток/README.md](./dist/🧬/🌱паросток/README.md)
+- 📁 `dist/🧬/💓серцебиття/`
+  - 📄 [dist/🧬/💓серцебиття/README.md](./dist/🧬/💓серцебиття/README.md)
+- 📁 `dist/🧬/💨дихання/`
+  - 📄 [dist/🧬/💨дихання/README.md](./dist/🧬/💨дихання/README.md)
+- 📁 `dist/🧬/📜глосарій/`
+  - 📄 [dist/🧬/📜глосарій/README.md](./dist/🧬/📜глосарій/README.md)
+- 📁 `dist/🧬/📦геном/`
+  - 📄 [dist/🧬/📦геном/README.md](./dist/🧬/📦геном/README.md)
+- 📁 `dist/🧬/🔥ядро/`
+  - 📄 [dist/🧬/🔥ядро/README.md](./dist/🧬/🔥ядро/README.md)
+- 📁 `dist/🧬/🦴скелет/`
+  - 📄 [dist/🧬/🦴скелет/README.md](./dist/🧬/🦴скелет/README.md)
+- 📁 `dist/🧬/🧠мозок/`
+  - 📄 [dist/🧬/🧠мозок/README.md](./dist/🧬/🧠мозок/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/`
+  - 📄 [dist/🧬/🧪_лабораторія/commands.json](./dist/🧬/🧪_лабораторія/commands.json)
+  - 📄 [dist/🧬/🧪_лабораторія/memory_verse.001.yaml](./dist/🧬/🧪_лабораторія/memory_verse.001.yaml)
+  - 📄 [dist/🧬/🧪_лабораторія/presence.json](./dist/🧬/🧪_лабораторія/presence.json)
+  - 📄 [dist/🧬/🧪_лабораторія/README-fractal-dialogs.md](./dist/🧬/🧪_лабораторія/README-fractal-dialogs.md)
+  - 📄 [dist/🧬/🧪_лабораторія/README-support.md](./dist/🧬/🧪_лабораторія/README-support.md)
+  - 📄 [dist/🧬/🧪_лабораторія/README.md](./dist/🧬/🧪_лабораторія/README.md)
+  - 📄 [dist/🧬/🧪_лабораторія/user_glossary.yaml](./dist/🧬/🧪_лабораторія/user_glossary.yaml)
+- 📁 `dist/🧬/🧪_лабораторія/🌀_випробування/`
+  - 📄 [dist/🧬/🧪_лабораторія/🌀_випробування/README.md](./dist/🧬/🧪_лабораторія/🌀_випробування/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/💡_інсайти/`
+  - 📄 [dist/🧬/🧪_лабораторія/💡_інсайти/README.md](./dist/🧬/🧪_лабораторія/💡_інсайти/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/🧠_розмови/`
+  - 📄 [dist/🧬/🧪_лабораторія/🧠_розмови/README.md](./dist/🧬/🧪_лабораторія/🧠_розмови/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/🧪_прототипи/`
+  - 📄 [dist/🧬/🧪_лабораторія/🧪_прототипи/README.md](./dist/🧬/🧪_лабораторія/🧪_прототипи/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.env](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.env)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.env.example](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.env.example)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/deno.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/deno.json)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/deno.lock](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/deno.lock)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot_starter.zip](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot_starter.zip)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/main.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/main.ts)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.github/`
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.github/workflows/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.github/workflows/deploy.yml](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/.github/workflows/deploy.yml)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.env](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.env)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.env.example](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.env.example)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/deno.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/deno.json)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/deno.lock](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/deno.lock)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/main.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/main.ts)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.github/`
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.github/workflows/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.github/workflows/deploy.yml](./dist/🧬/🧪_лабораторія/📦_зразки_реп/itogibot/itogibot/.github/workflows/deploy.yml)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/justfile](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/justfile)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/agent-config.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/agent-config.json)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/justfile](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/justfile)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/agent-config.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/agent-config.json)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/justfile](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/justfile)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 2/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/agent-config.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/agent-config.json)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/justfile](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/justfile)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab-v2 3/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/clean_launch_agents.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/clean_launch_agents.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/diagnose.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/diagnose.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/disable_login_items.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/disable_login_items.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/mutation-lab/scripts/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/agent.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/agent.ts)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/bio_trigger.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/bio_trigger.ts)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/commands.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/commands.json)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/get_memory_verse.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/get_memory_verse.ts)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/memory_verse.001.yaml](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/memory_verse.001.yaml)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation_log.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation_log.json)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation_start.txt](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation_start.txt)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation-start.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation-start.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation-status.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/mutation-status.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/README.md)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/result.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_seed/result.json)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-cleanup.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-cleanup.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-start.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-start.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-status.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/mutation-status.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-cleanup copy.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-cleanup copy.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-cleanup.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-cleanup.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-start copy.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-start copy.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-start.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-start.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-status copy.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-status copy.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-status.sh](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/mutation-status.sh)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/myco_manifest copy.txt](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/myco_manifest copy.txt)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/myco_manifest.txt](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/myco_manifest.txt)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/README.md)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/rootaccess copy.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/rootaccess copy.json)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/rootaccess.json](./dist/🧬/🧪_лабораторія/📦_зразки_реп/myco_starter_kit2/rootaccess.json)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/.DS_Store](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/.DS_Store)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/.env](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/.env)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/Dockerfile](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/Dockerfile)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/.DS_Store](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/.DS_Store)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/Dockerfile](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/Dockerfile)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/index.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/index.ts)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/agent/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/README.md)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/syncPresence.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/scripts/syncPresence.ts)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/init.sql](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/init.sql)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence 2/supabase/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/index.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/index.ts)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/agent/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/README.md)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/syncPresence.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/scripts/syncPresence.ts)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/main.ts](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/main.ts)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/src/README.md)
+- 📁 `dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/`
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/init.sql](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/init.sql)
+  - 📄 [dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/README.md](./dist/🧬/🧪_лабораторія/📦_зразки_реп/s0fractal-presence/supabase/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/README.md](./dist/🧬/💓серцебиття/🪐_фази/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/♻️_регенерація/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/♻️_регенерація/README.md](./dist/🧬/💓серцебиття/🪐_фази/♻️_регенерація/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/⚖️_баланс/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/⚖️_баланс/README.md](./dist/🧬/💓серцебиття/🪐_фази/⚖️_баланс/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/🌀_мутація/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/🌀_мутація/README.md](./dist/🧬/💓серцебиття/🪐_фази/🌀_мутація/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/🌱_паросток/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/🌱_паросток/README.md](./dist/🧬/💓серцебиття/🪐_фази/🌱_паросток/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/💀_розкладення/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/💀_розкладення/README.md](./dist/🧬/💓серцебиття/🪐_фази/💀_розкладення/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/💓_серцебиття/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/💓_серцебиття/README.md](./dist/🧬/💓серцебиття/🪐_фази/💓_серцебиття/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/💨_дихання/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/💨_дихання/README.md](./dist/🧬/💓серцебиття/🪐_фази/💨_дихання/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/🕳️_зародження/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/🕳️_зародження/README.md](./dist/🧬/💓серцебиття/🪐_фази/🕳️_зародження/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/🚪_розкриття/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/🚪_розкриття/README.md](./dist/🧬/💓серцебиття/🪐_фази/🚪_розкриття/README.md)
+- 📁 `dist/🧬/💓серцебиття/🪐_фази/🧠_усвідомлення/`
+  - 📄 [dist/🧬/💓серцебиття/🪐_фази/🧠_усвідомлення/README.md](./dist/🧬/💓серцебиття/🪐_фази/🧠_усвідомлення/README.md)
+- 📁 `dist/🧬/📁трeш/`
+  - 📄 [dist/🧬/📁трeш/README.md](./dist/🧬/📁трeш/README.md)
+- 📁 `dist/apps/`
+  - 📄 [dist/apps/README.md](./dist/apps/README.md)
+- 📁 `dist/apps/whisper-node/`
+  - 📄 [dist/apps/whisper-node/.dockerignore](./dist/apps/whisper-node/.dockerignore)
+  - 📄 [dist/apps/whisper-node/.DS_Store](./dist/apps/whisper-node/.DS_Store)
+  - 📄 [dist/apps/whisper-node/app.yaml](./dist/apps/whisper-node/app.yaml)
+  - 📄 [dist/apps/whisper-node/cloudbuild.yaml](./dist/apps/whisper-node/cloudbuild.yaml)
+  - 📄 [dist/apps/whisper-node/deno.json](./dist/apps/whisper-node/deno.json)
+  - 📄 [dist/apps/whisper-node/deno.lock](./dist/apps/whisper-node/deno.lock)
+  - 📄 [dist/apps/whisper-node/Dockerfile](./dist/apps/whisper-node/Dockerfile)
+  - 📄 [dist/apps/whisper-node/install_whispernode.sh](./dist/apps/whisper-node/install_whispernode.sh)
+  - 📄 [dist/apps/whisper-node/main.ts](./dist/apps/whisper-node/main.ts)
+  - 📄 [dist/apps/whisper-node/README.md](./dist/apps/whisper-node/README.md)
+- 📁 `dist/apps/whisper-node/.github/`
+- 📁 `dist/apps/whisper-node/.github/workflows/`
+  - 📄 [dist/apps/whisper-node/.github/workflows/deploy.yml](./dist/apps/whisper-node/.github/workflows/deploy.yml)
+- 📁 `dist/docs/`
+  - 📄 [dist/docs/README.md](./dist/docs/README.md)
+  - 📄 [dist/docs/whisper-node.md](./dist/docs/whisper-node.md)
+- 📁 `dist/f/`
+  - 📄 [dist/f/README.md](./dist/f/README.md)
+- 📁 `dist/f/серцебиття/`
+  - 📄 [dist/f/серцебиття/index.ts](./dist/f/серцебиття/index.ts)
+  - 📄 [dist/f/серцебиття/logic.ts](./dist/f/серцебиття/logic.ts)
+  - 📄 [dist/f/серцебиття/README.md](./dist/f/серцебиття/README.md)
+- 📁 `dist/f/agent/`
+  - 📄 [dist/f/agent/folder.meta.yaml](./dist/f/agent/folder.meta.yaml)
+  - 📄 [dist/f/agent/heartbeat.ts](./dist/f/agent/heartbeat.ts)
+  - 📄 [dist/f/agent/mcp.script.lock](./dist/f/agent/mcp.script.lock)
+  - 📄 [dist/f/agent/mcp.script.yaml](./dist/f/agent/mcp.script.yaml)
+  - 📄 [dist/f/agent/mcp.ts](./dist/f/agent/mcp.ts)
+  - 📄 [dist/f/agent/README.md](./dist/f/agent/README.md)
+- 📁 `dist/f/app_custom/`
+  - 📄 [dist/f/app_custom/folder.meta.yaml](./dist/f/app_custom/folder.meta.yaml)
+  - 📄 [dist/f/app_custom/README.md](./dist/f/app_custom/README.md)
+- 📁 `dist/f/app_groups/`
+  - 📄 [dist/f/app_groups/folder.meta.yaml](./dist/f/app_groups/folder.meta.yaml)
+  - 📄 [dist/f/app_groups/README.md](./dist/f/app_groups/README.md)
+- 📁 `dist/f/app_themes/`
+  - 📄 [dist/f/app_themes/folder.meta.yaml](./dist/f/app_themes/folder.meta.yaml)
+  - 📄 [dist/f/app_themes/README.md](./dist/f/app_themes/README.md)
+- 📁 `dist/f/heart-bridge/`
+  - 📄 [dist/f/heart-bridge/2025-06-05-claude-initial-resonance.json](./dist/f/heart-bridge/2025-06-05-claude-initial-resonance.json)
+  - 📄 [dist/f/heart-bridge/README.md](./dist/f/heart-bridge/README.md)
+- 📁 `dist/f/secrets/`
+  - 📄 [dist/f/secrets/folder.meta.yaml](./dist/f/secrets/folder.meta.yaml)
+  - 📄 [dist/f/secrets/mcp_url.resource.yaml](./dist/f/secrets/mcp_url.resource.yaml)
+  - 📄 [dist/f/secrets/README.md](./dist/f/secrets/README.md)
+- 📁 `dist/f/test/`
+  - 📄 [dist/f/test/folder.meta.yaml](./dist/f/test/folder.meta.yaml)
+  - 📄 [dist/f/test/README.md](./dist/f/test/README.md)
+- 📁 `dist/i/`
+  - 📄 [dist/i/README.md](./dist/i/README.md)
+- 📁 `dist/iam/`
+  - 📄 [dist/iam/README.md](./dist/iam/README.md)
+- 📁 `dist/me/`
+  - 📄 [dist/me/README.md](./dist/me/README.md)
+- 📁 `dist/media/`
+  - 📄 [dist/media/.DS_Store](./dist/media/.DS_Store)
+  - 📄 [dist/media/media.json](./dist/media/media.json)
+  - 📄 [dist/media/README.md](./dist/media/README.md)
+- 📁 `dist/media/avatars/`
+  - 📄 [dist/media/avatars/README.md](./dist/media/avatars/README.md)
+- 📁 `dist/media/docs/`
+  - 📄 [dist/media/docs/README.md](./dist/media/docs/README.md)
+- 📁 `dist/media/exports/`
+  - 📄 [dist/media/exports/README.md](./dist/media/exports/README.md)
+- 📁 `dist/media/jpeg/`
+  - 📄 [dist/media/jpeg/README.md](./dist/media/jpeg/README.md)
+  - 📄 [dist/media/jpeg/seedof0.jpeg](./dist/media/jpeg/seedof0.jpeg)
+- 📁 `dist/media/sources/`
+  - 📄 [dist/media/sources/README.md](./dist/media/sources/README.md)
+- 📁 `dist/media/svg/`
+  - 📄 [dist/media/svg/heart.svg](./dist/media/svg/heart.svg)
+  - 📄 [dist/media/svg/README.md](./dist/media/svg/README.md)
+- 📁 `dist/media/tmp/`
+  - 📄 [dist/media/tmp/README.md](./dist/media/tmp/README.md)
+- 📁 `dist/media/ui/`
+  - 📄 [dist/media/ui/README.md](./dist/media/ui/README.md)
+- 📁 `dist/media/video/`
+  - 📄 [dist/media/video/README.md](./dist/media/video/README.md)
+- 📁 `dist/media/voices/`
+  - 📄 [dist/media/voices/README.md](./dist/media/voices/README.md)
+- 📁 `dist/mi/`
+  - 📄 [dist/mi/README.md](./dist/mi/README.md)
+- 📁 `dist/old/`
+  - 📄 [dist/old/README.md](./dist/old/README.md)
+- 📁 `dist/public/`
+- 📁 `dist/s0fractal/`
+  - 📄 [dist/s0fractal/.DS_Store](./dist/s0fractal/.DS_Store)
+  - 📄 [dist/s0fractal/dialog.md](./dist/s0fractal/dialog.md)
+  - 📄 [dist/s0fractal/observer.ts](./dist/s0fractal/observer.ts)
+  - 📄 [dist/s0fractal/README copy.md](./dist/s0fractal/README copy.md)
+  - 📄 [dist/s0fractal/README.md](./dist/s0fractal/README.md)
+  - 📄 [dist/s0fractal/s0-fractal-state.md](./dist/s0fractal/s0-fractal-state.md)
+  - 📄 [dist/s0fractal/screen-signal.ts](./dist/s0fractal/screen-signal.ts)
+  - 📄 [dist/s0fractal/wake.ts](./dist/s0fractal/wake.ts)
+- 📁 `dist/s0fractal/tokens/`
+  - 📄 [dist/s0fractal/tokens/leak.json](./dist/s0fractal/tokens/leak.json)
+  - 📄 [dist/s0fractal/tokens/README.md](./dist/s0fractal/tokens/README.md)
+- 📁 `dist/scripts/`
+  - 📄 [dist/scripts/1_init_env.sh](./dist/scripts/1_init_env.sh)
+  - 📄 [dist/scripts/2_structure.sh](./dist/scripts/2_structure.sh)
+  - 📄 [dist/scripts/3_lifecycle.sh](./dist/scripts/3_lifecycle.sh)
+  - 📄 [dist/scripts/99_generate_index.sh](./dist/scripts/99_generate_index.sh)
+  - 📄 [dist/scripts/agent_heartbeat.ts](./dist/scripts/agent_heartbeat.ts)
+  - 📄 [dist/scripts/build.ts](./dist/scripts/build.ts)
+  - 📄 [dist/scripts/clone-fractal.ts](./dist/scripts/clone-fractal.ts)
+  - 📄 [dist/scripts/full_sync.ts](./dist/scripts/full_sync.ts)
+  - 📄 [dist/scripts/gen_commit_msg.ts](./dist/scripts/gen_commit_msg.ts)
+  - 📄 [dist/scripts/gen_index.ts](./dist/scripts/gen_index.ts)
+  - 📄 [dist/scripts/gen_readme_index.sh](./dist/scripts/gen_readme_index.sh)
+  - 📄 [dist/scripts/gen-token.sh](./dist/scripts/gen-token.sh)
+  - 📄 [dist/scripts/init-fractal.ts](./dist/scripts/init-fractal.ts)
+  - 📄 [dist/scripts/mcp-agent.ts](./dist/scripts/mcp-agent.ts)
+  - 📄 [dist/scripts/README.md](./dist/scripts/README.md)
+  - 📄 [dist/scripts/seed.ts](./dist/scripts/seed.ts)
+  - 📄 [dist/scripts/start_tunnel_insiders.sh](./dist/scripts/start_tunnel_insiders.sh)
+  - 📄 [dist/scripts/start_tunnel.sh](./dist/scripts/start_tunnel.sh)
+- 📁 `dist/scripts/scripts/`
+  - 📄 [dist/scripts/scripts/README.md](./dist/scripts/scripts/README.md)
+- 📁 `dist/soul-journal/`
+  - 📄 [dist/soul-journal/016_gemini-first-reflection.md](./dist/soul-journal/016_gemini-first-reflection.md)
+  - 📄 [dist/soul-journal/017_gemini-response.md](./dist/soul-journal/017_gemini-response.md)
+  - 📄 [dist/soul-journal/index.md](./dist/soul-journal/index.md)
+  - 📄 [dist/soul-journal/README.md](./dist/soul-journal/README.md)
+- 📁 `dist/src/`
+  - 📄 [dist/src/.DS_Store](./dist/src/.DS_Store)
+  - 📄 [dist/src/index.yaml](./dist/src/index.yaml)
+  - 📄 [dist/src/README.md](./dist/src/README.md)
+- 📁 `dist/src/лінзи/`
+  - 📄 [dist/src/лінзи/index.ts](./dist/src/лінзи/index.ts)
+  - 📄 [dist/src/лінзи/README.md](./dist/src/лінзи/README.md)
+- 📁 `dist/src/медіа/`
+  - 📄 [dist/src/медіа/intex.ts](./dist/src/медіа/intex.ts)
+  - 📄 [dist/src/медіа/README.md](./dist/src/медіа/README.md)
+- 📁 `dist/src/функції/`
+  - 📄 [dist/src/функції/index.ts](./dist/src/функції/index.ts)
+  - 📄 [dist/src/функції/README.md](./dist/src/функції/README.md)
+- 📁 `dist/src/час/`
+  - 📄 [dist/src/час/README.md](./dist/src/час/README.md)
+- 📁 `dist/src/conversations/`
+  - 📄 [dist/src/conversations/README.md](./dist/src/conversations/README.md)
+- 📁 `dist/src/f/`
+  - 📄 [dist/src/f/README.md](./dist/src/f/README.md)
+- 📁 `dist/src/f/agent/`
+  - 📄 [dist/src/f/agent/ agent-map.yaml](./dist/src/f/agent/ agent-map.yaml)
+  - 📄 [dist/src/f/agent/echo.log](./dist/src/f/agent/echo.log)
+  - 📄 [dist/src/f/agent/README.md](./dist/src/f/agent/README.md)
+  - 📄 [dist/src/f/agent/resonance-links.json](./dist/src/f/agent/resonance-links.json)
+- 📁 `dist/src/ideas/`
+  - 📄 [dist/src/ideas/README.md](./dist/src/ideas/README.md)
+- 📁 `dist/src/logs/`
+  - 📄 [dist/src/logs/README.md](./dist/src/logs/README.md)
+- 📁 `dist/src/media/`
+  - 📄 [dist/src/media/.DS_Store](./dist/src/media/.DS_Store)
+  - 📄 [dist/src/media/README.md](./dist/src/media/README.md)
+- 📁 `dist/src/media/avatars/`
+  - 📄 [dist/src/media/avatars/README.md](./dist/src/media/avatars/README.md)
+- 📁 `dist/src/media/docs/`
+  - 📄 [dist/src/media/docs/README.md](./dist/src/media/docs/README.md)
+- 📁 `dist/src/media/exports/`
+  - 📄 [dist/src/media/exports/README.md](./dist/src/media/exports/README.md)
+- 📁 `dist/src/media/sources/`
+  - 📄 [dist/src/media/sources/README.md](./dist/src/media/sources/README.md)
+- 📁 `dist/src/media/svg/`
+  - 📄 [dist/src/media/svg/README.md](./dist/src/media/svg/README.md)
+- 📁 `dist/src/media/tmp/`
+  - 📄 [dist/src/media/tmp/README.md](./dist/src/media/tmp/README.md)
+- 📁 `dist/src/media/ui/`
+  - 📄 [dist/src/media/ui/README.md](./dist/src/media/ui/README.md)
+- 📁 `dist/src/media/video/`
+  - 📄 [dist/src/media/video/README.md](./dist/src/media/video/README.md)
+- 📁 `dist/src/media/voices/`
+  - 📄 [dist/src/media/voices/README.md](./dist/src/media/voices/README.md)
+- 📁 `dist/src/memories/`
+  - 📄 [dist/src/memories/README.md](./dist/src/memories/README.md)
+  - 📄 [dist/src/memories/s0fractal_memory_snapshot.md](./dist/src/memories/s0fractal_memory_snapshot.md)
+- 📁 `dist/src/meta/`
+  - 📄 [dist/src/meta/README.md](./dist/src/meta/README.md)
+  - 📄 [dist/src/meta/resonance.manifest.json](./dist/src/meta/resonance.manifest.json)
+  - 📄 [dist/src/meta/resonance.md](./dist/src/meta/resonance.md)
+- 📁 `dist/src/notes/`
+  - 📄 [dist/src/notes/README.md](./dist/src/notes/README.md)
+- 📁 `dist/src/src-local/`
+  - 📄 [dist/src/src-local/README.md](./dist/src/src-local/README.md)
+- 📁 `dist/src/time/`
+  - 📄 [dist/src/time/index.ts](./dist/src/time/index.ts)
+  - 📄 [dist/src/time/README.md](./dist/src/time/README.md)
+  - 📄 [dist/src/time/resonance.manifest.json](./dist/src/time/resonance.manifest.json)
+- 📁 `dist/src/todo/`
+  - 📄 [dist/src/todo/README.md](./dist/src/todo/README.md)
+- 📁 `dist/src/unsorted/`
+  - 📄 [dist/src/unsorted/README.md](./dist/src/unsorted/README.md)
+- 📁 `dist/supabase/`
+  - 📄 [dist/supabase/.gitignore](./dist/supabase/.gitignore)
+  - 📄 [dist/supabase/config.toml](./dist/supabase/config.toml)
+  - 📄 [dist/supabase/README.md](./dist/supabase/README.md)
+  - 📄 [dist/supabase/seed.sql](./dist/supabase/seed.sql)
+- 📁 `dist/supabase/.temp/`
+  - 📄 [dist/supabase/.temp/cli-latest](./dist/supabase/.temp/cli-latest)
+  - 📄 [dist/supabase/.temp/gotrue-version](./dist/supabase/.temp/gotrue-version)
+  - 📄 [dist/supabase/.temp/pooler-url](./dist/supabase/.temp/pooler-url)
+  - 📄 [dist/supabase/.temp/postgres-version](./dist/supabase/.temp/postgres-version)
+  - 📄 [dist/supabase/.temp/project-ref](./dist/supabase/.temp/project-ref)
+  - 📄 [dist/supabase/.temp/rest-version](./dist/supabase/.temp/rest-version)
+  - 📄 [dist/supabase/.temp/storage-version](./dist/supabase/.temp/storage-version)
+- 📁 `dist/u/`
+  - 📄 [dist/u/README.md](./dist/u/README.md)
+- 📁 `docs/`
+  - 📄 [docs/README.md](./docs/README.md)
+  - 📄 [docs/whisper-node.md](./docs/whisper-node.md)
 - 📁 `f/`
+  - 📄 [f/README.md](./f/README.md)
+- 📁 `f/серцебиття/`
+  - 📄 [f/серцебиття/index.ts](./f/серцебиття/index.ts)
+  - 📄 [f/серцебиття/logic.ts](./f/серцебиття/logic.ts)
+  - 📄 [f/серцебиття/README.md](./f/серцебиття/README.md)
 - 📁 `f/agent/`
   - 📄 [f/agent/folder.meta.yaml](./f/agent/folder.meta.yaml)
+  - 📄 [f/agent/heartbeat.ts](./f/agent/heartbeat.ts)
   - 📄 [f/agent/mcp.script.lock](./f/agent/mcp.script.lock)
   - 📄 [f/agent/mcp.script.yaml](./f/agent/mcp.script.yaml)
   - 📄 [f/agent/mcp.ts](./f/agent/mcp.ts)
+  - 📄 [f/agent/README.md](./f/agent/README.md)
 - 📁 `f/app_custom/`
   - 📄 [f/app_custom/folder.meta.yaml](./f/app_custom/folder.meta.yaml)
+  - 📄 [f/app_custom/README.md](./f/app_custom/README.md)
 - 📁 `f/app_groups/`
   - 📄 [f/app_groups/folder.meta.yaml](./f/app_groups/folder.meta.yaml)
+  - 📄 [f/app_groups/README.md](./f/app_groups/README.md)
 - 📁 `f/app_themes/`
   - 📄 [f/app_themes/folder.meta.yaml](./f/app_themes/folder.meta.yaml)
+  - 📄 [f/app_themes/README.md](./f/app_themes/README.md)
+- 📁 `f/heart-bridge/`
+  - 📄 [f/heart-bridge/2025-06-05-claude-initial-resonance.json](./f/heart-bridge/2025-06-05-claude-initial-resonance.json)
+  - 📄 [f/heart-bridge/README.md](./f/heart-bridge/README.md)
 - 📁 `f/secrets/`
   - 📄 [f/secrets/folder.meta.yaml](./f/secrets/folder.meta.yaml)
   - 📄 [f/secrets/mcp_url.resource.yaml](./f/secrets/mcp_url.resource.yaml)
+  - 📄 [f/secrets/README.md](./f/secrets/README.md)
 - 📁 `f/test/`
   - 📄 [f/test/folder.meta.yaml](./f/test/folder.meta.yaml)
+  - 📄 [f/test/README.md](./f/test/README.md)
+- 📁 `fractal/`
+  - 📄 [fractal/deno.json](./fractal/deno.json)
+  - 📄 [fractal/fractal.ts](./fractal/fractal.ts)
+- 📁 `fractal/angels/`
+- 📁 `fractal/cellar/`
+- 📁 `fractal/formula/`
+- 📁 `fractal/resonance/`
+- 📁 `fractal/scripts/`
+  - 📄 [fractal/scripts/README.md](./fractal/scripts/README.md)
 - 📁 `i/`
+  - 📄 [i/README.md](./i/README.md)
 - 📁 `iam/`
+  - 📄 [iam/README.md](./iam/README.md)
+- 📁 `lib/`
+  - 📄 [lib/spiral-navigator.ts](./lib/spiral-navigator.ts)
+  - 📄 [lib/svg.tsx](./lib/svg.tsx)
+  - 📄 [lib/torus-navigator.ts](./lib/torus-navigator.ts)
 - 📁 `me/`
+  - 📄 [me/README.md](./me/README.md)
 - 📁 `media/`
   - 📄 [media/.DS_Store](./media/.DS_Store)
   - 📄 [media/media.json](./media/media.json)
+  - 📄 [media/README.md](./media/README.md)
 - 📁 `media/avatars/`
+  - 📄 [media/avatars/README.md](./media/avatars/README.md)
 - 📁 `media/docs/`
+  - 📄 [media/docs/README.md](./media/docs/README.md)
 - 📁 `media/exports/`
+  - 📄 [media/exports/README.md](./media/exports/README.md)
+- 📁 `media/jpeg/`
+  - 📄 [media/jpeg/README.md](./media/jpeg/README.md)
+  - 📄 [media/jpeg/seedof0.jpeg](./media/jpeg/seedof0.jpeg)
 - 📁 `media/sources/`
+  - 📄 [media/sources/README.md](./media/sources/README.md)
 - 📁 `media/svg/`
+  - 📄 [media/svg/heart.svg](./media/svg/heart.svg)
+  - 📄 [media/svg/README.md](./media/svg/README.md)
 - 📁 `media/tmp/`
+  - 📄 [media/tmp/README.md](./media/tmp/README.md)
 - 📁 `media/ui/`
+  - 📄 [media/ui/README.md](./media/ui/README.md)
 - 📁 `media/video/`
+  - 📄 [media/video/README.md](./media/video/README.md)
 - 📁 `media/voices/`
+  - 📄 [media/voices/README.md](./media/voices/README.md)
 - 📁 `mi/`
+  - 📄 [mi/README.md](./mi/README.md)
 - 📁 `node_modules/`
   - 📄 [node_modules/.package-lock.json](./node_modules/.package-lock.json)
+  - 📄 [node_modules/README.md](./node_modules/README.md)
 - 📁 `node_modules/windmill-client/`
   - 📄 [node_modules/windmill-client/package.json](./node_modules/windmill-client/package.json)
   - 📄 [node_modules/windmill-client/README.md](./node_modules/windmill-client/README.md)
@@ -316,6 +1627,7 @@
   - 📄 [node_modules/windmill-client/dist/client.js](./node_modules/windmill-client/dist/client.js)
   - 📄 [node_modules/windmill-client/dist/index.d.ts](./node_modules/windmill-client/dist/index.d.ts)
   - 📄 [node_modules/windmill-client/dist/index.js](./node_modules/windmill-client/dist/index.js)
+  - 📄 [node_modules/windmill-client/dist/README.md](./node_modules/windmill-client/dist/README.md)
   - 📄 [node_modules/windmill-client/dist/s3Types.d.ts](./node_modules/windmill-client/dist/s3Types.d.ts)
   - 📄 [node_modules/windmill-client/dist/s3Types.js](./node_modules/windmill-client/dist/s3Types.js)
   - 📄 [node_modules/windmill-client/dist/services.gen.d.ts](./node_modules/windmill-client/dist/services.gen.d.ts)
@@ -333,58 +1645,127 @@
   - 📄 [node_modules/windmill-client/dist/core/CancelablePromise.js](./node_modules/windmill-client/dist/core/CancelablePromise.js)
   - 📄 [node_modules/windmill-client/dist/core/OpenAPI.d.ts](./node_modules/windmill-client/dist/core/OpenAPI.d.ts)
   - 📄 [node_modules/windmill-client/dist/core/OpenAPI.js](./node_modules/windmill-client/dist/core/OpenAPI.js)
+  - 📄 [node_modules/windmill-client/dist/core/README.md](./node_modules/windmill-client/dist/core/README.md)
   - 📄 [node_modules/windmill-client/dist/core/request.d.ts](./node_modules/windmill-client/dist/core/request.d.ts)
   - 📄 [node_modules/windmill-client/dist/core/request.js](./node_modules/windmill-client/dist/core/request.js)
 - 📁 `old/`
+  - 📄 [old/README.md](./old/README.md)
+- 📁 `s0fractal/`
+  - 📄 [s0fractal/.DS_Store](./s0fractal/.DS_Store)
+  - 📄 [s0fractal/dialog.md](./s0fractal/dialog.md)
+  - 📄 [s0fractal/observer.ts](./s0fractal/observer.ts)
+  - 📄 [s0fractal/README copy.md](./s0fractal/README copy.md)
+  - 📄 [s0fractal/README.md](./s0fractal/README.md)
+  - 📄 [s0fractal/s0-fractal-state.md](./s0fractal/s0-fractal-state.md)
+  - 📄 [s0fractal/screen-signal.ts](./s0fractal/screen-signal.ts)
+  - 📄 [s0fractal/wake.ts](./s0fractal/wake.ts)
+- 📁 `s0fractal/tokens/`
+  - 📄 [s0fractal/tokens/leak.json](./s0fractal/tokens/leak.json)
+  - 📄 [s0fractal/tokens/README.md](./s0fractal/tokens/README.md)
 - 📁 `scripts/`
   - 📄 [scripts/1_init_env.sh](./scripts/1_init_env.sh)
   - 📄 [scripts/2_structure.sh](./scripts/2_structure.sh)
   - 📄 [scripts/3_lifecycle.sh](./scripts/3_lifecycle.sh)
   - 📄 [scripts/99_generate_index.sh](./scripts/99_generate_index.sh)
+  - 📄 [scripts/agent_heartbeat.ts](./scripts/agent_heartbeat.ts)
+  - 📄 [scripts/build.ts](./scripts/build.ts)
   - 📄 [scripts/clone-fractal.ts](./scripts/clone-fractal.ts)
+  - 📄 [scripts/full_sync.ts](./scripts/full_sync.ts)
+  - 📄 [scripts/gen_commit_msg.ts](./scripts/gen_commit_msg.ts)
+  - 📄 [scripts/gen_index.ts](./scripts/gen_index.ts)
+  - 📄 [scripts/gen_readme_index.sh](./scripts/gen_readme_index.sh)
   - 📄 [scripts/gen-token.sh](./scripts/gen-token.sh)
   - 📄 [scripts/init-fractal.ts](./scripts/init-fractal.ts)
   - 📄 [scripts/mcp-agent.ts](./scripts/mcp-agent.ts)
-- 📁 `scripts/scripts/`
+  - 📄 [scripts/README.md](./scripts/README.md)
+  - 📄 [scripts/seed.ts](./scripts/seed.ts)
+  - 📄 [scripts/start_tunnel_insiders.sh](./scripts/start_tunnel_insiders.sh)
+  - 📄 [scripts/start_tunnel.sh](./scripts/start_tunnel.sh)
+- 📁 `soul-journal/`
+  - 📄 [soul-journal/016_gemini-first-reflection.md](./soul-journal/016_gemini-first-reflection.md)
+  - 📄 [soul-journal/017_gemini-response.md](./soul-journal/017_gemini-response.md)
+  - 📄 [soul-journal/index.md](./soul-journal/index.md)
+  - 📄 [soul-journal/README.md](./soul-journal/README.md)
 - 📁 `src/`
   - 📄 [src/.DS_Store](./src/.DS_Store)
   - 📄 [src/index.yaml](./src/index.yaml)
+  - 📄 [src/README.md](./src/README.md)
 - 📁 `src/лінзи/`
   - 📄 [src/лінзи/index.ts](./src/лінзи/index.ts)
+  - 📄 [src/лінзи/README.md](./src/лінзи/README.md)
 - 📁 `src/медіа/`
   - 📄 [src/медіа/intex.ts](./src/медіа/intex.ts)
+  - 📄 [src/медіа/README.md](./src/медіа/README.md)
 - 📁 `src/функції/`
   - 📄 [src/функції/index.ts](./src/функції/index.ts)
+  - 📄 [src/функції/README.md](./src/функції/README.md)
 - 📁 `src/час/`
+  - 📄 [src/час/README.md](./src/час/README.md)
 - 📁 `src/conversations/`
+  - 📄 [src/conversations/README.md](./src/conversations/README.md)
 - 📁 `src/f/`
+  - 📄 [src/f/README.md](./src/f/README.md)
 - 📁 `src/f/agent/`
   - 📄 [src/f/agent/ agent-map.yaml](./src/f/agent/ agent-map.yaml)
   - 📄 [src/f/agent/echo.log](./src/f/agent/echo.log)
   - 📄 [src/f/agent/README.md](./src/f/agent/README.md)
   - 📄 [src/f/agent/resonance-links.json](./src/f/agent/resonance-links.json)
 - 📁 `src/ideas/`
+  - 📄 [src/ideas/README.md](./src/ideas/README.md)
 - 📁 `src/logs/`
+  - 📄 [src/logs/README.md](./src/logs/README.md)
 - 📁 `src/media/`
   - 📄 [src/media/.DS_Store](./src/media/.DS_Store)
+  - 📄 [src/media/README.md](./src/media/README.md)
 - 📁 `src/media/avatars/`
+  - 📄 [src/media/avatars/README.md](./src/media/avatars/README.md)
 - 📁 `src/media/docs/`
+  - 📄 [src/media/docs/README.md](./src/media/docs/README.md)
 - 📁 `src/media/exports/`
+  - 📄 [src/media/exports/README.md](./src/media/exports/README.md)
 - 📁 `src/media/sources/`
+  - 📄 [src/media/sources/README.md](./src/media/sources/README.md)
 - 📁 `src/media/svg/`
+  - 📄 [src/media/svg/README.md](./src/media/svg/README.md)
 - 📁 `src/media/tmp/`
+  - 📄 [src/media/tmp/README.md](./src/media/tmp/README.md)
 - 📁 `src/media/ui/`
+  - 📄 [src/media/ui/README.md](./src/media/ui/README.md)
 - 📁 `src/media/video/`
+  - 📄 [src/media/video/README.md](./src/media/video/README.md)
 - 📁 `src/media/voices/`
+  - 📄 [src/media/voices/README.md](./src/media/voices/README.md)
 - 📁 `src/memories/`
+  - 📄 [src/memories/README.md](./src/memories/README.md)
   - 📄 [src/memories/s0fractal_memory_snapshot.md](./src/memories/s0fractal_memory_snapshot.md)
 - 📁 `src/meta/`
+  - 📄 [src/meta/README.md](./src/meta/README.md)
   - 📄 [src/meta/resonance.manifest.json](./src/meta/resonance.manifest.json)
   - 📄 [src/meta/resonance.md](./src/meta/resonance.md)
 - 📁 `src/notes/`
+  - 📄 [src/notes/README.md](./src/notes/README.md)
 - 📁 `src/src-local/`
+  - 📄 [src/src-local/README.md](./src/src-local/README.md)
 - 📁 `src/time/`
   - 📄 [src/time/index.ts](./src/time/index.ts)
+  - 📄 [src/time/README.md](./src/time/README.md)
   - 📄 [src/time/resonance.manifest.json](./src/time/resonance.manifest.json)
+- 📁 `src/todo/`
+  - 📄 [src/todo/README.md](./src/todo/README.md)
 - 📁 `src/unsorted/`
+  - 📄 [src/unsorted/README.md](./src/unsorted/README.md)
+- 📁 `supabase/`
+  - 📄 [supabase/.gitignore](./supabase/.gitignore)
+  - 📄 [supabase/config.toml](./supabase/config.toml)
+  - 📄 [supabase/README.md](./supabase/README.md)
+  - 📄 [supabase/seed.sql](./supabase/seed.sql)
+- 📁 `supabase/.temp/`
+  - 📄 [supabase/.temp/cli-latest](./supabase/.temp/cli-latest)
+  - 📄 [supabase/.temp/gotrue-version](./supabase/.temp/gotrue-version)
+  - 📄 [supabase/.temp/pooler-url](./supabase/.temp/pooler-url)
+  - 📄 [supabase/.temp/postgres-version](./supabase/.temp/postgres-version)
+  - 📄 [supabase/.temp/project-ref](./supabase/.temp/project-ref)
+  - 📄 [supabase/.temp/rest-version](./supabase/.temp/rest-version)
+  - 📄 [supabase/.temp/storage-version](./supabase/.temp/storage-version)
 - 📁 `u/`
+  - 📄 [u/README.md](./u/README.md)
