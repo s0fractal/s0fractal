@@ -12,4 +12,7 @@ cp fallback/.fractal.env .fractal.env || echo "Using default .fractal.env"
 echo "📦 Installing Deno..."
 curl -fsSL https://deno.land/x/install/install.sh | sh
 
-echo "✅ Boot complete. Run: deno run -A fractal/fractal.ts init"
+echo "✅ Boot complete. Run: deno run -A ~/.s0fractal/fractal/fractal.ts init"
+
+echo "🧠 Initializing fractal CLI..."
+deno run -A ~/.s0fractal/fractal/fractal.ts init
