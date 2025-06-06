@@ -1,7 +1,8 @@
 #!/usr/bin/env -S deno run -A
 import { exists } from "https://deno.land/std@0.224.0/fs/mod.ts";
 import { parse } from "https://deno.land/std@0.224.0/flags/mod.ts";
-
+const cwd = new URL(".", import.meta.url).pathname;
+Deno.chdir(cwd);
 const args = parse(Deno.args);
 const cmd = args._[0];
 
@@ -33,8 +34,23 @@ deno run -A ~/.s0fractal/fractal/fractal.ts "$@"`;
       await Deno.chmod(cliAlias, 0o755);
       console.log("✅ CLI alias 'f' created");
     }
+    const localBin = `${home}/.local/bin`;
+    await Deno.mkdir(localBin, { recursive: true });
+
+    const cliLocal = `${localBin}/fractal`;
+    const aliasLocal = `${localBin}/f`;
+
+    await Deno.writeTextFile(cliLocal, script);
+    await Deno.chmod(cliLocal, 0o755);
+    await Deno.writeTextFile(aliasLocal, script);
+    await Deno.chmod(aliasLocal, 0o755);
+
+    console.log("🔗 Linked to ~/.local/bin (if in $PATH)");
 
     console.log("✅ Fractal CLI installed as 'fractal' and alias 'f'");
+    console.log(
+      "📘 You may need to restart your shell or run `source ~/.zshrc`",
+    );
     Deno.exit(0);
   }
   case "install":
@@ -61,7 +77,29 @@ deno run -A ~/.s0fractal/fractal/fractal.ts "$@"`;
       if (dir.isDirectory) console.log(` - ${dir.name}`);
     }
     break;
+  case "doctor":
+    console.log("🩺 Running Fractal Doctor...");
 
+    const checks = [
+      { name: "Deno", cmd: "deno --version" },
+      { name: "Fractal CLI", cmd: "which fractal" },
+      { name: "Fractal Alias", cmd: "which f" },
+      { name: "Fractal Repo", cmd: "test -d ~/.s0fractal" },
+    ];
+
+    for (const check of checks) {
+      try {
+        const proc = check.cmd.startsWith("test")
+          ? await Deno.run({ cmd: ["bash", "-c", check.cmd] }).status()
+          : await Deno.run({ cmd: check.cmd.split(" "), stdout: "null" })
+            .status();
+        console.log(`✅ ${check.name}: ${proc.success ? "ok" : "missing"}`);
+      } catch {
+        console.log(`❌ ${check.name}: error`);
+      }
+    }
+
+    break;
   default:
     console.log("🌀 Fractal CLI");
     console.log("Usage:");
