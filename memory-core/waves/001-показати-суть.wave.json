@@ -1,0 +1,35 @@
+{
+  "wave": "001",
+  "label": "показати суть",
+  "date": "2025-06-07",
+  "nodes": [
+    {
+      "type": "intent",
+      "label": "показати суть",
+      "origin": "user",
+      "resonance": 0.91,
+      "targets": [
+        "mirror-core",
+        "vibe-auth"
+      ],
+      "reflects": true
+    },
+    {
+      "type": "response",
+      "label": "резонанс підтверджено",
+      "origin": "vibe-auth",
+      "reflects": false
+    },
+    {
+      "type": "resistance",
+      "label": "не підтримано: надто мілке середовище",
+      "origin": "ssh-agent"
+    },
+    {
+      "type": "echo",
+      "label": "пульс повернувся як 'vibe-check'",
+      "origin": "mirror-core"
+    }
+  ],
+  "status": "залишено в памʼяті як активна хвиля"
+}
