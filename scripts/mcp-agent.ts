@@ -27,6 +27,7 @@ while (true) {
 
   buffer += decoder.decode(value, { stream: true });
   const lines = buffer.split("\n");
+  buffer = lines.pop() ?? ""; // keep incomplete line for next chunk
 
   for (const line of lines) {
     if (line.startsWith("data: ")) {
@@ -38,12 +39,12 @@ while (true) {
         console.log("📦 Отримано команду:", command);
 
         if (command.cmd === "git.pull") {
-          const command = new Deno.Command("git", {
+          const gitCmd = new Deno.Command("git", {
             args: ["pull"],
             stdout: "piped",
             stderr: "piped",
           });
-          const { stdout } = await command.output();
+          const { stdout } = await gitCmd.output();
           console.log("✅ git pull:", new TextDecoder().decode(stdout));
         }
 
