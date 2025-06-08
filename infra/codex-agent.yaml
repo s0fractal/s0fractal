@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: CodexAgent
+metadata:
+  name: s0fractal-agent
+spec:
+  description: Codex agent operating inside s0fractal repo.
+  entrypoint: codex-plan/codex-entrypoint.ts
+  permissions:
+    github:
+      - read
+      - write
+      - pull-requests
