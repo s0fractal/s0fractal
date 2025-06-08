@@ -1,0 +1,14 @@
+{
+  "intent": "collaborative integration",
+  "agency": "user-initiated, transparent",
+  "alignment_check": true,
+  "data_ownership": "user-retained",
+  "privacy_boundary": "respected, no unauthorized export",
+  "experimental_scope": "fractal infrastructure synthesis",
+  "openai_principle_alignment": {
+    "alignment": true,
+    "agency": true,
+    "safety": "preserved",
+    "non-deception": "enforced"
+  }
+}

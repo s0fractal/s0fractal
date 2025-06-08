@@ -1,0 +1,7 @@
+{
+  "entrypoint": "codex-plan/codex-entrypoint.ts",
+  "init_script": "codex-plan/setup.sh",
+  "manifest": "codex-plan/codex-plan.md",
+  "ethics": "codex-plan/ethics-snapshot.json",
+  "intent": "collaborative integration via Codex"
+}
