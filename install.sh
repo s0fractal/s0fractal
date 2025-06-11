@@ -41,4 +41,7 @@ chmod +x "$0"
 echo "⚙️ Running fractal.ts init..."
 deno run -A fractal/fractal.ts init
 
+echo "⚙️ Running fractal.ts setup..."
+deno run -A fractal/fractal.ts setup
+
 echo "🎉 Installation complete. Try running: fractal pulse"
