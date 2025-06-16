@@ -95,7 +95,18 @@ deno run -A ~/.s0fractal/fractal/fractal.ts "$@"`;
     console.log("🎉 Setup complete.");
     break;
   }
-
+  case "sb": {
+    const argsList = Deno.args.slice(1).map(String);
+    const cmd = ["supabase", ...argsList];
+    const p = Deno.run({
+      cmd,
+      stdout: "inherit",
+      stderr: "inherit",
+      stdin: "inherit",
+    });
+    const status = await p.status();
+    Deno.exit(status.code);
+  }
   case "glyphs":
     console.log("📁 Exporting glyphs...");
     const glyphs = {
@@ -158,15 +169,34 @@ deno run -A ~/.s0fractal/fractal/fractal.ts "$@"`;
     }
 
     break;
+  case "seed": {
+    console.log("🌱 Running seed...");
+    if (!(await exists("seed/seed.sql"))) {
+      console.log("❌ No seed file found at seed/seed.sql");
+      Deno.exit(1);
+    }
 
+    const proc = await Deno.run({
+      cmd: ["psql", "-d", "fractal", "-f", "seed/seed.sql"],
+      stdout: "inherit",
+      stderr: "inherit",
+    }).status();
+
+    console.log(proc.success ? "✅ Seed applied" : "❌ Seed failed");
+    Deno.exit(proc.success ? 0 : 1);
+  }
   default:
+      default:
     console.log("🌀 Fractal CLI");
     console.log("Usage:");
     console.log("  fractal.ts init");
     console.log("  fractal.ts setup");
     console.log("  fractal.ts glyphs");
-    console.log("  fractal.ts install <angel>");
+    console.log("  fractal.ts seed");
+    console.log("  fractal.ts sb [args]     # proxy to supabase CLI");
     console.log("  fractal.ts pulse");
+    console.log("  fractal.ts install <angel>");
     console.log("  fractal.ts angels");
+    console.log("  fractal.ts doctor");
     break;
 }
