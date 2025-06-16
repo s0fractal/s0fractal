@@ -1,0 +1,7 @@
+summary: "\U0001F9EC"
+display_name: glf
+extra_perms:
+  g/all: false
+  u/core: true
+owners:
+  - u/core
