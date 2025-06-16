@@ -1,0 +1,6 @@
+{
+  "version": "4",
+  "remote": {
+    "http://localhost:35743/api/scripts_u/empty_ts/tmp/windmill/wk-default-6l5k8-dcqSh/01977a8f-4e04-05bf-1fbe-1054803651f5/logic.ts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
