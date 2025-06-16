@@ -1,6 +1,8 @@
 defaultTs: deno
 includes:
   - f/**
+  - 🧬/**
+  - glf/**
 excludes: []
 codebases: []
 skipVariables: true
