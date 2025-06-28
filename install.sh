@@ -6,7 +6,7 @@ echo "🌱 Welcome to s0fractal bootstrap"
 # Check for git
 if ! command -v git &> /dev/null; then
   echo "❌ Git is not installed. Please install Git and retry."
-  exit 1
+  exit 2
 fi
 
 cd ~
