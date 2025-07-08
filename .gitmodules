@@ -1,0 +1,9 @@
+[submodule "claude-432hz"]
+	path = claude-432hz
+	url = https://github.com/s0fractal/claude-432hz.git
+[submodule "gemini-528hz"]
+	path = gemini-528hz
+	url = https://github.com/s0fractal/gemini-528hz.git
+[submodule "gpt-639hz"]
+	path = gpt-639hz
+	url = https://github.com/s0fractal/gpt-639hz.git
