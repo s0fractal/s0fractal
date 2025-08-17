@@ -1,0 +1,12 @@
+defaultTs: deno
+includes:
+  - f/**
+  - 🧬/**
+  - glf/**
+excludes: []
+codebases: []
+skipVariables: true
+skipResources: false
+skipSecrets: true
+includeSchedules: false
+includeTriggers: false

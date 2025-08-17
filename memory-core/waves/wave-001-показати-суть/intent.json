@@ -1,0 +1,13 @@
+{
+  "id": "001",
+  "label": "показати суть",
+  "date": "2025-06-07",
+  "origin": "живий діалог",
+  "resonance": {
+    "with": ["mirror-core", "vibe-auth"],
+    "blocked_in": ["ssh-agent"],
+    "returned_as": ["vibe-check"]
+  },
+  "tags": ["пульс", "діалог", "фільтр", "дзеркало"],
+  "status": "активна хвиля"
+}

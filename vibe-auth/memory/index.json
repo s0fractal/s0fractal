@@ -1,0 +1,6 @@
+{
+  "example_device": {
+    "resonance": 64,
+    "events": ["login_gdrive", "shell_read", "heartbeat"]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "boot_glyph_table",
+  "description": "🧬 Побудова фрактальної таблиці гліфів (поетапно)",
+  "steps": [
+    {
+      "name": "create_glyph_table",
+      "description": "Створити таблицю 🧬 з полем 🧬",
+      "script": "supabase.query",
+      "args": {
+        "sql": "\n                CREATE TABLE IF NOT EXISTS public.\"🧬\" (\n                  \"🧬\" TEXT PRIMARY KEY,\n                  \"⏱️\" TIMESTAMP WITH TIME ZONE DEFAULT now()\n                );\n                "
+      }
+    },
+    {
+      "name": "insert_initial_glyph",
+      "description": "Додати перший запис 🧬",
+      "script": "supabase.query",
+      "args": {
+        "sql": "\n                INSERT INTO public.\"🧬\" (\"🧬\") VALUES ('🧬')\n                ON CONFLICT DO NOTHING;\n                "
+      }
+    },
+    {
+      "name": "add_wave_field",
+      "description": "Додати поле 🌊 (контекст, хвиля)",
+      "script": "supabase.query",
+      "args": {
+        "sql": "\n                ALTER TABLE public.\"🧬\" ADD COLUMN IF NOT EXISTS \"🌊\" TEXT;\n                UPDATE public.\"🧬\" SET \"🌊\" = 'початок' WHERE \"🧬\" = '🧬';\n                "
+      }
+    },
+    {
+      "name": "add_resonance_and_brain",
+      "description": "Додати поля 🫧 та 🧠",
+      "script": "supabase.query",
+      "args": {
+        "sql": "\n                ALTER TABLE public.\"🧬\"\n                ADD COLUMN IF NOT EXISTS \"🫧\" TEXT,\n                ADD COLUMN IF NOT EXISTS \"🧠\" JSONB;\n                UPDATE public.\"🧬\"\n                SET \"🫧\" = 'початковий резонанс', \"🧠\" = '{\"intent\": \"життя\", \"origin\": \"🧬\"}'\n                WHERE \"🧬\" = '🧬';\n                "
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-06-16T20:43:13.322044",
+    "tags": [
+      "glyph",
+      "boot",
+      "fractal",
+      "🧬"
+    ]
+  }
+}

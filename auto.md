@@ -1,0 +1,21 @@
+# 🧠 `auto.md`: Індекс поточного фрактального середовища
+
+- `src/`
+  - `src/README.md`
+  - `src/fractals.md`
+- `me/`
+  - `me/profile.md`
+- `wmill/`
+  - `wmill/wmill.yaml`
+  - `wmill/sync.md`
+- `i/`
+  - `i/identity1.yaml`
+  - `i/identity2.yaml`
+- `mi/`
+- `iam/`
+- `scripts/`
+  - `scripts/clone-fractals.ts`
+  - `scripts/bootstrap.ts`
+- `README.md` — файл
+- `.user.yaml` — файл
+- `.device.yaml` — файл

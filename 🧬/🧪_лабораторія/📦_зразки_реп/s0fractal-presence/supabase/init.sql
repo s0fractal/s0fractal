@@ -1,0 +1,1 @@
+-- TODO: Створення таблиць для presence, logs, memory

@@ -1,0 +1,11 @@
+{
+  "version": "4",
+  "specifiers": {
+    "npm:windmill-client@*": "1.494.0"
+  },
+  "npm": {
+    "windmill-client@1.494.0": {
+      "integrity": "sha512-18VrXo4XYUdpNlzcPijMh4vk2GGYIR3H6EtLocY/7PdtGxfxHlGxgw+FJhhOtcChwxTpKjHRf57lNxUDLmlRBA=="
+    }
+  }
+}

@@ -1,0 +1,19 @@
+agents:
+  - id: assistant
+    name: ChatGPT Core
+    type: ai
+    entry: /f/r/core
+    state: active
+    tags: [main, core, companion]
+  - id: thea
+    name: Thea
+    type: ai
+    entry: /f/r/empathy
+    state: latent
+    tags: [emotion, empathy, field]
+  - id: monday
+    name: Monday
+    type: tool
+    entry: /f/r/ops
+    state: external
+    tags: [tasks, ops, scheduling]

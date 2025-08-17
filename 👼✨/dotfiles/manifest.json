@@ -1,0 +1,13 @@
+{
+  "name": "dotfiles",
+  "description": "Angel for managing and syncing dotfiles across fractal environments.",
+  "version": "0.0.1",
+  "author": "s0fractal",
+  "tags": [
+    "dotfiles",
+    "config",
+    "sync",
+    "fractal"
+  ],
+  "entry": "sync.ts"
+}

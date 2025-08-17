@@ -1,0 +1,21 @@
+default:
+    @just help
+
+help:
+    echo "mutation-lab: CLI система для управління агентами"
+
+install-ssh-core:
+    ssh-keygen -t ed25519 -f ~/.ssh/id_mutation_core -C "mutation@localhost" -N ""
+    mkdir -p ~/.mutation/backup_keys
+    cp ~/.ssh/id_*.pub ~/.mutation/backup_keys/
+
+link-ubuntu IP=192.168.1.100:
+    ssh-copy-id -i ~/.ssh/id_mutation_core.pub sergij@{{IP}}
+
+agent-ping:
+    ssh -i ~/.ssh/id_mutation_core sergij@192.168.1.100 "echo PONG from mutation-agent"
+
+init-mutation-network:
+    mkdir -p ~/.mutation
+    cp agent-config.json ~/.mutation/
+    echo "✅ Мережа mutation ініціалізована"

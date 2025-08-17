@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://s0fractal.github.io/s0fractal/sitemap.xml

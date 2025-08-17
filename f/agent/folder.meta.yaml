@@ -1,0 +1,7 @@
+summary: null
+display_name: agent
+extra_perms:
+  g/all: false
+  u/core: true
+owners:
+  - u/core

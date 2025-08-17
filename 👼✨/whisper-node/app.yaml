@@ -1,0 +1,12 @@
+runtime: nodejs18 # або python, або інше, залежно від середовища
+
+instance_class: F1
+
+entrypoint: deno run --allow-all src/main.ts
+
+env_variables:
+  DENO_DIR: /tmp/deno
+
+handlers:
+  - url: /.*
+    script: auto
