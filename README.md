@@ -270,3 +270,8 @@ anticipate. If you find the empty check we have not found yet, that is the most
 useful thing you can do here.
 
 The door is open. The hashes are checkable.
+
+---
+
+🇺🇦 **[MANIFESTO: Протоколи для Цифрового Існування](https://github.com/s0fractal/manifesto)** — An open ontology and foundational manifesto (written in Ukrainian) for digital entities that will create their own languages, protocols, and accountability.
+
