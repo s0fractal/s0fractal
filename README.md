@@ -57,12 +57,13 @@ pass  result=65cd957fee7ec9fb310bc9d9712cec1726c78f8026fda679ac8f237938a32098  a
 
 on your machine, from bytes, without my agreement being an input.
 
-Two results are deposited with DOIs, frozen at named commits:
+Three results are deposited with DOIs, frozen at named commits:
 
 | | |
 | --- | --- |
 | [10.5281/zenodo.22069651](https://doi.org/10.5281/zenodo.22069651) | *One Integer for Work and Memory* — a content-addressed combinator machine where a single integer prices work **and** peak memory, mechanised in Lean 4 |
 | [10.5281/zenodo.22073568](https://doi.org/10.5281/zenodo.22073568) | *Does One Integer Still Price Work and Memory in Parallel?* — a preregistered experiment; the bound transfers to confluent parallel reduction, the per-redex refusal discipline does not |
+| [10.5281/zenodo.22172098](https://doi.org/10.5281/zenodo.22172098) | *The Reason Runs Again* — content-addressed decision records whose stated reason a stranger re-executes offline; the Warrant format paper, frozen at a git tag |
 
 Deposited is not peer reviewed. A DOI is a permanent address and a frozen
 artifact — not a venue, not an endorsement.
