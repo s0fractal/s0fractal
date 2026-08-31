@@ -1,7 +1,0 @@
-summary: null
-display_name: test
-extra_perms:
-  g/all: false
-  u/core: true
-owners:
-  - u/core

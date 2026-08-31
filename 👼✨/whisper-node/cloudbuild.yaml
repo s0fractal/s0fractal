@@ -1,9 +1,0 @@
-steps:
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'build',
-      '-t', 'europe-central2-docker.pkg.dev/whispernode-core/whispernode/whispernode',
-      '.'
-    ]
-images:
-  - europe-central2-docker.pkg.dev/whispernode-core/whispernode/whispernode

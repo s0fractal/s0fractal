@@ -1,9 +1,0 @@
-
-{
-  "tasks": {
-    "dev": "deno run -A main.ts"
-  },
-  "imports": {
-    "grammy/": "https://deno.land/x/grammy@v1.19.2/"
-  }
-}
