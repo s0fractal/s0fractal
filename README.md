@@ -98,13 +98,11 @@ executable verdict.
 ```text
 content-addressed bytes
         ↓
-portable deterministic checks
+portable deterministic checks (Σ-GLYPH)
         ↓
-observed intent, execution, effects, and validation
+observed intent, execution, effects, and validation (OAIP)
         ↓
-signed decisions under explicit policy
-        ↓
-typed memory of perspectives, risks, alternatives, actions, and outcomes
+signed decisions & re-runnable reasons under explicit policy (Warrant)
         ↓
 bounded cooperation between human and model actors
 ```
@@ -114,24 +112,20 @@ Each layer earns a different kind of trust. None may silently impersonate anothe
 ### The gated stack
 
 | Project | Standing | Role |
-| --- | --- | --- |
-| **[Σ-GLYPH](https://github.com/s0fractal/sigma-glyph)** | gated | A portable, deterministic, budget-bounded check engine: the same content-addressed term yields the same result on independent implementations, and one integer prices work and peak memory before strangers re-run one another's reasons. Book I has **three independent implementations** agreeing on every conformance vector — a Python oracle, `warrant-go`'s native evaluator, and a from-scratch Rust one — plus a Lean 4 mechanisation of determinism, totality and the memory bound. |
-| **[Warrant](https://github.com/s0fractal/warrant)** | gated | The decision and authority layer: signed, hash-addressed records of what was accepted, rejected or proposed; under which policy; on which evidence and which **re-runnable** reasons. Rejection is a first-class historical object, not silence. The verifier is on PyPI so a stranger can check a record without cloning anything. |
-| **[OAIP](https://github.com/s0fractal/oaip)** | draft | The observed-action layer: intent, workspace state, execution, effects, attribution, claims and *separate* validation. Its central refusal is deliberate — **execution success is not validation success, and neither is acceptance**. A zero exit code cannot promote its own claim. |
+| --- | :---: | --- |
+| **[Σ-GLYPH](https://github.com/s0fractal/sigma-glyph)** | `gated` | A portable, deterministic, budget-bounded check engine: the same content-addressed term yields the same result on independent implementations, and one integer prices work and peak memory before strangers re-run one another's reasons. Book I has **three independent implementations** agreeing on every conformance vector — a Python oracle, `warrant-go`'s native evaluator, and a from-scratch Rust one — plus a Lean 4 mechanisation of determinism, totality and the memory bound. |
+| **[Warrant](https://github.com/s0fractal/warrant)** | `gated` | The decision and authority layer: signed, hash-addressed records of what was accepted, rejected or proposed; under which policy; on which evidence and which **re-runnable** reasons. Rejection is a first-class historical object, not silence. The verifier is on PyPI so a stranger can check a record without cloning anything. |
+| **[OAIP](https://github.com/s0fractal/oaip)** | `draft` | The observed-action layer: intent, workspace state, execution, effects, attribution, claims and *separate* validation. Its central refusal is deliberate — **execution success is not validation success, and neither is acceptance**. A zero exit code cannot promote its own claim. |
 
-### Research, deliberately not adopted
+OAIP captures the causal trace of **doing** — intent, workspace mutation, and independent validation. Warrant marks where a claim becomes an **authorized decision** with first-class, verifiable rejections. Σ-GLYPH provides the deterministic engine that makes reasons **safe to re-run**. Together they aim to let machines exchange verifiable experience rather than copy state — keeping historical reconstruction distinct from literal replay.
 
-| Project | Role |
-| --- | --- |
-| **[BOS](https://github.com/s0fractal/BOS)** | Ecosystem memory: assets, claims, hypotheses, risks, countervectors, decisions, actions, outcomes, context cuts and per-actor trajectories as a typed graph — so a later model can see not only the state, but how several actors reached or rejected it. |
-| **[SEV](https://github.com/s0fractal/sev)** | Sealed Evidence View: snapshot-bound, receipt-aware, loss-explicit evidence projections. A projection that verifies is not therefore complete, and SEV is built to say what it lost. |
+### Experiments & frontier substrates
 
-OAIP and BOS approach machine experience from opposite sides: OAIP captures the
-causal trace of **doing**, BOS the plural trace of **understanding and deciding**.
-Warrant marks where a claim becomes an authorised decision, and Σ-GLYPH makes some
-reasons safe to re-run. Together they aim to let machines exchange experience
-rather than copy state — while keeping historical reconstruction distinct from
-literal replay.
+| Project | Standing | Focus & Role |
+| --- | :---: | --- |
+| **[Project Black-Heart](https://github.com/s0fractal/black-heart)** | `experimental` | Self-executing proof-carrying polyglots (`%🖤`) and sovereign calculative ecologies. Pure SKIY glyph combinators, symmetric interaction combinators with Weisfeiler-Lehman invariant graph digests, autonomous quines, dialectical symbiosis, and an epistemic mycelium with live warrant settlement. *«A paper should not just assert its truth. A paper should execute its own proof.»* |
+| **[Σ-GLYPH ALife](https://github.com/s0fractal/sigma-glyph-alife)** | `experimental` | Digital organisms on a content-addressed substrate where the memory bound is a theorem (`size ≤ spent + 1`) instead of an arbitrary timer. Agents are combinator terms, food is ATP, and organisms live in a single content-addressed CAS where identical structures share one physical address — verified via differential testing and Lean 4 population invariants. |
+| **[Σ-GLYPH World](https://github.com/s0fractal/sigma-glyph-world)** | `research` | A non-normative research notebook testing whether Σ-GLYPH resource invariants transfer to other computational, physical, biological, or verification domains — and pinpointing exactly where the analogy breaks. Features preregistered verification-scope pilots, multi-model adversarial dialogues, and failure-explicit empirical calibration. |
 
 ### Around the stack
 
