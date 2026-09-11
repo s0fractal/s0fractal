@@ -6,3 +6,8 @@
 !README.md
 !README.*
 !.gitignore
+
+# Whitelist drafts folder and DECISION-PROFILE.md
+!drafts/
+!drafts/DECISION-PROFILE.md
+
