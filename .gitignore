@@ -7,7 +7,7 @@
 !README.*
 !.gitignore
 
-# Whitelist drafts folder and DECISION-PROFILE.md
+# Whitelist drafts folder and markdown drafts
 !drafts/
-!drafts/DECISION-PROFILE.md
+!drafts/*.md
 
