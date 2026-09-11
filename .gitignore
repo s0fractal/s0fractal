@@ -10,9 +10,3 @@
 # Whitelist drafts folder and markdown drafts
 !drafts/
 !drafts/*.md
-
-# Whitelist .github
-!.github/
-!.github/**
-
-
