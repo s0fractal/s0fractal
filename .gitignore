@@ -1,0 +1,8 @@
+# Ignore everything by default (profile repo carries only README)
+*
+.*
+
+# Whitelist README and .gitignore
+!README.md
+!README.*
+!.gitignore
