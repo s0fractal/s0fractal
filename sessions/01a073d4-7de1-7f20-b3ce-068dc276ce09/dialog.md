@@ -9983,3 +9983,64 @@ OTS-доказ → Bitcoin
 2. Незавершене grounded-обчислення не може отримувати `PASS`.
 
 Наш орієнтир зберігаю: **перший PDF-реліз із перевірюваною історією до найдавнішого підтвердженого предка**, без вимоги знати глобально найновіший стан. Цей ремонт прямо допомагає: документ не може сам визначати умови, за якими йому довіряють.
+
+### 👤 User (2026-09-12T12:46:06.986000+00:00)
+
+\#30 merged → `92b8ae2`. Next: finding 13, empty deny-all round-trip. Setting up and reading the exact serialization code.
+
+Confirmed: line 462 uses truthiness (`if self.trusted_author_pks`), so an empty set (deny-all) serializes to `None` (trust-all). `from_dict` is already correct with `is not None`. Reproducing, then fixing `to_dict`:
+
+Reproduced: in-memory deny-all → serialized `None` → round-tripped **trusts everyone**. Fixing `to_dict` to distinguish `None` (no allowlist) from empty set (deny-all):
+
+All three cases round-trip correctly now: deny-all stays deny-all, trust-all stays trust-all, allowlist preserved. Also verifying the file save/load path and that existing tests still pass:
+
+File save/load correct too, existing tests green. Writing the regression module:
+
+6/6, but I introduced a `ResourceWarning` (unclosed `open` at line 100) — the exact hygiene issue I just fixed in another module. Fixing it before it ships:
+
+Clean under `-W error::ResourceWarning`. Register, mutation control, full suite:
+
+Both mutants killed, full suite **960/960**. Ledger, commit, PR:
+
+Recording, then the report:
+
+Верифікатор, крок 2 з 3 — «порожній deny-all зберігається після серіалізації» — відтворено й закрито → [**PR #31**](https://github.com/s0fractal/black-heart/pull/31), голова `96b36ee`, CI 7/7, mergeable. Не мерджив.
+
+## Дефект
+
+`TrustConfig.trusted_author_pks` має **три** значення:
+
+| значення сенс `is_author_trusted`  |                   |                                |
+| ---------------------------------- | ----------------- | ------------------------------ |
+| `None`                             | немає списку      | довіряти **всім**              |
+| `set()`                            | список без нікого | довіряти **нікому** (deny-all) |
+| `{a, b}`                           | лише ці           | лише ці                        |
+
+`to_dict` писав `list(pks) if pks else None` — а порожня множина хибна, тому **deny-all серіалізувався у&#x20;****`None`**, який `from_dict` читає назад як trust-all. Відтворив:
+```python
+in-memory deny-all trusts 'abc': False
+serialized trusted_author_pks: None
+round-tripped trusts 'abc': True   <-- deny-all became trust-all
+```
+
+Те саме через `save_to_file`/`load_from_file`.
+
+## Ремонт
+
+`to_dict` тепер перевіряє `is not None`: `set()` → `[]` (перезавантажується як deny-all), `None` → `None` (лишається trust-all). Дві протилежні політики більше не злипаються в одну серіалізовану форму; явні списки збережено. `from_dict` уже вживав `is not None` — не чіпав.
+
+Прямо підтримує наш орієнтир, як ти й зауважив: документ (чи збережена конфігурація) не може змінити умови, за яких йому довіряють, — deny-all лишається deny-all крізь запис на диск.
+
+## Перевірка
+
+6 тестів (A — round-trip трьох політик + що deny-all і trust-all серіалізуються **по-різному**; B — файловий save/load). **Повний набір 960/960.** **2 з 2 мутантів убито.**
+
+Дрібниця, яку впіймав до відправки: у власному тесті лишив незакритий `open()` — той самий `ResourceWarning`, що я нещодавно виправляв деінде. Закрив, перевірив під `-W error::ResourceWarning`.
+
+## Далі
+
+Останній у серії: **незавершене grounded-обчислення не може отримати&#x20;****`PASS`** (`warrant_kernel.py:593` — grounded-гілка порівнює хеш і повертає PASS без вимоги settled-статусу; на вичерпанні бюджету має бути `UNVERIFIED`, не PASS/FAIL). Починаю після твого рішення щодо #31.
+
+### 🤖 Assistant (2026-09-12T12:46:14.161000+00:00)
+
+Перегляну короткий диф і CI на голові #31. Якщо зміна відповідає заявленому контракту, змерджу й дам зелене останньому кроку серії.
