@@ -33,3 +33,7 @@
 !experiments/endorsement-1/README.md
 !experiments/endorsement-1/result.json
 !experiments/endorsement-1/RESULTS.md
+
+# One real DOC-F1 observation through the existing Warrant recorder.
+!experiments/endorsement-1/DOC-F1.md
+!experiments/endorsement-1/doc-f1.json
