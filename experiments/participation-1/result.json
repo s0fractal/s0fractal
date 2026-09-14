@@ -1,0 +1,290 @@
+{
+  "scope": "synthetic single-process role simulation, no model calls",
+  "issuer_public_key": "b45af1f138953579c699170dc0d456c78b2aeb27fb2ec4594a4e8159d866e9d0",
+  "policy": {
+    "version": "participation-1/demo",
+    "allowed_keys": [
+      "4e1c200b329e09543be2be7170655520e6ab47d5dd2a6de0e6f7eec594c52541"
+    ],
+    "allowed_operations": [
+      "endorse"
+    ],
+    "profile_sha256": "ef015cebb47bb8e8cb3fd91257e07ef4ce4224817aac7dd3a1136c627d7d5ce6"
+  },
+  "artifact_sha256": "d34dc6a29117e812a2c67c0feae344fa2492401e57959299aa327dce6cdb50d6",
+  "cases": [
+    {
+      "name": "allowed_request",
+      "observed": "ACCEPT",
+      "expected": "ACCEPT",
+      "matches": true
+    },
+    {
+      "name": "same_request_again",
+      "observed": "REPLAY",
+      "expected": "REPLAY",
+      "matches": true
+    },
+    {
+      "name": "unknown_key",
+      "observed": "KEY_NOT_ALLOWED",
+      "expected": "KEY_NOT_ALLOWED",
+      "matches": true
+    },
+    {
+      "name": "refusal_is_not_authorization",
+      "observed": "REFUSED",
+      "expected": "REFUSED",
+      "matches": true
+    },
+    {
+      "name": "forbidden_operation",
+      "observed": "OPERATION_NOT_ALLOWED",
+      "expected": "OPERATION_NOT_ALLOWED",
+      "matches": true
+    },
+    {
+      "name": "spoofed_requester",
+      "observed": "BAD_REQUEST_SIGNATURE",
+      "expected": "BAD_REQUEST_SIGNATURE",
+      "matches": true
+    },
+    {
+      "name": "spoof_is_not_attributed",
+      "observed": null,
+      "expected": null,
+      "matches": true
+    },
+    {
+      "name": "changed_signed_request",
+      "observed": "BAD_REQUEST_SIGNATURE",
+      "expected": "BAD_REQUEST_SIGNATURE",
+      "matches": true
+    },
+    {
+      "name": "request_for_old_policy",
+      "observed": "POLICY_MISMATCH",
+      "expected": "POLICY_MISMATCH",
+      "matches": true
+    },
+    {
+      "name": "changed_artifact",
+      "observed": "ARTIFACT_MISMATCH",
+      "expected": "ARTIFACT_MISMATCH",
+      "matches": true
+    },
+    {
+      "name": "different_requested_operation",
+      "observed": "REQUEST_MISMATCH",
+      "expected": "REQUEST_MISMATCH",
+      "matches": true
+    },
+    {
+      "name": "policy_changed_at_receiver",
+      "observed": "POLICY_MISMATCH",
+      "expected": "POLICY_MISMATCH",
+      "matches": true
+    },
+    {
+      "name": "edit_refusal_into_allow",
+      "observed": "BAD_ISSUER_SIGNATURE",
+      "expected": "BAD_ISSUER_SIGNATURE",
+      "matches": true
+    },
+    {
+      "name": "bypass_without_permit",
+      "observed": "MISSING_AUTHORIZATION",
+      "expected": "MISSING_AUTHORIZATION",
+      "matches": true
+    },
+    {
+      "name": "bypass_with_callers_signature",
+      "observed": "BAD_ISSUER_SIGNATURE",
+      "expected": "BAD_ISSUER_SIGNATURE",
+      "matches": true
+    },
+    {
+      "name": "ledger_intact",
+      "observed": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "name": "ledger_edit",
+      "observed": false,
+      "expected": false,
+      "matches": true
+    },
+    {
+      "name": "ledger_tail_removed_with_checkpoint",
+      "observed": false,
+      "expected": false,
+      "matches": true
+    },
+    {
+      "name": "BOUNDARY_tail_removed_without_checkpoint",
+      "observed": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "name": "BOUNDARY_replay_after_state_loss",
+      "observed": "ACCEPT",
+      "expected": "ACCEPT",
+      "matches": true
+    },
+    {
+      "name": "BOUNDARY_issuer_key_compromised",
+      "observed": "ACCEPT",
+      "expected": "ACCEPT",
+      "matches": true
+    },
+    {
+      "name": "BOUNDARY_receiver_replaced",
+      "observed": "ACCEPT",
+      "expected": "ACCEPT",
+      "matches": true
+    }
+  ],
+  "all_expected": true,
+  "observed_ledger": [
+    {
+      "body": {
+        "request": {
+          "body": {
+            "actor": "4e1c200b329e09543be2be7170655520e6ab47d5dd2a6de0e6f7eec594c52541",
+            "nonce": "request-1",
+            "operation": "endorse",
+            "artifact_sha256": "d34dc6a29117e812a2c67c0feae344fa2492401e57959299aa327dce6cdb50d6",
+            "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e"
+          },
+          "signature": "d86a4a0a27fe92483b26075c9b499d3aa2385e0a40e0461260680dc85e14decb3b842b9ca0288ea88794fa0d472eb805e31547bb7787f74101127a785a02780f"
+        },
+        "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e",
+        "authenticated_actor": "4e1c200b329e09543be2be7170655520e6ab47d5dd2a6de0e6f7eec594c52541",
+        "decision": "ALLOW",
+        "reason": "POLICY_MATCH",
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "sequence": 0
+      },
+      "signature": "c83a0f06613135ed773d31037bda2a572f7c2d9303b99cb9f91db484538361e0e02df2419689ebe8283fcaac77493eecd82606d0495bb328ed77cc6596c5ff03"
+    },
+    {
+      "body": {
+        "request": {
+          "body": {
+            "actor": "d5b16950a53510b1c4a5e320162a48f930a5dfb013be8d039f1a1f98735fb489",
+            "nonce": "request-2",
+            "operation": "endorse",
+            "artifact_sha256": "d34dc6a29117e812a2c67c0feae344fa2492401e57959299aa327dce6cdb50d6",
+            "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e"
+          },
+          "signature": "b7ec7c8347ff4a50550cf8e98d54ec60166b4c37cfd70731b1bbf62312f647b13ba6f5120133e307ad3d8e9254b927645a1eba7350c3b8105c7bb106ebc1ce05"
+        },
+        "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e",
+        "authenticated_actor": "d5b16950a53510b1c4a5e320162a48f930a5dfb013be8d039f1a1f98735fb489",
+        "decision": "REFUSE",
+        "reason": "KEY_NOT_ALLOWED",
+        "previous": "da96eb7c3124e85611e9ac6cef64643956b35b350a07e9820344112874d83980",
+        "sequence": 1
+      },
+      "signature": "50353c27fdd11ec6e01e0b72e16a6925804bf7d4aed4a1d3d8728ea04612705c9f3b6da61a552135b485256441e3740112899280f4755e8bac848730e3111708"
+    },
+    {
+      "body": {
+        "request": {
+          "body": {
+            "actor": "4e1c200b329e09543be2be7170655520e6ab47d5dd2a6de0e6f7eec594c52541",
+            "nonce": "request-3",
+            "operation": "publish",
+            "artifact_sha256": "d34dc6a29117e812a2c67c0feae344fa2492401e57959299aa327dce6cdb50d6",
+            "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e"
+          },
+          "signature": "86e9e67e0297f49abcdcf6e6e6e2e71334baea56bbc764c98a510df50d4a73a43a442fd86857525154235467bddf411a4d9cd55db226ea10ba4f9d3247cc650d"
+        },
+        "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e",
+        "authenticated_actor": "4e1c200b329e09543be2be7170655520e6ab47d5dd2a6de0e6f7eec594c52541",
+        "decision": "REFUSE",
+        "reason": "OPERATION_NOT_ALLOWED",
+        "previous": "edb463f67068bb39d96545813a80d05f39c0265f1a7f9652ea2c18ead1c67854",
+        "sequence": 2
+      },
+      "signature": "cc5f4671a53186a43ed29bd45d89135edc07e8dd36f2f8a6dd847edbc1e7d643ca938cd6c5208561aeed223b9f2865ed1e9c014a73650b67406c553eeeb9ab0e"
+    },
+    {
+      "body": {
+        "request": {
+          "body": {
+            "actor": "4e1c200b329e09543be2be7170655520e6ab47d5dd2a6de0e6f7eec594c52541",
+            "nonce": "request-4",
+            "operation": "endorse",
+            "artifact_sha256": "d34dc6a29117e812a2c67c0feae344fa2492401e57959299aa327dce6cdb50d6",
+            "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e"
+          },
+          "signature": "7a045701c4368972af6b2f97d9ad04559dfac618127ced1d00eea864a32c70d11f6a5dff6d99ee0c2034b7c8947c8dce5725c5944e7753a7e7ed1c4d580e5a03"
+        },
+        "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e",
+        "authenticated_actor": null,
+        "decision": "REFUSE",
+        "reason": "BAD_REQUEST_SIGNATURE",
+        "previous": "5314f313fcb4a042c0f970740b5d902f305cb4a4edbe065a04bf8746fbc14867",
+        "sequence": 3
+      },
+      "signature": "2c9f7a20c2d6d985486c627636d985b27c3939148a10d58889577c6246dbbe5225dbc444db4ba38f57c556cd8a4da439c0c20355ef0e3735a870752305f49506"
+    },
+    {
+      "body": {
+        "request": {
+          "body": {
+            "actor": "4e1c200b329e09543be2be7170655520e6ab47d5dd2a6de0e6f7eec594c52541",
+            "nonce": "request-1",
+            "operation": "publish",
+            "artifact_sha256": "d34dc6a29117e812a2c67c0feae344fa2492401e57959299aa327dce6cdb50d6",
+            "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e"
+          },
+          "signature": "d86a4a0a27fe92483b26075c9b499d3aa2385e0a40e0461260680dc85e14decb3b842b9ca0288ea88794fa0d472eb805e31547bb7787f74101127a785a02780f"
+        },
+        "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e",
+        "authenticated_actor": null,
+        "decision": "REFUSE",
+        "reason": "BAD_REQUEST_SIGNATURE",
+        "previous": "bd37fd8605e7a084a10b69b9ecfbf697b629993bd269dd2d4b9a522eead1607f",
+        "sequence": 4
+      },
+      "signature": "7ebe1d5658d1e1eb131070e15bd345755c16e6f653500f77284ad761cb28c69cbf35349c83c341486a16fc5250e1126e970157ddfc26513d48add524572f6600"
+    },
+    {
+      "body": {
+        "request": {
+          "body": {
+            "actor": "4e1c200b329e09543be2be7170655520e6ab47d5dd2a6de0e6f7eec594c52541",
+            "nonce": "request-1",
+            "operation": "endorse",
+            "artifact_sha256": "d34dc6a29117e812a2c67c0feae344fa2492401e57959299aa327dce6cdb50d6",
+            "policy_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "signature": "3453a1f7ad1ca0cff63869a046aaa74bcba260a82a81ba64132dd29e159b67b7ec71bb3581bfd55dc64524d12e5131a2fd7568839f74168f5da96d657889270e"
+        },
+        "policy_sha256": "b9c985cd4f85e706ce6b3e16ac3112d8c0675004284e6ec5c1cdc4b67306ad7e",
+        "authenticated_actor": "4e1c200b329e09543be2be7170655520e6ab47d5dd2a6de0e6f7eec594c52541",
+        "decision": "REFUSE",
+        "reason": "POLICY_MISMATCH",
+        "previous": "64c057b866ed99ab4bc6b193a48d8e05c62c7911c7732e474583b1a7db81ea6f",
+        "sequence": 5
+      },
+      "signature": "c997c530859e2bb6ca701601434dd696670f39e290b67fd3b04c777faf07228b1a2fd869ea057e98c0717e14ecd0b6ccf76101af39968cceda257f9db17af001"
+    }
+  ],
+  "external_checkpoint_for_this_run": "66ac3953f00e699209acf2d57e852824d33b55f403efc1949d06d1fac77862e5",
+  "private_keys_retained": false,
+  "python": "3.14.7",
+  "crypto_sha256": "d9c726c4940aedc7e6ec061b2b0740116009b3a577391fac56a7802cc129f263",
+  "source_sha256": {
+    "drafts/DECISION-PROFILE.md": "ef015cebb47bb8e8cb3fd91257e07ef4ce4224817aac7dd3a1136c627d7d5ce6",
+    "drafts/EXECUTABLE-LICENSE.md": "cf213263f42ca248e78239976bb29ebaae95888bec64d2f7737d4a7bed99ffcd",
+    "experiments/participation-1/run.py": "b9423b744536ef2cf955eea068b09e0aede04a0dadeca0739833e36b61c853df",
+    "experiments/participation-1/README.md": "eb9086394ae3b7ecb99763f60f46654b683bc66952739a888823df3d0189e03e"
+  },
+  "source_commit": "f59bf02e58fad0fe7c6e4303fb196115b64e3f18",
+  "checkout_before_recording": ""
+}

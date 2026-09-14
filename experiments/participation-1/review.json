@@ -1,0 +1,22 @@
+{
+  "preparation_note": "Initial mutation selection expected one matching guard, but there are two. Assertion stopped before execution; corrected mutation replaces only the recipient guard.",
+  "mutation": "disable issuer signature verification in recipient",
+  "mutant_sha256": "1eadf5814283aeca61d613bf2c9e030e93036b636adf2b26281faf6d5192694b",
+  "unexpected_cases": [
+    {
+      "name": "edit_refusal_into_allow",
+      "observed": "ACCEPT",
+      "expected": "BAD_ISSUER_SIGNATURE",
+      "matches": false
+    },
+    {
+      "name": "bypass_with_callers_signature",
+      "observed": "ACCEPT",
+      "expected": "BAD_ISSUER_SIGNATURE",
+      "matches": false
+    }
+  ],
+  "openssl": "OpenSSL 3.6.4 25 Aug 2026 (Library: OpenSSL 3.6.4 25 Aug 2026)",
+  "openssl_valid_decisions": 6,
+  "openssl_changed_message_rejected": true
+}
