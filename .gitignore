@@ -19,3 +19,10 @@
 !experiments/participation-1/result.json
 !experiments/participation-1/RESULTS.md
 !experiments/participation-1/review.json
+
+# Separate-process follow-up; no other experiment directories are included.
+!experiments/participation-2/
+!experiments/participation-2/run.py
+!experiments/participation-2/README.md
+!experiments/participation-2/result.json
+!experiments/participation-2/RESULTS.md
