@@ -26,3 +26,10 @@
 !experiments/participation-2/README.md
 !experiments/participation-2/result.json
 !experiments/participation-2/RESULTS.md
+
+# Concrete endorsement consumer demonstration.
+!experiments/endorsement-1/
+!experiments/endorsement-1/run.py
+!experiments/endorsement-1/README.md
+!experiments/endorsement-1/result.json
+!experiments/endorsement-1/RESULTS.md
