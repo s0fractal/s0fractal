@@ -1,0 +1,146 @@
+{
+  "all_expected": true,
+  "cases": [
+    {
+      "name": "correct",
+      "expected": "READY_FOR_LOCAL_PUBLICATION",
+      "observed": "READY_FOR_LOCAL_PUBLICATION"
+    },
+    {
+      "name": "wrong_total",
+      "expected": "REFUSED",
+      "observed": "REFUSED"
+    },
+    {
+      "name": "boolean_is_not_integer",
+      "expected": "REFUSED",
+      "observed": "REFUSED"
+    },
+    {
+      "name": "extra_claim",
+      "expected": "REFUSED",
+      "observed": "REFUSED"
+    },
+    {
+      "name": "duplicate_field",
+      "expected": "REFUSED",
+      "observed": "REFUSED"
+    },
+    {
+      "name": "edited_artifact",
+      "expected": "CHANGED_ARTIFACT",
+      "observed": "CHANGED_ARTIFACT"
+    },
+    {
+      "name": "missing_receipt",
+      "expected": "INVALID_RECEIPT",
+      "observed": "INVALID_RECEIPT"
+    },
+    {
+      "name": "self_signed_claim",
+      "expected": "BAD_SIGNATURE",
+      "observed": "BAD_SIGNATURE"
+    },
+    {
+      "name": "edited_refusal",
+      "expected": "BAD_SIGNATURE",
+      "observed": "BAD_SIGNATURE"
+    },
+    {
+      "name": "different_policy_sha256",
+      "expected": "WRONG_SCOPE",
+      "observed": "WRONG_SCOPE"
+    },
+    {
+      "name": "different_verifier_sha256",
+      "expected": "WRONG_SCOPE",
+      "observed": "WRONG_SCOPE"
+    }
+  ],
+  "policy": {
+    "id": "integer-sum/v1",
+    "max_items": 100,
+    "claim": "claimed_total equals the sum of supplied integers",
+    "limits": "No endorsement of input provenance, purpose or other claims."
+  },
+  "trust": {
+    "issuer": "468e592043eb38804b52a6d23167648e71415f6a4144e476b0b0d8a8d11e881c",
+    "policy_sha256": "d50255f737f7847cd940ff03a86afeeb796a5a6a534878646e628be941ac0447",
+    "verifier_sha256": "c50c61e85980d96b4f0f6713fae198181c8271f2d0b5c048bfcc95760c5b3305"
+  },
+  "signed_observations": [
+    {
+      "artifact_hex": "7b22636c61696d65645f746f74616c223a31352c2276616c756573223a5b31322c2d342c375d7d",
+      "receipt": {
+        "body": {
+          "artifact_sha256": "99cca6de8aa946d4fa63f22d20e8195cdf95c62ccea4ba264c02c95256e55f19",
+          "policy_sha256": "d50255f737f7847cd940ff03a86afeeb796a5a6a534878646e628be941ac0447",
+          "verifier_sha256": "c50c61e85980d96b4f0f6713fae198181c8271f2d0b5c048bfcc95760c5b3305",
+          "decision": "ALLOW",
+          "reason": "MATCH",
+          "observed_total": 15
+        },
+        "signature": "d6016de9fddc7b8147df6679fb0193541f71ae5400ee4125282675699c8b1aa6c3a83f3bb76445c35cec0f27177319fb766e39f1747ca3df792bf0efc7eba704"
+      }
+    },
+    {
+      "artifact_hex": "7b22636c61696d65645f746f74616c223a31362c2276616c756573223a5b31322c2d342c375d7d",
+      "receipt": {
+        "body": {
+          "artifact_sha256": "09ab500e797cb234873070926b18a778085b227011f34d608d3f69d3daba9aed",
+          "policy_sha256": "d50255f737f7847cd940ff03a86afeeb796a5a6a534878646e628be941ac0447",
+          "verifier_sha256": "c50c61e85980d96b4f0f6713fae198181c8271f2d0b5c048bfcc95760c5b3305",
+          "decision": "REFUSE",
+          "reason": "MISMATCH",
+          "observed_total": 15
+        },
+        "signature": "18462d37a0a232cf635eb84eca7494eeb5a1d3cb7d0746c5d463be426a71b07de902628cdd09765a091f862d7016ff5bacf931ad9f73b823713a8ca4f47e3d01"
+      }
+    },
+    {
+      "artifact_hex": "7b22636c61696d65645f746f74616c223a312c2276616c756573223a5b747275655d7d",
+      "receipt": {
+        "body": {
+          "artifact_sha256": "84941ef949f535ed15804ffdc548124f85ede49972ee5a6936f3811fca7fd9b4",
+          "policy_sha256": "d50255f737f7847cd940ff03a86afeeb796a5a6a534878646e628be941ac0447",
+          "verifier_sha256": "c50c61e85980d96b4f0f6713fae198181c8271f2d0b5c048bfcc95760c5b3305",
+          "decision": "REFUSE",
+          "reason": "INVALID_INPUT",
+          "observed_total": null
+        },
+        "signature": "a5658210d52641689583a173e021dacb53236f07153c4d6a938592eba9ec9efe0cd5720e632a7a476720746575ebc3f91e603428814f0d4451f9d876f86eea09"
+      }
+    },
+    {
+      "artifact_hex": "7b22636c61696d65645f746f74616c223a312c226574686963616c223a747275652c2276616c756573223a5b315d7d",
+      "receipt": {
+        "body": {
+          "artifact_sha256": "c056d1061ce64713d8e78483adf3f9bbe7a374efe893710dabd6afccfc2dd8b7",
+          "policy_sha256": "d50255f737f7847cd940ff03a86afeeb796a5a6a534878646e628be941ac0447",
+          "verifier_sha256": "c50c61e85980d96b4f0f6713fae198181c8271f2d0b5c048bfcc95760c5b3305",
+          "decision": "REFUSE",
+          "reason": "INVALID_INPUT",
+          "observed_total": null
+        },
+        "signature": "81c09ca84e0f7f3b82a0fd3350c67c7260f3f57b7518dd4b2291cc04ab5ba5a3b50e7610b459ed336957cec5ba9aed0999d08f94fbc752d89d71fae39846460a"
+      }
+    },
+    {
+      "artifact_hex": "7b2276616c756573223a5b315d2c22636c61696d65645f746f74616c223a322c22636c61696d65645f746f74616c223a317d",
+      "receipt": {
+        "body": {
+          "artifact_sha256": "b37836493b56514b854165f376bc8b68310a81df513659e4a96b294dbbd8d502",
+          "policy_sha256": "d50255f737f7847cd940ff03a86afeeb796a5a6a534878646e628be941ac0447",
+          "verifier_sha256": "c50c61e85980d96b4f0f6713fae198181c8271f2d0b5c048bfcc95760c5b3305",
+          "decision": "REFUSE",
+          "reason": "INVALID_INPUT",
+          "observed_total": null
+        },
+        "signature": "68c936966e72a77a1d9212910422dcb6dd378315ee449774f485c8df8b35401e16035a15df7de23c0eeb666d84ed83fe930a38219137aee40dc72b5d86914007"
+      }
+    }
+  ],
+  "source_commit": "22bea7a26fd8dd5400e00f192de3b028dfd0b500",
+  "crypto_sha256": "d9c726c4940aedc7e6ec061b2b0740116009b3a577391fac56a7802cc129f263",
+  "limits": "Operator-controlled local simulation; no external user, sandbox or persistent signing key. No public publication."
+}
