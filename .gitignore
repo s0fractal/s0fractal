@@ -10,3 +10,11 @@
 # Whitelist drafts folder and markdown drafts
 !drafts/
 !drafts/*.md
+
+# One explicitly authorized local participation probe; keep other experiments ignored.
+!experiments/
+!experiments/participation-1/
+!experiments/participation-1/README.md
+!experiments/participation-1/run.py
+!experiments/participation-1/result.json
+!experiments/participation-1/RESULTS.md
