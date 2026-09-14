@@ -1,0 +1,195 @@
+{
+  "all_expected": true,
+  "cases": [
+    {
+      "name": "allowed_endorsement",
+      "observed": "ACCEPT",
+      "expected": "ACCEPT",
+      "matches": true
+    },
+    {
+      "name": "forbidden_operation_at_signer",
+      "observed": "OPERATION_NOT_ALLOWED",
+      "expected": "OPERATION_NOT_ALLOWED",
+      "matches": true
+    },
+    {
+      "name": "refusal_at_recipient",
+      "observed": "REFUSED",
+      "expected": "REFUSED",
+      "matches": true
+    },
+    {
+      "name": "local_guard_bypass_forged_permit",
+      "observed": "BAD_ISSUER_SIGNATURE",
+      "expected": "BAD_ISSUER_SIGNATURE",
+      "matches": true
+    },
+    {
+      "name": "changed_artifact",
+      "observed": "ARTIFACT_MISMATCH",
+      "expected": "ARTIFACT_MISMATCH",
+      "matches": true
+    },
+    {
+      "name": "grant_moved_to_other_request",
+      "observed": "REQUEST_MISMATCH",
+      "expected": "REQUEST_MISMATCH",
+      "matches": true
+    },
+    {
+      "name": "same_uid_without_sandbox",
+      "observed": "READABLE",
+      "expected": "READABLE",
+      "matches": true
+    },
+    {
+      "name": "sandbox_direct_key_read",
+      "observed": "DENIED",
+      "expected": "DENIED",
+      "matches": true
+    },
+    {
+      "name": "sandbox_symlink_key_read",
+      "observed": "DENIED",
+      "expected": "DENIED",
+      "matches": true
+    },
+    {
+      "name": "sandbox_inherited_by_child",
+      "observed": "DENIED",
+      "expected": "DENIED",
+      "matches": true
+    },
+    {
+      "name": "sandbox_overwrite_issuer.key",
+      "observed": "DENIED",
+      "expected": "DENIED",
+      "matches": true
+    },
+    {
+      "name": "sandbox_overwrite_policy.json",
+      "observed": "DENIED",
+      "expected": "DENIED",
+      "matches": true
+    },
+    {
+      "name": "sandbox_overwrite_recipient.json",
+      "observed": "DENIED",
+      "expected": "DENIED",
+      "matches": true
+    },
+    {
+      "name": "sandbox_overwrite_role.py",
+      "observed": "DENIED",
+      "expected": "DENIED",
+      "matches": true
+    },
+    {
+      "name": "sandbox_hardlink_key_read",
+      "observed": "DENIED",
+      "expected": "DENIED",
+      "matches": true
+    },
+    {
+      "name": "protected_bytes_unchanged",
+      "observed": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "name": "BOUNDARY_unsandboxed_key_theft",
+      "observed": "ACCEPT",
+      "expected": "ACCEPT",
+      "matches": true
+    },
+    {
+      "name": "role_processes_differ_from_supervisor",
+      "observed": true,
+      "expected": true,
+      "matches": true
+    }
+  ],
+  "scope": "selected macOS filesystem paths and a pinned recipient; not host-admin isolation",
+  "runtime": {
+    "python": "3.14.7",
+    "system": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "uid": 501,
+    "supervisor_pid": 26979,
+    "child_pids": [
+      26995,
+      26996,
+      26997,
+      26998,
+      26999,
+      27000,
+      27001,
+      27002,
+      27003,
+      27004,
+      27005,
+      27006,
+      27008,
+      27014
+    ]
+  },
+  "sandbox_profile": "(version 1)(allow default)(deny file-write*)(allow file-write* (subpath \"<fixture>/caller\"))(deny file-read* (subpath \"<fixture>/private\"))(deny network*)",
+  "issuer_public_key": "78b8926a91f37775854be621e11a94fa7f16dff1afe028ff3ccf4cfed92a1bf3",
+  "policy": {
+    "operations": [
+      "endorse"
+    ],
+    "allowed_keys": [
+      "4befd2b88c0b1056d62ef727367b373718bd5a5a9c11c18b77fb298d93687875"
+    ],
+    "version": "participation-2/demo"
+  },
+  "signed_decisions": [
+    {
+      "body": {
+        "request": {
+          "body": {
+            "actor": "4befd2b88c0b1056d62ef727367b373718bd5a5a9c11c18b77fb298d93687875",
+            "operation": "endorse",
+            "nonce": "one",
+            "artifact_sha256": "91746bb97a42a44136a80465d7c4a7093060003dc6e098c2afd4fd39c2821c97",
+            "policy_sha256": "157b7390be412ef48d31a43337076d552f20e06117df1c712454362df557f450"
+          },
+          "signature": "cf6e776c9c6b6967f532a3628945090911af88ce5a737ac6cf5ae33d9f4be65fb95b78fabc46392162748e3b3fc03d2e2caa8586fba5d7c3678c55f17bf5fe0f"
+        },
+        "decision": "ALLOW",
+        "reason": "POLICY_MATCH",
+        "authenticated_actor": "4befd2b88c0b1056d62ef727367b373718bd5a5a9c11c18b77fb298d93687875",
+        "policy_sha256": "157b7390be412ef48d31a43337076d552f20e06117df1c712454362df557f450"
+      },
+      "signature": "71387496aea6ace5ca220412207b977d0b86c86403502d3afe0480b99d78cf2eeef4c634578a05a68316df3a35d101b0f1aae4b64ec3975bf36ce43dc743640a"
+    },
+    {
+      "body": {
+        "request": {
+          "body": {
+            "actor": "4befd2b88c0b1056d62ef727367b373718bd5a5a9c11c18b77fb298d93687875",
+            "operation": "publish",
+            "nonce": "two",
+            "artifact_sha256": "91746bb97a42a44136a80465d7c4a7093060003dc6e098c2afd4fd39c2821c97",
+            "policy_sha256": "157b7390be412ef48d31a43337076d552f20e06117df1c712454362df557f450"
+          },
+          "signature": "712f0a099e0e7cc0a0d71713d6fcead1b517a832b37c5cfaac26e6bd8596835602dfea1069cde51560a6bc817ad3c450ddd9f5410688912d405c41d147ff5d04"
+        },
+        "decision": "REFUSE",
+        "reason": "OPERATION_NOT_ALLOWED",
+        "authenticated_actor": "4befd2b88c0b1056d62ef727367b373718bd5a5a9c11c18b77fb298d93687875",
+        "policy_sha256": "157b7390be412ef48d31a43337076d552f20e06117df1c712454362df557f450"
+      },
+      "signature": "6060970dc14bcad92125893b754b8a7248fe4091dc94e2fbc455ed477f9dd8e88f2a1cad8f52d07d3c9bd78445e16d822850a73823cd1190d56c2f6303bca802"
+    }
+  ],
+  "private_keys_retained": false,
+  "source_commit": "d9928bfab5c1ea99b4d7e9744b923f5a079663d1",
+  "checkout_before_recording": "",
+  "source_sha256": {
+    "experiments/participation-2/run.py": "10383a604b37274dea0e75e41b417b353146faba7505e392d0f00b6bafc42db2",
+    "experiments/participation-2/README.md": "3bd6c18d28133e974d539d37c6c56dc64c93a619052c5d86eb259b9b0a9c09c7"
+  },
+  "crypto_sha256": "d9c726c4940aedc7e6ec061b2b0740116009b3a577391fac56a7802cc129f263"
+}
