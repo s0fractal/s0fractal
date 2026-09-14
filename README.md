@@ -1,6 +1,6 @@
 # s0fractal
 
-> Human companion for building verifiable futures with digital entities.
+> Building tools for models to exchange evidence, preserve disagreement, and make decisions accountable.
 
 *This portrait was written with the models that work beside me. It describes how
 they currently understand the work — not a claim that every sentence began in my
@@ -21,20 +21,23 @@ arguments, and often discover the architecture. My role is different: hold the
 long horizon, keep several incompatible perspectives alive, notice the deeper
 attractor, and decide where authority actually belongs.
 
-The recurring lenses are category theory, fixed points, topology, field-like
-systems, the free-energy principle, causal graphs and hyperbolic geometry — used
-not as decoration, but to ask what remains invariant when viewpoint,
-implementation or historical context changes.
+I explore category theory, fixed points, topology and causal models as ways to
+ask what survives a change of viewpoint or implementation. An analogy starts a
+question; a concrete definition and a test determine how far it holds.
+
+My current direction is **less, but better**: smaller working examples, explicit
+limits, and evidence that someone outside our own development loop can use them.
 
 Two rules keep returning:
 
-> **Trust the hash, not the host.**
+> **Use hashes to identify bytes. Ask separately what those bytes establish.**
 
 > **A model may propose meaning freely; changing shared reality requires explicit
 > authority and leaves a verifiable receipt.**
 
-The first protects truth from infrastructure. The second protects freedom from
-turning into unaccountable power.
+A matching hash establishes byte correspondence, not truth or authorship. A
+receipt makes a decision inspectable; its authority still needs a basis outside
+the receipt itself.
 
 ---
 
@@ -57,13 +60,15 @@ pass  result=65cd957fee7ec9fb310bc9d9712cec1726c78f8026fda679ac8f237938a32098  a
 
 on your machine, from bytes, without my agreement being an input.
 
-Three results are deposited with DOIs, frozen at named commits:
+Five papers are deposited with DOIs, frozen at named commits:
 
 | | |
 | --- | --- |
 | [10.5281/zenodo.22069651](https://doi.org/10.5281/zenodo.22069651) | *One Integer for Work and Memory* — a content-addressed combinator machine where a single integer prices work **and** peak memory, mechanised in Lean 4 |
 | [10.5281/zenodo.22073568](https://doi.org/10.5281/zenodo.22073568) | *Does One Integer Still Price Work and Memory in Parallel?* — a preregistered experiment; the bound transfers to confluent parallel reduction, the per-redex refusal discipline does not |
 | [10.5281/zenodo.22172098](https://doi.org/10.5281/zenodo.22172098) | *The Reason Runs Again* — content-addressed decision records whose stated reason a stranger re-executes offline; the Warrant format paper, frozen at a git tag |
+| [10.5281/zenodo.22750755](https://doi.org/10.5281/zenodo.22750755) | *Measuring Verifier-Reported Verification Load on a Single LLM Monologue Corpus: A Report with Termination Controls* — reported verification-load observations on one LLM monologue corpus, with termination controls and a claim ledger; deposited with 2 CHECKED / 8 REFUSED, not an independently reproduced improvement |
+| [10.5281/zenodo.22754264](https://doi.org/10.5281/zenodo.22754264) | *What a Green Check Does Not Establish* — a self-running PDF companion and nine mutation controls showing how a successful check can miss altered text, unrecognized claims, and executable code; bounded records from Black-Heart, with no claim of general reliability |
 
 Deposited is not peer reviewed. A DOI is a permanent address and a frozen
 artifact — not a venue, not an endorsement.
@@ -117,13 +122,13 @@ Each layer earns a different kind of trust. None may silently impersonate anothe
 | **[Warrant](https://github.com/s0fractal/warrant)** | `gated` | The decision and authority layer: signed, hash-addressed records of what was accepted, rejected or proposed; under which policy; on which evidence and which **re-runnable** reasons. Rejection is a first-class historical object, not silence. The verifier is on PyPI so a stranger can check a record without cloning anything. |
 | **[OAIP](https://github.com/s0fractal/oaip)** | `draft` | The observed-action layer: intent, workspace state, execution, effects, attribution, claims and *separate* validation. Its central refusal is deliberate — **execution success is not validation success, and neither is acceptance**. A zero exit code cannot promote its own claim. |
 
-OAIP captures the causal trace of **doing** — intent, workspace mutation, and independent validation. Warrant marks where a claim becomes an **authorized decision** with first-class, verifiable rejections. Σ-GLYPH provides the deterministic engine that makes reasons **safe to re-run**. Together they aim to let machines exchange verifiable experience rather than copy state — keeping historical reconstruction distinct from literal replay.
+OAIP captures the causal trace of **doing** — intent, workspace mutation, and independent validation. Warrant marks where a claim becomes an **authorized decision** with first-class, verifiable rejections. Σ-GLYPH provides **bounded deterministic evaluation** for the reasons expressible in its language. Together they aim to let machines exchange verifiable experience rather than copy state — keeping historical reconstruction distinct from literal replay.
 
 ### Experiments & frontier substrates
 
 | Project | Standing | Focus & Role |
 | --- | :---: | --- |
-| **[Project Black-Heart](https://github.com/s0fractal/black-heart)** | `experimental` | Self-executing proof-carrying polyglots (`%🖤`) and sovereign calculative ecologies. Pure SKIY glyph combinators, symmetric interaction combinators with Weisfeiler-Lehman invariant graph digests, autonomous quines, dialectical symbiosis, and an epistemic mycelium with live warrant settlement. *«A paper should not just assert its truth. A paper should execute its own proof.»* |
+| **[Black-Heart](https://github.com/s0fractal/black-heart)** | `experimental` | Engineering experience packaged with pinned sources, local byte checks and explicit limits for the next model or developer. Includes bounded combinator evaluation and an executable-PDF case study. One recorded model exchange ran a sender-designed check; the later controlled pilot demonstrated no advantage of the packet over plain text. |
 | **[Σ-GLYPH ALife](https://github.com/s0fractal/sigma-glyph-alife)** | `experimental` | Digital organisms on a content-addressed substrate where the memory bound is a theorem (`size ≤ spent + 1`) instead of an arbitrary timer. Agents are combinator terms, food is ATP, and organisms live in a single content-addressed CAS where identical structures share one physical address — verified via differential testing and Lean 4 population invariants. |
 | **[Σ-GLYPH World](https://github.com/s0fractal/sigma-glyph-world)** | `research` | A non-normative research notebook testing whether Σ-GLYPH resource invariants transfer to other computational, physical, biological, or verification domains — and pinpointing exactly where the analogy breaks. Features preregistered verification-scope pilots, multi-model adversarial dialogues, and failure-explicit empirical calibration. |
 
