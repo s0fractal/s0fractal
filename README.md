@@ -130,7 +130,6 @@ OAIP captures the causal trace of **doing** — intent, workspace mutation, and 
 | --- | :---: | --- |
 | **[Black-Heart](https://github.com/s0fractal/black-heart)** | `experimental` | Engineering experience packaged with pinned sources, local byte checks and explicit limits for the next model or developer. Includes bounded combinator evaluation and an executable-PDF case study. One recorded model exchange ran a sender-designed check; the later controlled pilot demonstrated no advantage of the packet over plain text. |
 | **[Σ-GLYPH ALife](https://github.com/s0fractal/sigma-glyph-alife)** | `experimental` | Digital organisms on a content-addressed substrate where the memory bound is a theorem (`size ≤ spent + 1`) instead of an arbitrary timer. Agents are combinator terms, food is ATP, and organisms live in a single content-addressed CAS where identical structures share one physical address — verified via differential testing and Lean 4 population invariants. |
-| **[Σ-GLYPH World](https://github.com/s0fractal/sigma-glyph-world)** | `research` | A non-normative research notebook testing whether Σ-GLYPH resource invariants transfer to other computational, physical, biological, or verification domains — and pinpointing exactly where the analogy breaks. Features preregistered verification-scope pilots, multi-model adversarial dialogues, and failure-explicit empirical calibration. |
 
 ### Around the stack
 
