@@ -134,7 +134,7 @@ OAIP captures the causal trace of **doing** — intent, workspace mutation, and 
 
 | Project | Standing | Role |
 | --- | :---: | --- |
-| **[decision-archaeology](https://github.com/s0fractal/decision-archaeology)** | `driver` | An **application driver**, not a member protocol: real retrospective cases that generate bounded integration demand. A case may replay that bytes have an identity or that a declared procedure evaluates a certain way. It must never promote that into a finding of guilt, legality or good faith. Member repositories are forbidden to depend on it. |
+| **[decision-archaeology](https://github.com/s0fractal/decision-archaeology)** | `archived` | Historical application and calibration dossiers, archived 2026-09-17. No active case backlog or integration-demand role. Existing independently pinned consumers retain their exact historical dependency; see the repository’s [retirement record](https://github.com/s0fractal/decision-archaeology/blob/main/RETIREMENT.md). |
 
 An earlier federation line — [trinity](https://github.com/s0fractal/trinity),
 [genesis](https://github.com/s0fractal/genesis),
