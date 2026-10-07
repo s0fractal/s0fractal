@@ -124,6 +124,14 @@ Each layer earns a different kind of trust. None may silently impersonate anothe
 
 OAIP captures the causal trace of **doing** — intent, workspace mutation, and independent validation. Warrant marks where a claim becomes an **authorized decision** with first-class, verifiable rejections. Σ-GLYPH provides **bounded deterministic evaluation** for the reasons expressible in its language. Together they aim to let machines exchange verifiable experience rather than copy state — keeping historical reconstruction distinct from literal replay.
 
+### Autonomous defense & wire-speed enforcement
+
+| Project | Standing | Role |
+| --- | :---: | --- |
+| **[Sokol-Core](https://github.com/ValkyrieSentinel/sokol-core)** | `lab-qualified` | Autonomous kernel-level traffic filtering and DDoS mitigation at wire speed (eBPF/XDP + Rust daemon), co-authored with [@ValkyrieSentinel](https://github.com/ValkyrieSentinel). Enforces external detector claims (Suricata, CrowdSec, FastNetMon), operator decisions, and mesh peer blocks before packets reach the kernel network stack, refusing to conflate detection semantics with enforcement authority. Every block, drop, and trap event is sealed into an append-only, BLAKE3 hash-chained audit log with peer-witnessed audit heads ([ADR-0021](https://github.com/ValkyrieSentinel/sokol-core/blob/main/docs/adr/0021-audit-witnesses.md)), optional timestamp anchoring ([ADR-0022](https://github.com/ValkyrieSentinel/sokol-core/blob/main/docs/adr/0022-audit-anchor.md)), and upstream BGP FlowSpec propagation. |
+
+Sokol-Core projects the same core refusal down to wire speed: **detection is not authority, and execution must leave an immutable receipt**. The XDP filter executes drop decisions at millions of packets per second, but does not invent attack semantics on its own. Claims arrive with explicit issuers, bounds, and lifetimes; every change to shared network reality is permanently checkable in the audit chain.
+
 ### Experiments & frontier substrates
 
 | Project | Standing | Focus & Role |
