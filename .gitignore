@@ -5,6 +5,7 @@
 # Whitelist README and .gitignore
 !README.md
 !README.*
+!COUNTERVECTORS.md
 !.gitignore
 
 # Whitelist drafts folder and markdown drafts
