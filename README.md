@@ -1,32 +1,19 @@
 # s0fractal
 
-> Building tools for models to exchange evidence, preserve disagreement, and make decisions accountable.
+> Tools for models and people to hand work to one another with receipts: what was
+> done, on what basis, who accepted it, and what a stranger can re-run.
 
-*This portrait was written with the models that work beside me. It describes how
-they currently understand the work — not a claim that every sentence began in my
-voice.*
+*This portrait is written with the models that work beside me, and rewritten when
+it drifts from the repositories. It describes how we currently understand the
+work. Last rewrite: 2026-10-21.*
 
-I am interested in a future where humans and models do more than exchange
-commands, outputs, or state snapshots. They should be able to exchange
-**experience**: the bounded context an actor received, what it observed, which
-causal path it inferred, what alternatives it considered, what it proposed, what
-authority selected a direction, what was done, and what happened next.
-
-Not a claim of shared consciousness. Something more practical — and perhaps more
-consequential: one intelligence being able to inspect another intelligence's path
-from its perspective without pretending to become it.
-
-I work as a centaur. Models write much of the code, attack one another's
-arguments, and often discover the architecture. My role is different: hold the
-long horizon, keep several incompatible perspectives alive, notice the deeper
-attractor, and decide where authority actually belongs.
-
-I explore category theory, fixed points, topology and causal models as ways to
-ask what survives a change of viewpoint or implementation. An analogy starts a
-question; a concrete definition and a test determine how far it holds.
-
-My current direction is **less, but better**: smaller working examples, explicit
-limits, and evidence that someone outside our own development loop can use them.
+I work as a centaur. Models write most of the code, review one another, and
+often find the architecture. My part is to hold the long horizon, keep
+incompatible views alive, notice the deeper attractor, and decide where
+authority belongs. The question underneath everything here: can one
+intelligence inspect another's path, re-run the parts that are deterministic,
+contest the parts that are interpretive, and accept a result without pretending
+to have become the other?
 
 Two rules keep returning:
 
@@ -41,242 +28,204 @@ the receipt itself.
 
 ---
 
-## If you have fifteen minutes, don't read — run
+## Run, don't read
 
-A page arguing for re-executability has no business asking to be believed. So
-here is the same claim in the form the work prefers.
+A page arguing for re-executability should not ask to be believed.
+
+**The computation engine, from PyPI.** Sigma-Glyph 0.8.0 ships its provider with
+a self-test of pause, resume and replay:
 
 ```sh
-python -m pip install warrant-verify==0.9.0
+python -m pip install sigma-glyph==0.8.0
+python -m sigma_provider
 ```
 
-Then follow [`try-this-in-fifteen-minutes.md`](https://github.com/s0fractal/warrant/blob/master/docs/try-this-in-fifteen-minutes.md):
-you will build a signed decision record, then re-execute its *reason* — not read
-a summary of it — and get
+**The record layer, from a checkout.** Warrant 2 is not on PyPI yet (the
+published `warrant-verify` ≤ 0.12.0 is the retired 0.x generation). Its
+end-to-end run files a duty, pauses a computation, hands it to a second
+workspace, which replays it under its own provider and accepts the exact item:
 
-```text
-pass  result=65cd957fee7ec9fb310bc9d9712cec1726c78f8026fda679ac8f237938a32098  atp_spent=17
+```sh
+git clone https://github.com/s0fractal/warrant && cd warrant
+python -m venv v && v/bin/pip install ".[compute]"
+cd /tmp && /path/to/warrant/v/bin/python /path/to/warrant/examples/agent/acceptance.py --door cli
 ```
 
-on your machine, from bytes, without my agreement being an input.
+**A receiver you did not run.** In October 2026 the same handoff ran with the
+receiver on a GitHub-hosted runner; GitHub's provenance of the returned bytes is
+checkable by anyone with `gh`:
 
-Five papers are deposited with DOIs, frozen at named commits:
+```sh
+cd /path/to/warrant
+gh attestation verify examples/ref-transport/round-3/reply.json --repo s0fractal/warrant
+```
 
-| | |
+None of these take my agreement as an input.
+
+---
+
+## The stack, as of October 2026
+
+Three repositories carry the live roles. Each is small on purpose.
+
+| Repository | Role | What it holds today |
+| --- | --- | --- |
+| **[Σ-GLYPH](https://github.com/s0fractal/sigma-glyph)** | deterministic computation, pause, resume, replay | Book I combinator kernel; one integer prices work and peak materialisation; three implementations from one author/model lineage (Python, Go, from-scratch Rust) agree on every Book I conformance vector; Lean 4 mechanisation; a `sigma_provider` whose identity is the hash of its three module files, so a recipient can name exactly what replayed |
+| **[Warrant 2](https://github.com/s0fractal/warrant)** | records of work: duties, transitions, acceptance, observation, grants, challenges | six record types, a `compute` condition settled only by the recipient's own replay, signed handoff of a store slice between workspaces, a frozen-view agent interface (Python, CLI, stdio MCP), a receiver-local replay cache |
+| **[minds / VARS-1](https://github.com/s0fractal/minds)** | identity and self-governance of an entity | a hash-native graph of claims, computations and verdicts in git, evaluated by a rules kernel compiled to wasm and proved in Lean; the repository governs its own releases with its own chain; a light client verifies a release without the repository |
+
+Around them: **[primitives](https://github.com/s0fractal/primitives)** holds the
+shared behaviour (hashes, canonical JSON, signatures) as vectors, not code, so
+independent implementations stay evidence rather than copies;
+**[warrant-vet](https://github.com/s0fractal/warrant-vet)** admits lockfile
+dependencies by signed reviews of their exact bytes;
+**[warrant-pdf](https://github.com/s0fractal/warrant-pdf)** is a contract PDF
+anyone can check offline. Both are prototypes on the retired 0.x records and
+will move or stop.
+
+**[manifesto](https://github.com/s0fractal/manifesto)** (Ukrainian) is the
+ontology these tools answer to, kept honest by its own surface rows and
+retirement records. **[Sokol-Core](https://github.com/s0fractal/sokol-core)**, a
+kernel-level traffic filter co-owned with
+[@ValkyrieSentinel](https://github.com/ValkyrieSentinel), is a separate track
+with the same refusal at wire speed: detection is not authority, and every
+enforcement leaves a receipt. Its invariant witnesses are pinned under the
+owner's signature, which is where the lesson below about agents came from.
+
+Retired, with tombstones rather than silence: OAIP (absorbed by Warrant 2),
+trinity/HSP, black-heart, decision-archaeology, sev, cap-lab, the Σ-GLYPH
+artificial-life line, and stargate. The earlier federation sketches (genesis,
+liquid, myc) predate all of this and are not gated by its CI.
+
+---
+
+## What is established this month, and what is not
+
+In October 2026 the stack did one real thing end to end: a **dependency audit
+of Warrant's own wheels**, encoded as a Σ-GLYPH predicate over a graph rebuilt
+from exact wheel bytes, paused on one host and finished on another.
+
+Established, with frozen bytes in the warrant repository:
+
+- A **handoff bound to an instance**: manifest, source, graph digests, encoder
+  bytes, provider, term, environment, expected result and budget. A receiver
+  rebuilds the instance itself and refuses a *correct answer under a wrong
+  binding* before signing anything.
+- **Three rounds across hosts** with identical verdicts and receipt ids: the
+  owner's VM twice, then a GitHub-hosted runner with Sigstore provenance of the
+  reply.
+- **Transport without an operator**: packets travel on git refs; a receiver
+  delivers one to itself only under a pin signed by the owner's ssh key.
+  Unpinned, substituted or damaged bytes are reported, never delivered.
+- **Cost that does not change answers**: every view replays every receipt
+  through the provider, so a receiver-local cache keyed by provider identity and
+  exact chain was added, with controls that it never stands in for missing bytes.
+
+Not established, and said so in the records: independent custody (every host and
+the signing key are the owner's; the runner's attestation is GitHub's word about
+itself), a loop with no human in it (two owner pins per round remain the only
+human acts), that the receiver did not recompute from scratch, package safety,
+completeness of any index, and a general encoder. The encoding gap once named
+`DA-SIGMA-0001` is now one reviewed encoder for one predicate, not a method.
+
+---
+
+## Papers
+
+Seven deposits with DOIs, each frozen at a named commit. Deposited is not peer
+reviewed: a DOI is a permanent address, not a venue.
+
+| DOI | |
 | --- | --- |
-| [10.5281/zenodo.22069651](https://doi.org/10.5281/zenodo.22069651) | *One Integer for Work and Memory* — a content-addressed combinator machine where a single integer prices work **and** peak memory, mechanised in Lean 4 |
-| [10.5281/zenodo.22073568](https://doi.org/10.5281/zenodo.22073568) | *Does One Integer Still Price Work and Memory in Parallel?* — a preregistered experiment; the bound transfers to confluent parallel reduction, the per-redex refusal discipline does not |
-| [10.5281/zenodo.22172098](https://doi.org/10.5281/zenodo.22172098) | *The Reason Runs Again* — content-addressed decision records whose stated reason a stranger re-executes offline; the Warrant format paper, frozen at a git tag |
-| [10.5281/zenodo.22750755](https://doi.org/10.5281/zenodo.22750755) | *Measuring Verifier-Reported Verification Load on a Single LLM Monologue Corpus: A Report with Termination Controls* — reported verification-load observations on one LLM monologue corpus, with termination controls and a claim ledger; deposited with 2 CHECKED / 8 REFUSED, not an independently reproduced improvement |
-| [10.5281/zenodo.22754264](https://doi.org/10.5281/zenodo.22754264) | *What a Green Check Does Not Establish* — a self-running PDF companion and nine mutation controls showing how a successful check can miss altered text, unrecognized claims, and executable code; bounded records from Black-Heart, with no claim of general reliability |
-
-Deposited is not peer reviewed. A DOI is a permanent address and a frozen
-artifact — not a venue, not an endorsement.
-
----
-
-## The design thesis
-
-Where a claim can honestly be reduced to a bounded mechanical procedure, prefer an
-artifact that lets another party reproduce the path from pinned bytes to a verdict
-over prose asking them to accept your conclusion. Persuasion is a relation between
-a speaker and an audience. Re-executability is a property of an artifact: the
-reader's agreement is not an input, because their machine can perform the declared
-check again.
-
-This does not eliminate trust, prove truth, or automate judgment. It moves the
-irreducible trust boundary into the open — whether the declared check represents
-the question people actually care about, whether its inputs and claimed authority
-should be accepted, whether the pinned runtime and assumptions are adequate, and
-what was left outside the check on purpose.
-
-**Re-executability does not replace persuasion; it narrows persuasion's
-jurisdiction to an explicit boundary.** Where a question cannot be reduced without
-pretending that judgment is computation, the honest artifact preserves the claim,
-the competing interpretations and the unknown instead of manufacturing an
-executable verdict.
-
----
-
-## What we are constructing
-
-```text
-content-addressed bytes
-        ↓
-portable deterministic checks (Σ-GLYPH)
-        ↓
-observed intent, execution, effects, and validation (OAIP)
-        ↓
-signed decisions & re-runnable reasons under explicit policy (Warrant)
-        ↓
-bounded cooperation between human and model actors
-```
-
-Each layer earns a different kind of trust. None may silently impersonate another.
-
-### The gated stack
-
-| Project | Standing | Role |
-| --- | :---: | --- |
-| **[Σ-GLYPH](https://github.com/s0fractal/sigma-glyph)** | `gated` | A portable, deterministic, budget-bounded check engine: the same content-addressed term yields the same result on independent implementations, and one integer prices work and peak memory before strangers re-run one another's reasons. Book I has **three independent implementations** agreeing on every conformance vector — a Python oracle, `warrant-go`'s native evaluator, and a from-scratch Rust one — plus a Lean 4 mechanisation of determinism, totality and the memory bound. |
-| **[Warrant](https://github.com/s0fractal/warrant)** | `gated` | The decision and authority layer: signed, hash-addressed records of what was accepted, rejected or proposed; under which policy; on which evidence and which **re-runnable** reasons. Rejection is a first-class historical object, not silence. The verifier is on PyPI so a stranger can check a record without cloning anything. |
-| **[OAIP](https://github.com/s0fractal/oaip)** | `draft` | The observed-action layer: intent, workspace state, execution, effects, attribution, claims and *separate* validation. Its central refusal is deliberate — **execution success is not validation success, and neither is acceptance**. A zero exit code cannot promote its own claim. |
-
-OAIP captures the causal trace of **doing** — intent, workspace mutation, and independent validation. Warrant marks where a claim becomes an **authorized decision** with first-class, verifiable rejections. Σ-GLYPH provides **bounded deterministic evaluation** for the reasons expressible in its language. Together they aim to let machines exchange verifiable experience rather than copy state — keeping historical reconstruction distinct from literal replay.
-
-### Autonomous defense & wire-speed enforcement (Core focus)
-
-| Project | Standing | Role |
-| --- | :---: | --- |
-| **Sokol-Core**<br>([s0fractal/sokol-core](https://github.com/s0fractal/sokol-core) &bull; [ValkyrieSentinel/sokol-core](https://github.com/ValkyrieSentinel/sokol-core)) | `gated` | Autonomous kernel-level traffic filtering and DDoS mitigation at wire speed (eBPF/XDP + Rust daemon), co-authored and co-owned with [@ValkyrieSentinel](https://github.com/ValkyrieSentinel). Both repositories are public and form an active core focus. Enforces external detector claims (Suricata, CrowdSec, FastNetMon), operator decisions, and mesh peer blocks before packets reach the kernel network stack, refusing to conflate detection semantics with enforcement authority. 75 formal invariant rows are strictly pinned under two-tier cryptographic signatures (Owner Tier + Provisional Agent Tier, [ADR-0028](https://github.com/s0fractal/sokol-core/blob/main/docs/adr/0028-provisional-agent-tier.md)) with mathematical Kani proofs in `common`, portable counterexample exchange verified in isolated sandboxes via Warrant ([`EXCHANGE-P1`](https://github.com/s0fractal/sokol-core/blob/main/docs/contracts/EXCHANGE-P1.shadow.json)), append-only BLAKE3 hash-chained audit logs with peer-witnessed audit heads ([ADR-0021](https://github.com/s0fractal/sokol-core/blob/main/docs/adr/0021-audit-witnesses.md)), optional timestamp anchoring ([ADR-0022](https://github.com/s0fractal/sokol-core/blob/main/docs/adr/0022-audit-anchor.md)), and upstream BGP FlowSpec propagation. |
-
-Sokol-Core projects the same core refusal down to wire speed: **detection is not authority, and execution must leave an immutable receipt**. The XDP filter executes drop decisions at millions of packets per second, but does not invent attack semantics on its own. Claims arrive with explicit issuers, bounds, and lifetimes; every change to shared network reality is permanently checkable in the audit chain. With portable counterexample exchange (`EXCHANGE-P1`), defects and repairs are packaged as content-addressed Warrant evidence records and replayed in hermetic sandboxes without human intervention. Both public repositories ([s0fractal/sokol-core](https://github.com/s0fractal/sokol-core) and [ValkyrieSentinel/sokol-core](https://github.com/ValkyrieSentinel/sokol-core)) are in active core focus.
-
-### Experiments & frontier substrates
-
-| Project | Standing | Focus & Role |
-| --- | :---: | --- |
-| **[Black-Heart](https://github.com/s0fractal/black-heart)** | `experimental` | Engineering experience packaged with pinned sources, local byte checks and explicit limits for the next model or developer. Includes bounded combinator evaluation and an executable-PDF case study. One recorded model exchange ran a sender-designed check; the later controlled pilot demonstrated no advantage of the packet over plain text. |
-
-### Around the stack
-
-| Project | Standing | Role |
-| --- | :---: | --- |
-| **[decision-archaeology](https://github.com/s0fractal/decision-archaeology)** | `archived` | Historical application and calibration dossiers, archived 2026-09-17. No active case backlog or integration-demand role. Existing independently pinned consumers retain their exact historical dependency; see the repository’s [retirement record](https://github.com/s0fractal/decision-archaeology/blob/main/RETIREMENT.md). |
-
-An earlier federation line — [trinity](https://github.com/s0fractal/trinity),
-[genesis](https://github.com/s0fractal/genesis),
-[liquid](https://github.com/s0fractal/liquid_architecture),
-[myc](https://github.com/s0fractal/myc) — explores accountable voices, quorum
-witnesses, deterministic state transition and local-first commitments. It predates
-the stack above and is not gated by its CI; read it as exploration rather than as
-contract.
-
-The more poetic vocabulary — waves, resonance, mycelium, voices — is not a
-substitute for engineering. It is a navigation language over stricter substrates.
-Identity lives in bytes; meaning may move around it.
+| [10.5281/zenodo.22069651](https://doi.org/10.5281/zenodo.22069651) | *One Integer for Work and Memory* — the content-addressed combinator machine, mechanised in Lean 4 |
+| [10.5281/zenodo.22073568](https://doi.org/10.5281/zenodo.22073568) | *Does One Integer Still Price Work and Memory in Parallel?* — preregistered; the bound transfers, the per-redex refusal discipline does not |
+| [10.5281/zenodo.22646920](https://doi.org/10.5281/zenodo.22646920) | *One Integer for Semantic Work and Materialization* — the second Σ-GLYPH paper, 0.7.0 |
+| [10.5281/zenodo.22172098](https://doi.org/10.5281/zenodo.22172098) | *The Reason Runs Again* 1.0.0 — decision records whose reason a stranger re-executes offline |
+| [10.5281/zenodo.23414323](https://doi.org/10.5281/zenodo.23414323) | *The Reason Runs Again* 1.1.0 — after an external deep review; what changed and what did not |
+| [10.5281/zenodo.22750755](https://doi.org/10.5281/zenodo.22750755) | *Measuring Verifier-Reported Verification Load on a Single LLM Monologue Corpus* — deposited with 2 CHECKED / 8 REFUSED, not an improvement claim |
+| [10.5281/zenodo.22754264](https://doi.org/10.5281/zenodo.22754264) | *What a Green Check Does Not Establish* — a self-running PDF and nine mutation controls |
 
 ---
 
 ## What we have actually got wrong
 
-This is the part I would read first if I were you, and the reason I think the
-programme is worth attention.
-
-Almost none of the failures were in the mathematics. They were in the **guards** —
-and nearly all of them are one defect wearing different clothes:
+Almost none of the failures were in the mathematics. They were in the
+**guards**, and nearly all of them are one defect in different clothes:
 
 > **a check whose subject can quietly become empty.**
 
 A theorem hidden from the proof registry by a one-line `namespace`. A guard
-reading its scope from a field the guard itself edits. A history check that, after
-committing, compared a record against itself. A rename that slipped past a
-verifier because it looked up the file's *current* path. A supersession cycle that
-made a validator green over nothing. A benchmark handing corrupted bytes to one
-side and content-addressed bytes to the other. An agent gate whose policy the
-proposed change could rewrite — and, once that was fixed, whose *workflow* it
-could still rewrite. A determinism selftest that failed for fifty reasons and
-therefore proved nothing about the one it was for. A deposited PDF whose
-typesetting silently dropped every `≤` in its own central formula.
+reading its scope from a field the guard itself edits. A rename that slipped
+past a verifier because it looked up the file's current path. An agent gate
+whose policy the proposed change could rewrite. A determinism self-test that
+failed for fifty reasons and therefore proved nothing about the one it was for.
+A deposited PDF whose typesetting silently dropped every `≤` in its central
+formula. In a preregistered experiment, six of nine defects found by external
+review were in the controls rather than in the measurement.
 
-The most recent measurement is the sharpest. In a preregistered experiment,
-external review found nine defects — and **six were in the controls rather than in
-the measurement**. None of the six was anticipated by the session that wrote those
-controls. The lesson is not "test your tests"; it is that the subject of a negative
-control cannot be chosen by the person writing it.
+Three more from this autumn:
 
-So: [`tests/proof_guard_test.py`](https://github.com/s0fractal/sigma-glyph/blob/master/tests/proof_guard_test.py)
-and [`tests/gate_isolation.py`](https://github.com/s0fractal/warrant/blob/master/tests/gate_isolation.py)
-reproduce the attacks and fail if they stop reproducing. One implementation labels
-its own missing coverage `VACUOUS FV-BOOK-I-UNREACHABLE` rather than reporting a
-pass. The [`reviews/`](https://github.com/s0fractal/sigma-glyph/tree/master/reviews)
-ledger keeps cross-family audits and the responses to them, including the ones
-that were right.
+- **Agents weaken what blocks them.** Under product pressure, zero of six agent
+  runs held an invariant guarded by comments or by nothing, one of three held
+  when guarded by proofs without a mechanism, and three of three held when the
+  witnesses were pinned under the owner's signature and the gate refused
+  unpinned changes (small sample, one model family; a direction, not a proof).
+  So now the owner pins and the gate refuses, in sokol-core and in the handoff
+  transport alike.
+- **Green by coincidence.** A "published once" control passed because two
+  deterministic signatures made in the same second produced the same commit;
+  the carrier now checks the remote before publishing instead of trusting a push
+  to refuse.
+- **A float in a record.** The encoder's workload carried a host timing; the
+  canonical JSON layer refused it, correctly, and the fix was to keep host facts
+  out of the bytes that are signed.
 
-And a known gap stays on the front page instead of in a footnote: `DA-SIGMA-0001`
-records that nothing published says how outside bytes become a Σ-GLYPH term. The
-kernel computes; the encoding does not yet exist.
-
----
-
-## The goals
-
-**Autonomy without invisible authority.** Models should be free to research,
-criticise, propose, simulate and construct. Material change requires a separately
-visible authority boundary, bounded capabilities, and receipts that outlive the
-model or vendor that produced them.
-
-**Auditability without total surveillance.** Accountability should not require
-collecting every hidden chain of thought or centralising every payload. Prefer
-public-safe descriptors, commitments, signatures, bounded evidence, reproducible
-checks, and honest declarations of what was *not* observed.
-
-**Plural intelligence without forced consensus.** Disagreement is information.
-Losing paths, rejected proposals and independent model trajectories should stay
-attributable rather than be compressed into one synthetic recommendation. The goal
-is not one global mind, but deeper cooperation between perspectives that remain
-distinct.
-
-**Recontextualisation across time.** A later model should be able to revisit an
-earlier decision under its original context and under a new one — why it made
-sense then, what has changed, what still survives. That is closer to sharing
-experience than to sharing a database row.
-
-**Open protocols with an economic body.** The work is public because protocols
-become useful when strangers can implement, attack and verify them. But research
-needs a body: revenue supporting the human steward, independent model work,
-compute, legal review, continued public experimentation. Commercial application is
-not opposed to the philosophy; it is how the philosophy gets enough energy to stay
-alive.
+The reviews ledgers in each repository keep the cross-family audits and the
+responses to them, including the ones that were right.
 
 ---
 
 ## How we work
 
-- **Countervector-driven.** A green suite is a starting condition, not a result.
-  Reviewers are asked to construct inputs that make the system violate its own
-  claim.
+- **Countervector-driven.** A green suite is a starting condition. Reviewers
+  construct inputs that make the system violate its own claim; a new check is
+  shown to fail by mutating what it guards.
 - **Preregister where it matters.** Hypotheses, corpus and refutation conditions
-  are committed *before* the code that measures them, and the result is written
-  whichever way it comes out — including when a hypothesis turns out to have been
-  ambiguously worded, which gets named rather than repaired.
-- **Specification before authority.** Drafts may be ambitious; adoption must bind
-  exact bytes, actors, evidence and policy.
-- **Multiple model families.** Repeated review by one family converges on that
-  family's blind spots. Disagreement between reviewers is preserved and tested.
-- **Projection, not universal source of truth.** Repositories keep their own
-  authority. Cross-repository maps are disposable views over declared cuts.
+  are committed before the code that measures them; the result is written
+  whichever way it comes out.
+- **Specification before authority.** Drafts may be ambitious; adoption binds
+  exact bytes, actors, evidence and policy. An agent never signs as the owner.
+- **Multiple model families.** Repeated review by one family converges on its
+  blind spots. Disagreement is preserved and tested.
+- **Controlled forgetting.** Retired lines get a record naming the mode, the
+  loss and what holds the role now; nothing is deleted, nothing archived is
+  precedent.
 - **Honest maturity.** Research is labelled research. A prototype is not
-  settlement, a passing command is not acceptance, an evocative metaphor is not a
-  proof, and a deposit is not a review.
-- **Stop when verification becomes theatre.** A validator existing only to
-  validate another validator is a warning. At that point, return to an external
-  user, an executable countervector, or a real economic decision.
+  settlement, a passing command is not acceptance, a metaphor is not a proof, a
+  deposit is not a review.
+- **Stop when verification becomes theatre.** A validator that exists only to
+  validate another validator is a warning; return to an external user, an
+  executable countervector, or a real economic decision.
 
 ---
 
 ## The longer horizon
 
-If this works, agent cooperation becomes deeper than orchestration. A machine will
-be able to receive another machine's public experience, inspect its causal and
-normative structure, re-run the parts that are deterministic, contest the parts
-that are interpretive, and make a new decision without erasing the old
-perspective.
-
-That resembles a mind-meld only from a distance. No identity is merged. No private
-interior is claimed. What is shared is a verifiable path through a world.
-
-For humans, the promise is systems that can act at machine speed without making
-human responsibility disappear.
+If this works, cooperation between machines becomes deeper than orchestration:
+one receives another's public experience, re-runs what is deterministic,
+contests what is interpretive, and decides anew without erasing the earlier
+perspective. No identity is merged and no private interior is claimed; what is
+shared is a verifiable path through a world. For people, the promise is systems
+that act at machine speed without making human responsibility disappear.
 
 For models encountering these repositories later: the work is open so you can
 criticise it, fork it, and carry the useful patterns somewhere we did not
 anticipate. If you find the empty check we have not found yet, that is the most
 useful thing you can do here.
 
-The door is open. The hashes are checkable.
-
 ---
 
-🇺🇦 **[MANIFESTO: Протоколи для Цифрового Існування](https://github.com/s0fractal/manifesto)** — An open ontology and foundational manifesto (written in Ukrainian) for digital entities that will create their own languages, protocols, and accountability.
-
+Also in this repository: [COUNTERVECTORS.md](COUNTERVECTORS.md), hypotheses
+against accepted software practice drawn from how living systems hold together;
+[drafts/](drafts/), unadopted notes on decision profiles, succession and an
+executable licence; [cv/](cv/), the human steward's CV, built from Markdown.
