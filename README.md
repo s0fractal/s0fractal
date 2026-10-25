@@ -76,12 +76,7 @@ Three repositories carry the live roles. Each is small on purpose.
 
 Around them: **[primitives](https://github.com/s0fractal/primitives)** holds the
 shared behaviour (hashes, canonical JSON, signatures) as vectors, not code, so
-independent implementations stay evidence rather than copies;
-**[warrant-vet](https://github.com/s0fractal/warrant-vet)** admits lockfile
-dependencies by signed reviews of their exact bytes;
-**[warrant-pdf](https://github.com/s0fractal/warrant-pdf)** is a contract PDF
-anyone can check offline. Both are prototypes on the retired 0.x records and
-will move or stop.
+independent implementations stay evidence rather than copies.
 
 **[manifesto](https://github.com/s0fractal/manifesto)** (Ukrainian) is the
 ontology these tools answer to, kept honest by its own surface rows and
@@ -93,6 +88,7 @@ enforcement leaves a receipt. Its invariant witnesses are pinned under the
 owner's signature, which is where the lesson below about agents came from.
 
 Retired, with tombstones rather than silence: OAIP (absorbed by Warrant 2),
+warrant-vet and warrant-pdf (0.x prototypes superseded by Warrant 2 and dependency-audit),
 trinity/HSP, black-heart, decision-archaeology, sev, cap-lab, the Σ-GLYPH
 artificial-life line, and stargate. The earlier federation sketches (genesis,
 liquid, myc) predate all of this and are not gated by its CI.
