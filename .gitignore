@@ -7,6 +7,9 @@
 !README.*
 !COUNTERVECTORS.md
 !.gitignore
+!.warrant/
+!.warrant/v3.json
+!.warrant/records.jsonl
 
 # Whitelist drafts folder and markdown drafts
 !drafts/
